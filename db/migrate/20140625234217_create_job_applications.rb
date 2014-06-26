@@ -8,6 +8,6 @@ class CreateJobApplications < ActiveRecord::Migration
       t.timestamps
     end
     
-    add_index :status
+    add_index :job_applications, :status
   end
 end

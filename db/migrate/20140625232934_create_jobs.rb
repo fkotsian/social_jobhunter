@@ -11,10 +11,10 @@ class CreateJobs < ActiveRecord::Migration
       t.timestamps
     end
     
-    add_index :title
-    add_index :url, unique: true
-    add_index :category
-    add_index :salary_bottom
-    add_index :salary_top
+    add_index :jobs, :title
+    add_index :jobs, :url, unique: true
+    add_index :jobs, :category
+    add_index :jobs, :salary_bottom
+    add_index :jobs, :salary_top
   end
 end

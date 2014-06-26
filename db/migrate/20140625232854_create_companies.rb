@@ -9,8 +9,8 @@ class CreateCompanies < ActiveRecord::Migration
       t.timestamps
     end
     
-    add_index :name, unique: true
-    add_index :company_size
-    add_index :industry
+    add_index :companies, :name, unique: true
+    add_index :companies, :company_size
+    add_index :companies, :industry
   end
 end
