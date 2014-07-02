@@ -1,5 +1,6 @@
 class JobApplicationsController < ApplicationController
   def index
+    @applications = JobApplications.where(applicant: current_user)
   end
 
   def new
