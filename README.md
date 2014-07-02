@@ -25,7 +25,8 @@ has_many :jobs
 
 
 
-users add jobs
+users add jobs-applications
+  this creates a Job if it doesnt exist
 jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
 jobs are then surfaced by field (jobs.where :category => /cat/)
 
@@ -63,3 +64,6 @@ jobs have title, description, salary, contact_info
 
 users can filter offers
 filter job_applications by company, salary, company size, location, and application status
+
+job_application form has autofill
+title has autofill for all job titles

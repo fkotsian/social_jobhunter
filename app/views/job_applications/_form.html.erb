@@ -1,0 +1,38 @@
+<%= form_for [current_user, @job, @job_application], url: { action: 'create' }, html: { class: 'form-inline '} do |f| %>
+  <%= fields_for :job do |builder| %>
+  
+    <p class='form-group'>
+      <%= builder.label :title %>
+      <%= builder.text "Title", class: 'form-control' options: 'autofocus' %>
+    </p>
+    
+    <p class='form-group'>
+      <%= builder.label :company %>
+      <%= builder.text "Company", class: 'form-control' %>
+    </p>
+    
+    <p class='form-group'>
+      <%= build.label :category %>
+      <%= builder.collection_select :category_name, JobCategory.order(:name), :id, :name, include_blank: true %>
+    </p>
+    
+    <p class='form-group'>
+      <%= builder.label :url %>
+      <%= builder.url "Job Posting URL", class: 'form-control' %>
+    </p>
+    
+    <p class='form-group'>
+      <%= builder.label :salary_bottom %>
+      <%= builder.range "Listed Salary Minimum", min: 0, 
+                                                 class: 'form-control' %>
+    </p>
+    
+    <p class='form-group'>
+      <%= builder.label :salary_top %>
+      <%= builder.range "Listed Salary Maximum", min: 0, 
+                                                 class: 'form-control' %>
+    </p>
+  
+  <% end %>
+    
+<% end %>
