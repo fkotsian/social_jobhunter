@@ -67,3 +67,9 @@ filter job_applications by company, salary, company size, location, and applicat
 
 job_application form has autofill
 title has autofill for all job titles
+
+job_application form allows you to add new job categories
+it recognizes a new entry to the category input and creates it as a JobCategory
+
+applying to a job tells you how many jobs you have applied to that day
+creating a new job_application flashes a message containing the number of jobs you have applied to that day
