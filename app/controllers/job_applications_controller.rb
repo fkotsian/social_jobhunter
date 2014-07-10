@@ -4,8 +4,8 @@ class JobApplicationsController < ApplicationController
   end
 
   def new
-    @job = Job.build
-    @job_application = JobApplication.build
+    @job = Job.new
+    @job_application = JobApplication.new
   end
 
   def create
