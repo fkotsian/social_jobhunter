@@ -27,6 +27,7 @@ industry
 has_many :jobs
 
 
+#Stories
 
 users add jobs-applications
   this creates a Job if it doesnt exist
