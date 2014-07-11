@@ -7,13 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+	<%= render 'shared/navbar' %>
+
 	<div class='container' id='body-container'>
-		
-		<%= render 'shared/navbar' %>
-		<%= render 'shared/alerts' %>
-
+  	<%= render 'shared/alerts' %>
 		<%= yield %>
-
 	</div>
 </body>
 </html>

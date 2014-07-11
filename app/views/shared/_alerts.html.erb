@@ -1,2 +1,12 @@
-<p class='alert alert-success'><%= notice || flash[:success] %></p>
-<p class='alert alert-danger'><%= alert || flash[:errors] %></p>
+<% if notice || flash[:success] %>
+<div class="alert alert-success">
+  <p><%= notice || flash[:success] %></p>
+</div>
+<% end %>
+
+<% if alert || flash[:errors] %>
+<div class="alert alert-danger">
+  <p><%= alert || flash[:errors] %></p>
+</div>
+
+<% end %>
