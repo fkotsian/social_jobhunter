@@ -6,6 +6,7 @@ class JobApplicationsController < ApplicationController
   def new
     @job = Job.new
     @job_application = JobApplication.new
+    @categories = JobCategory.all
   end
 
   def create

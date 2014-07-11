@@ -5,7 +5,7 @@
     <div class='form-group'>
       <%= builder.label :company %>
       <%= builder.text_field :company_name, class: 'form-control' %>
-      <!-- <%= builder.collection_select :company_name, Company.order(:name), "Company", class: 'form-control' %> -->
+      <%#= builder.collection_select :company_name, Company.order(:name), "Company", class: 'form-control' %>
     </div>
     
   <% end %>
@@ -19,8 +19,8 @@
         
     <div class='form-group'>
       <%= builder.label :job_category %>
-      <!-- <%= builder.text_field :category_id, class: 'form-control' %> -->
-      <%= builder.collection_select :category_id, JobCategory.order(:name), :id, :name, include_blank: true, class: 'form-control' %>
+      <%#= builder.text_field :category_id, class: 'form-control' %>
+      <%= builder.collection_select :category_id, JobCategory.all, :id, :id, class: 'form-control', prompt: "Select category" %>
     </div>
         
     <div class='form-group'>
