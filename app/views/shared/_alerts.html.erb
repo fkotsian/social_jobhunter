@@ -4,9 +4,9 @@
 </div>
 <% end %>
 
-<% if alert || flash[:errors] %>
+<% if alert || flash[:error] %>
 <div class="alert alert-danger">
-  <p><%= alert || flash[:errors] %></p>
+  <p><%= alert || flash[:error] %></p>
 </div>
 
 <% end %>
