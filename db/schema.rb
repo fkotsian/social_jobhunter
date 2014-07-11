@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20140711033711) do
 
   create_table "job_categories", force: true do |t|
     t.string   "name",       null: false
-    t.integer  "job_id",     null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
