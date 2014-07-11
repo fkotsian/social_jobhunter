@@ -1,6 +1,6 @@
 class JobApplicationsController < ApplicationController
   def index
-    @applications = JobApplications.where(applicant: current_user)
+    @applications = JobApplication  .where(applicant: current_user)
   end
 
   def new
@@ -9,11 +9,11 @@ class JobApplicationsController < ApplicationController
   end
 
   def create
-    fail
-    company_name = params[:job_application][:job][:company_name]
-    job_title = params[:job_application][:job][:title]
+    # fail
+    company_name = params[:job][:company_name]
+    job_title    = params[:job][:title]
     @company = Company.find_or_create_by_name(company_name)
-    @job = @company.jobs.find_or_create_by_title(job_params) #may want to mod this to be by_url (need to require URL at DB and model level)
+    @job = @company.jobs.find_or_create_by_title_and_status(job_params, "Open") #may want to mod this to be by_url (need to require URL at DB and model level)
     @job_application = @job.applications.new(applicant: current_user)
     
     if @job_application.save

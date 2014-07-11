@@ -8,4 +8,12 @@ describe Job do
   it "may have a URL"
   it "may have a salary bottom"
   it "may have a salary top"
+  
+  context "new Job" do
+    it "has a status of 'Open'"
+  end
+  
+  context "closed Job" do
+    it "has a status of 'Closed'"
+  end
 end
