@@ -9,7 +9,6 @@ class JobApplicationsController < ApplicationController
   end
 
   def create
-    # fail
     company_name = params[:job][:company_name]
     job_title    = params[:job][:title]
     @company = Company.find_or_create_by_name(company_name)

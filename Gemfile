@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'backbone-on-rails'
+gem 'autoprefixer-rails'
 
 group :development do
   gem 'better_errors'

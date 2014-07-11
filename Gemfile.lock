@@ -33,6 +33,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (2.1.0.20140628)
+      execjs
     backbone-on-rails (1.1.1.0)
       actionmailer
       actionpack
@@ -219,6 +221,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   backbone-on-rails
   better_errors
   binding_of_caller
