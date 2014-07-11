@@ -3,11 +3,13 @@
 Schema:
 =======================================
 
-#user
+user
+--
 email
 password
 
-#job
+job
+--
 title
 company
 category
@@ -15,12 +17,14 @@ url
 salary_bottom
 salary_top
 
-#job_application
+job_application
+--
 job
 user
 status: default => "applied"
 
-#company
+company
+--
 name
 size
 industry
