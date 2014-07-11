@@ -5,6 +5,6 @@ class CreateJobCategories < ActiveRecord::Migration
       t.timestamps
     end
     
-    add_index :job_categories, :name
+    add_index :job_categories, :name, unique: true
   end
 end

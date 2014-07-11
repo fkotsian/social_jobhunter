@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20140711033711) do
     t.datetime "updated_at"
   end
 
-  add_index "job_categories", ["name"], name: "index_job_categories_on_name"
+  add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true
 
   create_table "jobs", force: true do |t|
     t.string   "title",                          null: false
