@@ -9,6 +9,7 @@ class JobApplicationsController < ApplicationController
   end
 
   def create
+    # fail
     company_name = params[:job][:company_name]
     job_title    = params[:job][:title]
     @company = Company.find_or_create_by_name(company_name)
@@ -38,8 +39,7 @@ class JobApplicationsController < ApplicationController
   
   private
   def job_params
-    params.require(:job_application).require(:job)
-      .permit(:title, :category, :url, :salary_bottom, :salary_top)
+    params.require(:job).permit(:title, :category, :url, :salary_bottom, :salary_top)
   end
   
   def application_params

@@ -1,6 +1,6 @@
 class Job < ActiveRecord::Base
   belongs_to :company
-  has_one :job_category
+  belongs_to :job_category
   has_many :applications, class_name: 'JobApplications'
   
   validates :title, presence: true

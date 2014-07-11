@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 20140711033711) do
   create_table "jobs", force: true do |t|
     t.string   "title",                          null: false
     t.integer  "company_id",                     null: false
-    t.string   "category"
+    t.integer  "category_id"
     t.string   "url"
     t.integer  "salary_bottom"
     t.integer  "salary_top"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20140711033711) do
     t.string   "status",        default: "Open"
   end
 
-  add_index "jobs", ["category"], name: "index_jobs_on_category"
+  add_index "jobs", ["category_id"], name: "index_jobs_on_category_id"
   add_index "jobs", ["company_id"], name: "index_jobs_on_company_id"
   add_index "jobs", ["salary_bottom"], name: "index_jobs_on_salary_bottom"
   add_index "jobs", ["salary_top"], name: "index_jobs_on_salary_top"
