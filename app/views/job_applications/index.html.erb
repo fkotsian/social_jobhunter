@@ -1,26 +1,30 @@
 <h1>My Apps</h1>
 
-<div class="row">
-  <div class="col-sm-10">
-    <%= render _form %>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-10">
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead>
-          <th>Company</th>
-          <th>Job Title</th>
-          <th>Applied</th>
-          <th>Status</th>
-          <th>Notes</th>
-        </thead>
-        <tbody>
-          <%= render @applications %>
-        </tbody>
-      </table>
+<section id="new-application-form">
+  <div class="row">
+    <div class="col-sm-10">
+      <%= render _form %>
     </div>
   </div>
-</div>
+</section>
+
+<section id="job-applications-table">
+  <div class="row">
+    <div class="col-sm-10">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <th>Company</th>
+            <th>Job Title</th>
+            <th>Applied</th>
+            <th>Status</th>
+            <th>Notes</th>
+          </thead>
+          <tbody>
+            <%= render @applications %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
