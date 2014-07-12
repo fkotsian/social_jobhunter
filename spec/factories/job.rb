@@ -2,7 +2,7 @@ require 'faker'
 
 FactoryGirl.define do
   factory :job do |f|
-    f.title           { Faker::Internet.email }
+    f.title           { Faker::Company.name }
     f.company_id      { FactoryGirl.create(:company).id }
     f.job_category_id 1
     f.url             { Faker::Internet.url }
