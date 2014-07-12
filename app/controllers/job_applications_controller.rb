@@ -19,7 +19,7 @@ class JobApplicationsController < ApplicationController
 
     if @job_application.save
       flash[:success] = "Congratulations on your new application!"
-      redirect_to root_path
+      redirect_to my_applications_path
     else
       flash[:error] = "Error: " + @job_application.errors.full_messages.to_s
       redirect_to :back
