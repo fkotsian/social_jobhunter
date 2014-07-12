@@ -47,19 +47,19 @@ ActiveRecord::Schema.define(version: 20140711033711) do
   add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true
 
   create_table "jobs", force: true do |t|
-    t.string   "title",                          null: false
-    t.integer  "company_id",                     null: false
-    t.integer  "category_id"
+    t.string   "title",                            null: false
+    t.integer  "company_id",                       null: false
+    t.integer  "job_category_id"
     t.string   "url"
     t.integer  "salary_bottom"
     t.integer  "salary_top"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status",        default: "Open"
+    t.string   "status",          default: "Open"
   end
 
-  add_index "jobs", ["category_id"], name: "index_jobs_on_category_id"
   add_index "jobs", ["company_id"], name: "index_jobs_on_company_id"
+  add_index "jobs", ["job_category_id"], name: "index_jobs_on_job_category_id"
   add_index "jobs", ["salary_bottom"], name: "index_jobs_on_salary_bottom"
   add_index "jobs", ["salary_top"], name: "index_jobs_on_salary_top"
   add_index "jobs", ["status"], name: "index_jobs_on_status"

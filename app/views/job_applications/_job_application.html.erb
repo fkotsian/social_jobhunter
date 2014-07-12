@@ -2,6 +2,7 @@
   <td><%= application.job.company.name %></td>
   <td><%= application.job.title %></td>
   <td><%= application.updated_at %></td>
+  <td><%= application.job_category || "form" %></td> <!-- || render partial: "jobs/job_category" %> -->
   <td><%= application.status %></td>
-  <td><%= "#{application.job.salary_bottom} - #{application.job.salary_top}" %></td>
+  <td><%= application.job.url %></td>
 </tr>
