@@ -14,3 +14,7 @@ JobCategory.create(name: "Engineering")
 JobCategory.create(name: "Marketing")
 JobCategory.create(name: "PR")
 JobCategory.create(name: "Product Management")
+
+10.times do
+  FactoryGirl.create :job
+end
