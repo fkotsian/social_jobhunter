@@ -3,7 +3,7 @@
 <section id="new-application-form">
   <div class="row">
     <div class="col-sm-10">
-      <%= render _form %>
+      <%= render "form" %>
     </div>
   </div>
 </section>
@@ -21,7 +21,9 @@
             <th>Notes</th>
           </thead>
           <tbody>
-            <%= render @applications %>
+            <%= render partial: "job_application", 
+                collection: @job_applications,
+                as: :application %>
           </tbody>
         </table>
       </div>

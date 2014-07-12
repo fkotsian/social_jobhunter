@@ -1,4 +1,4 @@
-<%= form_for [current_user, @job, @job_application], url: { action: 'create' }, html: { class: ''} do |f| %>
+<%= form_for [current_user], url: { action: 'create' }, html: { class: ''} do |f| %>
 
   <%= fields_for :company do |builder| %>
   

@@ -1,6 +1,8 @@
 class JobApplicationsController < ApplicationController
+  before_action :authenticate_user!, except: [:all_apps]
+  
   def index
-    @applications = JobApplication.where(applicant: current_user)
+    @job_applications = JobApplication.where(applicant: current_user)
   end
 
   def new
@@ -34,6 +36,9 @@ class JobApplicationsController < ApplicationController
   end
 
   def delete
+  end
+  
+  def all_apps
   end
   
   private
