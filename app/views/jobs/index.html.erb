@@ -1,2 +1,21 @@
 <h1>Jobs#index</h1>
-<p>Find me in app/views/jobs/index.html.erb</p>
+
+<section id="jobs-table">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-1">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Category</th>
+            <th>Salary</th>
+          </thead>
+          <tbody>
+            <%= render partial: @jobs %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

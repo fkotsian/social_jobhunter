@@ -1,0 +1,6 @@
+<tr>
+  <td><%= link_to job.title, job.url || "#" %></td>
+  <td><%= Company.find(job.company_id).name %></td>
+  <td><%= job.job_category_id %></td>
+  <td><%= "#{job.salary_bottom} - #{job.salary_top}" %></td>
+</tr>
