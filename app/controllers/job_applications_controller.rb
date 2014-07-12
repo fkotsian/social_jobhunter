@@ -10,7 +10,6 @@ class JobApplicationsController < ApplicationController
   end
 
   def create
-    # fail
     @company = attempt_company(params[:company][:company_name])
     @job =     attempt_job(params[:job][:title], "Open")
     

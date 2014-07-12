@@ -33,7 +33,7 @@ has_many :jobs
 
 #Stories
 
-users add jobs-applications
+users add job-applications
   this creates a Job if it doesnt exist
 jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
 jobs are then surfaced by field (jobs.where :category => /cat/)
