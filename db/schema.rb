@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140712211340) do
+ActiveRecord::Schema.define(version: 20140711033711) do
 
   create_table "companies", force: true do |t|
     t.string   "name",         null: false
@@ -20,13 +20,11 @@ ActiveRecord::Schema.define(version: 20140712211340) do
     t.string   "industry"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url"
   end
 
   add_index "companies", ["company_size"], name: "index_companies_on_company_size"
   add_index "companies", ["industry"], name: "index_companies_on_industry"
   add_index "companies", ["name"], name: "index_companies_on_name", unique: true
-  add_index "companies", ["url"], name: "index_companies_on_url", unique: true
 
   create_table "job_applications", force: true do |t|
     t.integer  "job_id",                           null: false
