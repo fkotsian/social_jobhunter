@@ -2,6 +2,7 @@ class JobsController < ApplicationController
   before_action :authenticate_user!
   
   def index
+    @jobs = Job.all
   end
 
   def new
@@ -21,4 +22,22 @@ class JobsController < ApplicationController
 
   def delete
   end
+  
+  def company_jobs  
+    @jobs = Job.where(company_id: params[:company_id])
+    render :index
+  end
+  
+  def category_jobs
+    @jobs = Job.where(category_id: params[:category_id])
+    render :index
+  end
+  
+  def area_jobs
+  end
+  
+  private
+  def job_params
+  end
+  
 end

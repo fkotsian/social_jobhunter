@@ -2,7 +2,7 @@ class CompaniesController < ApplicationController
   before_action :authenticate_user!
   
   def index
-    @companies = Companies.all
+    @companies = Company.all
   end
   
   def show
