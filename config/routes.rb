@@ -13,7 +13,9 @@ Rails.application.routes.draw do
     end
   end
   resources :jobs, only: [:index], as: 'all_jobs'
-  
+  get 'jobs/:company_id', to: 'jobs#company_jobs', as: 'company_jobs'
+  get 'jobs/:category_id', to: 'jobs#category_jobs', as: 'category_jobs'
+  get 'jobs/:area_id', to: 'jobs#area_jobs', as: 'area_jobs'  
   
   devise_scope :user do
     root to: 'static_pages#home'
