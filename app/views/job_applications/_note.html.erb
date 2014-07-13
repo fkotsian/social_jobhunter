@@ -1,7 +1,7 @@
 <%= form_for(application, url: job_application_path(id: application.id, job_id: application.job_id)) do |f| %>
 
   <div class="form-group">
-    <%= fields_for(application, application.note) do |builder| %>
+    <%= fields_for(application, :note) do |builder| %>
       <%= builder.text_field :note, class: "form-control no-input-box", maxlength: 60, placeholder: "Write me maybe" %>
     <% end %>
   </div>
