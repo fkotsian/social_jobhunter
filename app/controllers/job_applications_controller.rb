@@ -12,8 +12,8 @@ class JobApplicationsController < ApplicationController
   end
 
   def create
-    @company = attempt_company(params[:company][:company_name])
-    @job =     attempt_job(params[:job][:title], "Open")
+    @company = attempt_company
+    @job =     attempt_job
     
     @job_application = @job.applications.new(applicant_id: current_user.id)
 
@@ -33,6 +33,14 @@ class JobApplicationsController < ApplicationController
   end
 
   def update
+    @job_application = JobApplication.find(params[:id])
+    fail
+    if @job_application.try(:update_attributes, application_params)
+      redirect_to my_applications_path
+    else
+      flash[:error] = @job_application.errors.full_messages.to_s
+      redirect_to my_applications_path
+    end
   end
 
   def delete
@@ -42,13 +50,20 @@ class JobApplicationsController < ApplicationController
   end
   
   private
+  def application_params
+    params.require(:job_application).permit(:status)
+  end
+  
+  def company_params
+    params.require(:company).permit(:name)
+  end
+  
   def job_params
     params.require(:job).permit(:title, :category_id, :url, :salary_bottom, :salary_top)
   end
   
-  def attempt_company(company_name)
-    co = Company.find_or_create_by(name: company_name)
-    # co ||= Company.new(name: company_name)
+  def attempt_company
+    co = Company.find_or_create_by(company_params)
     unless co
       flash[:error] = "Error: " + co.errors.full_messages.to_s
       redirect_to root_path
@@ -56,10 +71,9 @@ class JobApplicationsController < ApplicationController
     co
   end
   
-  def attempt_job(job_title, job_status)
-    job = @company.jobs.find_or_create_by(title: job_title, status: job_status)
+  def attempt_job #(job_title, job_status)
+    job = @company.jobs.find_or_create_by(job_params)
     #may want to mod this to be by_url (need to require URL at DB and model level)
-    # job ||= @company.jobs.new(job_params)
     unless job
       flash[:error] = "Error: " + job.errors.full_messages.to_s
       redirect_to root_path
