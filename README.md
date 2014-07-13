@@ -81,3 +81,9 @@ it recognizes a new entry to the category input and creates it as a JobCategory
 
 applying to a job tells you how many jobs you have applied to that day
 creating a new job_application flashes a message containing the number of jobs you have applied to that day
+
+SquareSpace Logo
+SquareSpace favicon (hamsters? hound?)
+
+infinite scroll/pagination for job_applications and jobs and companies
+
