@@ -60,7 +60,7 @@ class JobApplicationsController < ApplicationController
     job = @company.jobs.find_or_create_by(title: job_title, status: job_status)
     #may want to mod this to be by_url (need to require URL at DB and model level)
     # job ||= @company.jobs.new(job_params)
-    unless job.save
+    unless job
       flash[:error] = "Error: " + job.errors.full_messages.to_s
       redirect_to root_path
     end

@@ -1,6 +1,6 @@
 class Company < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
-  validates :url, uniqueness: true
+  validates :url, uniqueness: true, allow_nil: true
   
   has_many :jobs
   # has_many :applications, through: :jobs, source: :job_applications
