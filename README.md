@@ -47,6 +47,21 @@ we also give advice on how to jobsearch
  - "loved companies" goals
  - integration with LinkedIn (see which companies you know people at)
  
+user can sort by app status, app category
+
+user can search jobs by salary, category, or location (need fields for all of these)
+searchbox above the th (or perhaps IS the th--> is a filter)
+
+company_size_max and company_size_min in DB for angellist data
+
+parse all data
+
+seed db with it
+
+figure out how to ETL into DB (a job, weekly or so, daily ideally)
+
+style signin page, perhaps make single-page (signin via AJAX; though then we lose some of the cool functionalities; not really any reason to)
+ 
 user can track number of jobs submitted
 user can track which companies they applied to
 user submits app
