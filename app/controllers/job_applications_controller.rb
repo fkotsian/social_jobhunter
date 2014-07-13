@@ -18,7 +18,8 @@ class JobApplicationsController < ApplicationController
     @job_application = @job.applications.new(applicant_id: current_user.id)
 
     if @job_application.save
-      flash[:success] = "Congratulations on your new application!"
+      apps_today = JobApplication.where("created_at > ?", Date.today.to_time(:utc)).count
+      flash[:success] = "Congratulations! You have applied to #{apps_today} jobs today!"
       redirect_to my_applications_path
     else
       flash[:error] = "Error: " + @job_application.errors.full_messages.to_s
