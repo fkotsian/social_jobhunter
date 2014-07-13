@@ -1,7 +1,7 @@
 <tr>
-  <td><%= application.job.company.name %></td>
+  <td><%= link_to application.job.company.name, application.job.url %></td>
   <td><%= application.job.title %></td>
-  <td><%= application.updated_at %></td>
+  <td><%= application.updated_at.strftime("%m-%d-%Y") %></td>
   <td><%= render partial: "status", locals: { current_status: application.status } %></td>
   <td><%= application.job.url %></td>
 </tr>
