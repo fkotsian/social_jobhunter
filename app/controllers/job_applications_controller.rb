@@ -34,6 +34,7 @@ class JobApplicationsController < ApplicationController
 
   def update
     @job_application = JobApplication.find(params[:id])
+    fail
     if @job_application.try(:update_attributes, application_params)
       redirect_to my_applications_path
     else

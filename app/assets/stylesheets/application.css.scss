@@ -16,3 +16,20 @@
 
 //@import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+
+/********************** Reusable Classes  ****************************/
+.no-input-box {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border: 0px;
+  
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  
+  background: inherit;
+}

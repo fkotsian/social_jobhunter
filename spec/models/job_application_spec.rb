@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: job_applications
+#
+#  id           :integer          not null, primary key
+#  job_id       :integer          not null
+#  applicant_id :integer          not null
+#  status       :string(255)      default("Applied")
+#  created_at   :datetime
+#  updated_at   :datetime
+#  note         :string(255)
+#
+
 require 'spec_helper'
 
 describe JobApplication do

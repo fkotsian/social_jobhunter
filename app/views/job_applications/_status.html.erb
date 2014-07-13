@@ -1,5 +1,5 @@
-<form action="update" method="PUT">
+<form action="<%= job_application_path(id: application.id, job_id: application.job_id) %>" method="PUT">
   <div class="form-group">
-    <%= text_field_tag "job_application[status]", current_status, class: "form-control", maxlength: 50 %>
+    <%= text_field_tag "job_application[status]", application.status, class: "form-control no-input-box", maxlength: 50 %>
   </div>
 </form>
