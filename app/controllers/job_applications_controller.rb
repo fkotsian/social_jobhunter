@@ -35,7 +35,6 @@ class JobApplicationsController < ApplicationController
 
   def update
     @job_application = JobApplication.find(params[:id])
-    fail
     if @job_application.try(:update_attributes, application_params)
       redirect_to my_applications_path
     else
@@ -52,7 +51,7 @@ class JobApplicationsController < ApplicationController
   
   private
   def application_params
-    params.require(:job_application).permit(:status)
+    params.require(:job_application).permit(:status, :note)
   end
   
   def company_params
@@ -80,8 +79,5 @@ class JobApplicationsController < ApplicationController
       redirect_to root_path
     end
     job
-  end
-  
-  def application_params
   end
 end
