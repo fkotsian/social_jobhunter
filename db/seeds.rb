@@ -8,12 +8,12 @@
 
 User.create(email: 'frank@test.com', password: 'aaaabbbb', password_confirmation: 'aaaabbbb')
 
-JobCategory.create(name: "Sales")
-JobCategory.create(name: "Biz Dev")
-JobCategory.create(name: "Engineering")
-JobCategory.create(name: "Marketing")
-JobCategory.create(name: "PR")
-JobCategory.create(name: "Product Management")
+JobCategory.create(name: "sales", display_name: "Sales")
+JobCategory.create(name: "biz_dev", display_name: "Biz Dev")
+JobCategory.create(name: "engineering", display_name: "Engineering")
+JobCategory.create(name: "marketing", display_name: "Marketing")
+JobCategory.create(name: "pr", display_name: "PR")
+JobCategory.create(name: "product_management", display_name: "Product Management")
 
 10.times do
   FactoryGirl.create :job

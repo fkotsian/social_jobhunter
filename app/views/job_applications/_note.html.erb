@@ -1,5 +1,10 @@
-<form action="<%= job_application_path(id: application.id, job_id: application.job_id) %>" method="PUT">
+<%= form_for(application, url: job_application_path(id: application.id, job_id: application.job_id)) do |f| %>
+
   <div class="form-group">
-    <%= text_field_tag "job_application[note]", application.note, class: "form-control no-input-box", maxlength: 60, placeholder: "Write me maybe" %>
+    <%= fields_for(application, application.note) do |builder| %>
+      <%= builder.text_field :note, class: "form-control no-input-box", maxlength: 60, placeholder: "Write me maybe" %>
+    <% end %>
   </div>
-</form>
+  
+  <%= submit_tag "Update", class: "invisible" %>
+<% end %>

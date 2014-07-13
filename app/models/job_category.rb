@@ -15,6 +15,7 @@ class JobCategory < ActiveRecord::Base
   attr_reader :name
   
   def self.names
-    categories = self.all.pluck(:name)
+    categories = self.all.pluck(:display_name)
   end
+
 end

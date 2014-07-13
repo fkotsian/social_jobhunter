@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140713033857) do
+ActiveRecord::Schema.define(version: 20140713064009) do
 
   create_table "companies", force: true do |t|
     t.string   "name",         null: false
@@ -42,11 +42,13 @@ ActiveRecord::Schema.define(version: 20140713033857) do
   add_index "job_applications", ["status"], name: "index_job_applications_on_status"
 
   create_table "job_categories", force: true do |t|
-    t.string   "name",       null: false
+    t.string   "name",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "display_name"
   end
 
+  add_index "job_categories", ["display_name"], name: "index_job_categories_on_display_name", unique: true
   add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true
 
   create_table "jobs", force: true do |t|
