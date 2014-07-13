@@ -3,5 +3,5 @@
   <td><%= application.job.title %></td>
   <td><%= application.updated_at.strftime("%m-%d-%Y") %></td>
   <td><%= render partial: "status", locals: { current_status: application.status } %></td>
-  <td><%= application.job.url %></td>
+  <td><em><%= render partial: "note", locals: { current_note: application.note } %></em></td>
 </tr>

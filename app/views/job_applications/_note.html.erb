@@ -1,0 +1,5 @@
+<form action="update" method="PUT">
+  <div class="form-group">
+    <%= text_field_tag "job_application[note]", current_note || "Write me maybe", class: "form-control no-input-box", maxlength: 60 %>
+  </div>
+</form>
