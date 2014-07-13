@@ -39,6 +39,14 @@ jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
 jobs are then surfaced by field (jobs.where :category => /cat/) -->
 
 we also give advice on how to jobsearch
+ - large number of apps
+ - resume forums
+ - cover letter help (examples)
+ - support
+ - applications/day goals
+ - "loved companies" goals
+ - integration with LinkedIn (see which companies you know people at)
+ 
 user can track number of jobs submitted
 user can track which companies they applied to
 user submits app
@@ -80,4 +88,10 @@ job_application form allows you to add new job categories
 it recognizes a new entry to the category input and creates it as a JobCategory
 
 applying to a job tells you how many jobs you have applied to that day
-creating a new job_application flashes a message containing the number of jobs you have applied to that day
+<!-- creating a new job_application flashes a message containing the number of jobs you have applied to that day -->
+
+SquareSpace Logo
+SquareSpace favicon (hamsters? hound?)
+
+infinite scroll/pagination for job_applications and jobs and companies
+
