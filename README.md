@@ -1,36 +1,5 @@
 #Social job-hunting for all
 
-Schema:
-=======================================
-
-user
---
-email
-password
-
-job
---
-title
-company
-category
-url
-salary_bottom
-salary_top
-
-job_application
---
-job
-user
-status: default => "applied"
-
-company
---
-name
-size
-industry
-has_many :jobs
-
-
 #Stories
 
 > <!-- users add job-applications
