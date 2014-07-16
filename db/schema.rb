@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140713064009) do
+ActiveRecord::Schema.define(version: 20140714180204) do
 
   create_table "companies", force: true do |t|
     t.string   "name",         null: false
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140713064009) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "url"
+    t.string   "company_url"
   end
 
   add_index "companies", ["company_size"], name: "index_companies_on_company_size"
