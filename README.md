@@ -33,10 +33,19 @@ has_many :jobs
 
 #Stories
 
-<!-- users add job-applications
-  this creates a Job if it doesnt exist
-jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
-jobs are then surfaced by field (jobs.where :category => /cat/) -->
+> <!-- users add job-applications
+>   this creates a Job if it doesnt exist
+> jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
+> jobs are then surfaced by field (jobs.where :category => /cat/) -->
+
+1. Select app status
+2. Search db for description, category, location
+3. Filter apps by category, location
+4. Make model for location
+5. Pull down Indeed data, AngelList data + location
+6. Push to Heroku and test performance for Backbone
+7. Infinite scroll/pagination
+8. Style signin/signup page
 
 we also give advice on how to jobsearch
  - large number of apps
