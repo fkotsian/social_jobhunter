@@ -1,1 +1,12 @@
-<button class="btn btn-primary">Button goes here</button>
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" id="category_select_dropdown"
+    data-toggle="dropdown" type="button">
+    All Apps
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <% JobCategory.all.each do |category| %>
+      <%= render partial: "filter_category", locals: { category: category } %>
+    <% end %>
+  </ul>
+</div>
