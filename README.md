@@ -1,12 +1,6 @@
 #Social job-hunting for all
 
-#User Stories
-
-> <!-- users add job-applications
->   this creates a Job if it doesnt exist
-> jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
-> jobs are then surfaced by field (jobs.where :category => /cat/) -->
-
+#Priorities
 1. Select app status
 2. Search db for description, category, location
 3. Filter apps by category, location
@@ -17,8 +11,18 @@
 8. Style signin/signup page
 9. LinkedIn integration/signin (figaro keys)
 10. Convert DB to Postgres
+11. Company_size max and min for angellist data
+12. ETL data into separate DB for query/analysis
 
-we also give advice on how to jobsearch
+#User Stories
+
+> <!-- users add job-applications
+>   this creates a Job if it doesnt exist
+> jobs have fields-categories (bizdev, sales, marketing, dev, devops, etc)
+> jobs are then surfaced by field (jobs.where :category => /cat/) -->
+
+users can get advice on how to jobsearch
+advice:
  - large number of apps
  - resume forums
  - cover letter help (examples)
@@ -26,19 +30,15 @@ we also give advice on how to jobsearch
  - applications/day goals
  - "loved companies" goals
  - integration with LinkedIn (see which companies you know people at)
+
+users can annotate advice
  
-user can sort by app status, app category
+user can sort applications 
+ by status
+ by job category
 
 user can search jobs by salary, category, or location (need fields for all of these)
 searchbox above the th (or perhaps IS the th--> is a filter)
-
-company_size_max and company_size_min in DB for angellist data
-
-parse all data
-
-seed db with it
-
-figure out how to ETL into DB (a job, weekly or so, daily ideally)
 
 style signin page, perhaps make single-page (signin via AJAX; though then we lose some of the cool functionalities; not really any reason to)
  
@@ -55,7 +55,12 @@ can set goal of companies or applications/day
 feature: /tracking?/ or /goal?/
 when activate feature, adds db query for applications where submitted_at is on DATE
 
-can seemost popular companies
+users can see analytics on applications
+- visualization of jobs submitted/day
+- stats on screens/apps submitted, interviews/screen, offers/interview
+- breakdown of screens/offers by company, by industry, by role
+
+users can see most popular companies this week
 company with most applications: query Job.where(:company => /company/)
 
 users can get offers
@@ -83,7 +88,7 @@ job_application form allows you to add new job categories
 it recognizes a new entry to the category input and creates it as a JobCategory
 
 applying to a job tells you how many jobs you have applied to that day
-<!-- creating a new job_application flashes a message containing the number of jobs you have applied to that day -->
+> <!-- creating a new job_application flashes a message containing the number of jobs you have applied to that day -->
 
 SquareSpace Logo
 SquareSpace favicon (hamsters? hound?)
