@@ -1,6 +1,6 @@
 #Social job-hunting for all
 
-#Stories
+#User Stories
 
 > <!-- users add job-applications
 >   this creates a Job if it doesnt exist
@@ -15,6 +15,8 @@
 6. Push to Heroku and test performance for Backbone
 7. Infinite scroll/pagination
 8. Style signin/signup page
+9. LinkedIn integration/signin (figaro keys)
+10. Convert DB to Postgres
 
 we also give advice on how to jobsearch
  - large number of apps
