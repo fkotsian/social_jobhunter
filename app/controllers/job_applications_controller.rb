@@ -49,6 +49,24 @@ class JobApplicationsController < ApplicationController
   def all_apps
   end
   
+  def company_applications
+    @job_applications = JobApplication.where(company_id: params[:company_id])
+    render :index
+  end
+  
+  def category_applications
+    @job_applications = JobApplication.find_by_sql ["
+      SELECT ja.*
+      FROM job_applications ja JOIN jobs j
+      ON ja.job_id = j.id
+      WHERE j.job_category_id = ?
+    ", params[:category_id]]
+    render :index
+  end
+  
+  def area_applications
+  end
+  
   private
   def application_params
     params.require(:job_application).permit(:status, :note)
@@ -63,20 +81,20 @@ class JobApplicationsController < ApplicationController
   end
   
   def attempt_company
-    co = Company.find_or_create_by(company_params)
-    unless co
-      flash[:error] = "Error: " + co.errors.full_messages.to_s
-      redirect_to root_path
+    company = Company.find_or_create_by(company_params)
+    unless company
+      flash[:error] = "Error: " + company.errors.full_messages.to_s
+      redirect_to my_applications_path
     end
-    co
+    company
   end
   
-  def attempt_job #(job_title, job_status)
+  def attempt_job
     job = @company.jobs.find_or_create_by(job_params)
     #may want to mod this to be by_url (need to require URL at DB and model level)
     unless job
       flash[:error] = "Error: " + job.errors.full_messages.to_s
-      redirect_to root_path
+      redirect_to my_applications_path
     end
     job
   end

@@ -1,8 +1,18 @@
-
+<section id="header">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <h1 class="pull-left">My Apps</h1>
+      <div class="pull-right">
+        <%= render "filter_button" %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+  
 <section id="new-application-form">
   <div class="row">
     <div class="col-sm-offset-1 col-sm-10">
-      <h1>My Apps</h1>
       <%= render "form" %>
     </div>
   </div>
