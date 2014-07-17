@@ -1,9 +1,9 @@
 #Social job-hunting for all
 
 #Priorities
-1. Select app status
-2. Search db for description, category, location
-3. Filter apps by category, location
+1. Select app status DONE
+2. Search db for description, category, location DONE x2
+3. Filter apps by category, location DONE
 4. Make model for location
 5. Pull down Indeed data, AngelList data + location
 6. Push to Heroku and test performance for Backbone
