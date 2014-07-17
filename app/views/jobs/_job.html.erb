@@ -1,6 +1,6 @@
 <tr>
-  <td><%= link_to job.title, job.url || "#" %></td>
-  <td><%= Company.find(job.company_id).name %></td>
-  <td><%= JobCategory.names[job.job_category_id.to_i] %></td>
-  <td><%= "$#{number_with_delimiter(job.salary_bottom)} - #{number_with_delimiter(job.salary_top)}" %></td>
+  <td class="col-sm-2"><%= link_to job.title, job.url || "#" %></td>
+  <td class="col-sm-1"><%= Company.find(job.company_id).name %></td>
+  <td class="col-sm-1"><%= JobCategory.names[job.job_category_id.to_i] %></td>
+  <td class="col-sm-1"><%= "$#{number_with_delimiter(job.salary_bottom)} - #{number_with_delimiter(job.salary_top)}" %></td>
 </tr>
