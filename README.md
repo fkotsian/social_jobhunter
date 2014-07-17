@@ -37,6 +37,9 @@ user can sort applications
  by status
  by job category
 
+user can sort companies 
+ by company industry
+
 user can search jobs by salary, category, or location (need fields for all of these)
 searchbox above the th (or perhaps IS the th--> is a filter)
 
