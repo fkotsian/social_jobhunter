@@ -14,6 +14,7 @@
 11. Company_size max and min for angellist data
 12. ETL data into separate DB for query/analysis
 13. Resolve category_jobs and company_jobs conflict
+14. Fix AngelList parser 1-off index error in job_categories
 
 #User Stories
 
