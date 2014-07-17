@@ -5,7 +5,7 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <% JobCategory.all.each do |category| %>
+    <% categories.each do |category| %>
       <%= render partial: "filter_category", locals: { category: category } %>
     <% end %>
   </ul>
