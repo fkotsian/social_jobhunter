@@ -1,7 +1,12 @@
 <tr>
-  <td><%= link_to application.job.company.name, application.job.url %></td>
-  <td><%= application.job.title %></td>
-  <td><%= application.updated_at.strftime("%m-%d-%Y") %></td>
-  <td><%= render partial: "status", locals: { application: application } %></td>
-  <td><em><%= render partial: "note", locals: { application: application } %></em></td>
+  <td class="col-sm-1"><%= link_to application.job.company.name, application.job.url %></td>
+  <td class="col-sm-1"><%= application.job.title %></td>
+  <td class="col-sm-1"><%= application.updated_at.strftime("%m-%d-%Y") %></td>
+  <td class="col-sm-2">
+    <%= render partial: "status", locals: { application: application, 
+          statuses: JobApplication.statuses } %>
+  </td>
+  <td class="col-sm-offset-1 col-sm-3">
+    <em><%= render partial: "note", locals: { application: application } %></em>
+  </td>
 </tr>

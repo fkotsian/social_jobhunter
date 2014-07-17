@@ -3,7 +3,8 @@
     <div class="col-sm-offset-1 col-sm-10">
       <h1 class="pull-left">My Apps</h1>
       <div class="pull-right">
-        <%= render "filter_button" %>
+        <%= render partial: "filter_button", 
+                   locals: { categories: JobCategory.all } %>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -20,15 +21,15 @@
 
 <section id="job-applications-table">
   <div class="row">
-    <div class="col-sm-offset-1 col-sm-10">
+    <div class="col-sm-offset-2 col-sm-8">
       <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table table-condensed table-striped">
           <thead>
             <th>Company</th>
             <th>Job Title</th>
             <th>Applied</th>
             <th>Status</th>
-            <th>Notes</th>
+            <th>Note</th>
           </thead>
           <tbody>
             <%= render partial: "job_application", 

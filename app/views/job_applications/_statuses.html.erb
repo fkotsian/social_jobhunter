@@ -1,0 +1,13 @@
+<div class="dropdown">
+  <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+    <%= application.status %><span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <% statuses.each do |status| %>
+      <li>
+        <!-- Issue: need to pass nested params; implement in backbone -->
+        <%#= link_to status, job_application_path(id: application.id, job_id: application.job_id), method: "PUT", data: { id: application.id } %>
+      </li>
+    <% end %>
+  </ul>
+</div>
