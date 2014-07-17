@@ -1,11 +1,19 @@
-<%= form_for(application, url: job_application_path(id: application.id, job_id: application.job_id)) do |f| %>
+<%= form_for(application, 
+      url: job_application_path(
+        id: application.id, 
+        job_id: application.job_id), 
+      method: "PUT", 
+      html: { id: "application-#{application.id}-status" }
+      ) do |f| %>
 
   <div class="form-group">
-    <%= fields_for application, :status do |builder| %>
-      <%= builder.text_field :status, class: "form-control no-input-box", maxlength: 50 %>
-    <% end %>
+    <%= f.collection_select :status, 
+          statuses,
+          :to_s,
+          :to_s,
+          {},
+          { class: "form-control no-input-box no-focus",
+            onchange: "$('#application-#{application.id}-status').submit();"} %>
   </div>
-  
-  <%= submit_tag "Update", class: "invisible" %>
   
 <% end %>

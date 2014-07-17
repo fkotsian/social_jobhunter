@@ -19,6 +19,6 @@ class JobApplication < ActiveRecord::Base
   validates :job, :applicant, :status, presence: true
   
   def self.statuses
-    %w[Applied, Screened, Interviewed On-site, Offered, Accepted Offer, Rejected, Rejected Offer]
+    %W[Applied Screened #{"Interviewed On-Site"} Rejected #{"Offered Position"} #{"Rejected Offer"} #{"Accepted Offer"}]
   end
 end
