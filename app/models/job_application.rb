@@ -17,4 +17,8 @@ class JobApplication < ActiveRecord::Base
   has_one :job_category, through: :job, source: :job_category
   
   validates :job, :applicant, :status, presence: true
+  
+  def self.statuses
+    %w[Applied, Screened, Interviewed On-site, Offered, Accepted Offer, Rejected, Rejected Offer]
+  end
 end
