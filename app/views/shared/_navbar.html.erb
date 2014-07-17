@@ -1,29 +1,24 @@
 <nav class="navbar navbar-default navbar-static-top">
 	<div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="navbar-header">
-          <div class="col-sm-1">
-            <a id="logo" class="navbar-brand" href="<%= root_path %>"><%= image_tag("jobhunter_logo.png", width: 80, class: "img-responsive") %></a>
-          </div>
-        </div>
-    
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to 'My Apps', my_applications_path, 
-                  class: "navbar-link" %></li>
-          <li><%= link_to 'Companies', companies_path, 
-                  class: "navbar-link" %></li>
-          <li><%= link_to 'All Jobs', all_jobs_path,
-                  class: "navbar-link" %></li>
-      
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <%= render 'devise/shared/login_links' %>
-              <%= render 'devise/shared/registration_links' %>
-            </ul>
-          </li>
-        </ul>
-    	</div>
+    <div class="navbar-header">
+      <a id="logo" class="navbar-brand" href="<%= root_path %>"><%= image_tag("jobhunter_logo.png", width: 131, class: "img-responsive") %></a>
     </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to 'My Apps', my_applications_path, 
+              class: "navbar-link" %></li>
+      <li><%= link_to 'Companies', companies_path, 
+              class: "navbar-link" %></li>
+      <li><%= link_to 'All Jobs', all_jobs_path,
+              class: "navbar-link" %></li>
+  
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <%= render 'devise/shared/login_links' %>
+          <%= render 'devise/shared/registration_links' %>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </nav>  
