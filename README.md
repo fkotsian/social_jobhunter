@@ -13,6 +13,7 @@
 10. Convert DB to Postgres
 11. Company_size max and min for angellist data
 12. ETL data into separate DB for query/analysis
+13. Resolve category_jobs and company_jobs conflict
 
 #User Stories
 
