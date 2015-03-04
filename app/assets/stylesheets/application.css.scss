@@ -1,21 +1,18 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
 
 //@import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+#home-bg {
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 /********************** Reusable Classes  ****************************/
@@ -41,4 +38,18 @@
     -o-box-shadow: none;
     box-shadow: none;
   }
+}
+
+.title-text {
+  font-size: 5em;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.subtitle-text {
+  font-size: 1.5em;
+}
+
+.box-height-1000 {
+  height: 1000px;
 }
