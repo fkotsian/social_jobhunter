@@ -1,5 +1,10 @@
 User.create(email: 'frank@test.com', password: 'aaaabbbb', password_confirmation: 'aaaabbbb')
 
+User.create(email: 'guest@jobhunter.com', password: 'guest', password_confirmation: 'guest')
+
+User.create(email: 'angela@jobhunter.com', password: 'guest', password_confirmation: 'guest')
+
+
 # JobCategory.create(name: "sales", display_name: "Sales")
 # JobCategory.create(name: "biz_dev", display_name: "Biz Dev")
 # JobCategory.create(name: "engineering", display_name: "Engineering")
@@ -47,7 +52,6 @@ not_avaliable = JobCategory.create(
   display_name: "Not Avaliable",
   name: "not_avaliable"
 )
-
-100.times do
+60.times do
   FactoryGirl.create :job
 end

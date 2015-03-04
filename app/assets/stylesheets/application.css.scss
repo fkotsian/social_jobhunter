@@ -14,6 +14,10 @@
   background-size: cover;
 }
 
+#copyright {
+  position: absolute;
+  bottom: 0;
+}
 
 /********************** Reusable Classes  ****************************/
 .no-input-box {
@@ -52,4 +56,8 @@
 
 .box-height-1000 {
   height: 1000px;
+}
+
+.position-relative {
+  position: relative;
 }
