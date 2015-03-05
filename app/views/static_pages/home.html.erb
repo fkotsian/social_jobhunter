@@ -8,7 +8,11 @@
         <br>
         <div class='row'>
           <div class='col-md-12 text-center'>
+            <% if current_user %>
+            <a class='btn btn-lg btn-success' href='/user/applications'>Get Started.</a>
+            <% else %>
             <a class='btn btn-lg btn-success' href='/login'>Get Started.</a>
+            <% end %>
           </div>
         <br><br><br><br>
       </div>
