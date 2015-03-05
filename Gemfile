@@ -33,6 +33,10 @@ gem 'backbone-on-rails'
 gem 'autoprefixer-rails'
 gem 'annotate'
 
+# for seeding prod
+gem 'factory_girl_rails'
+gem 'faker'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -40,12 +44,12 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  # gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'capybara'
-  gem 'faker'
+  # gem 'faker'
   gem 'launchy'
   gem 'guard-rspec'
 end
