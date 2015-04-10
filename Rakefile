@@ -3,4 +3,14 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+task default: %w[spec]
+
+task :spec do
+  bin/rspec 
+end
+
+task :jobs do
+  bin/rspec spec/lib/jobs
+end
+
 Rails.application.load_tasks
