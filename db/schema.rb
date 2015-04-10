@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140714180204) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "companies", force: true do |t|
     t.string   "name",         null: false
     t.string   "description"
@@ -24,10 +27,10 @@ ActiveRecord::Schema.define(version: 20140714180204) do
     t.string   "company_url"
   end
 
-  add_index "companies", ["company_size"], name: "index_companies_on_company_size"
-  add_index "companies", ["industry"], name: "index_companies_on_industry"
-  add_index "companies", ["name"], name: "index_companies_on_name", unique: true
-  add_index "companies", ["url"], name: "index_companies_on_url", unique: true
+  add_index "companies", ["company_size"], name: "index_companies_on_company_size", using: :btree
+  add_index "companies", ["industry"], name: "index_companies_on_industry", using: :btree
+  add_index "companies", ["name"], name: "index_companies_on_name", unique: true, using: :btree
+  add_index "companies", ["url"], name: "index_companies_on_url", unique: true, using: :btree
 
   create_table "job_applications", force: true do |t|
     t.integer  "job_id",                           null: false
@@ -38,9 +41,9 @@ ActiveRecord::Schema.define(version: 20140714180204) do
     t.string   "note"
   end
 
-  add_index "job_applications", ["applicant_id"], name: "index_job_applications_on_applicant_id"
-  add_index "job_applications", ["job_id"], name: "index_job_applications_on_job_id"
-  add_index "job_applications", ["status"], name: "index_job_applications_on_status"
+  add_index "job_applications", ["applicant_id"], name: "index_job_applications_on_applicant_id", using: :btree
+  add_index "job_applications", ["job_id"], name: "index_job_applications_on_job_id", using: :btree
+  add_index "job_applications", ["status"], name: "index_job_applications_on_status", using: :btree
 
   create_table "job_categories", force: true do |t|
     t.string   "name",         null: false
@@ -49,8 +52,8 @@ ActiveRecord::Schema.define(version: 20140714180204) do
     t.string   "display_name"
   end
 
-  add_index "job_categories", ["display_name"], name: "index_job_categories_on_display_name", unique: true
-  add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true
+  add_index "job_categories", ["display_name"], name: "index_job_categories_on_display_name", unique: true, using: :btree
+  add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true, using: :btree
 
   create_table "jobs", force: true do |t|
     t.string   "title",                            null: false
@@ -64,13 +67,13 @@ ActiveRecord::Schema.define(version: 20140714180204) do
     t.string   "status",          default: "Open"
   end
 
-  add_index "jobs", ["company_id"], name: "index_jobs_on_company_id"
-  add_index "jobs", ["job_category_id"], name: "index_jobs_on_job_category_id"
-  add_index "jobs", ["salary_bottom"], name: "index_jobs_on_salary_bottom"
-  add_index "jobs", ["salary_top"], name: "index_jobs_on_salary_top"
-  add_index "jobs", ["status"], name: "index_jobs_on_status"
-  add_index "jobs", ["title"], name: "index_jobs_on_title"
-  add_index "jobs", ["url"], name: "index_jobs_on_url", unique: true
+  add_index "jobs", ["company_id"], name: "index_jobs_on_company_id", using: :btree
+  add_index "jobs", ["job_category_id"], name: "index_jobs_on_job_category_id", using: :btree
+  add_index "jobs", ["salary_bottom"], name: "index_jobs_on_salary_bottom", using: :btree
+  add_index "jobs", ["salary_top"], name: "index_jobs_on_salary_top", using: :btree
+  add_index "jobs", ["status"], name: "index_jobs_on_status", using: :btree
+  add_index "jobs", ["title"], name: "index_jobs_on_title", using: :btree
+  add_index "jobs", ["url"], name: "index_jobs_on_url", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -87,7 +90,7 @@ ActiveRecord::Schema.define(version: 20140714180204) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

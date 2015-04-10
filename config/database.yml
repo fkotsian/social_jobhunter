@@ -7,24 +7,24 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: jobhunter
   pool: 5  
   timeout: 5000
 
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: jobhunter_dev
   pool: 5
   
 production:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: jobhunter
   pool: 5
   
 test:
   adapter: postgresql
   encoding: unicode
-  database: blog_test
+  database: jobhunter_dev
   pool: 5

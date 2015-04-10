@@ -32,6 +32,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    angellist_api (1.0.7)
+      faraday (~> 0.7)
+      faraday_middleware (~> 0.7)
+      hashie (>= 1.1.0)
+      multi_json (~> 1.0)
     annotate (2.6.3)
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
@@ -95,7 +100,14 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.1)
       i18n (~> 0.5)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
     ffi (1.9.3)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     formatador (0.2.5)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -106,6 +118,7 @@ GEM
     guard-rspec (4.2.10)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
+    hashie (3.4.1)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (2.1.1)
@@ -130,6 +143,7 @@ GEM
     mini_portile (0.6.0)
     minitest (5.3.5)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -224,6 +238,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angellist_api
   annotate
   autoprefixer-rails
   backbone-on-rails
@@ -235,6 +250,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
+  figaro
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
