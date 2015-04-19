@@ -1,7 +1,5 @@
-require 'angellist_api'
 require 'net/http'
 require 'uri'
-require 'figaro'
 
 module Jobs
   class AngelClient
@@ -10,7 +8,6 @@ module Jobs
         "per_page=#{per_page}&" +
         "access_token=#{angellist_token}"
         
-      p uri_str
       resp = make_req(uri_str)
       resp.body
     end
