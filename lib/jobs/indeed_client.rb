@@ -1,7 +1,6 @@
 require 'net/http'
 require 'json'
 require 'uri'
-# require 'indeed-ruby'
 
 module Jobs
   class IndeedClient
