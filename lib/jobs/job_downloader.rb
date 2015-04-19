@@ -10,8 +10,6 @@ module Jobs
     
     def download_jobs
       jobs = get_jobs
-      p jobs.length
-      p jobs
       jobs.each {|j| Job.create(j)}
     end
     
