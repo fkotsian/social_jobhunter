@@ -25,7 +25,7 @@ gem 'angellist_api'
 gem 'figaro'
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '< 2.0.0'
   gem 'binding_of_caller'
 end
 
@@ -35,7 +35,6 @@ end
 
 group :test do
   gem 'capybara'
-  # gem 'faker'
   gem 'launchy'
   gem 'guard-rspec'
 end

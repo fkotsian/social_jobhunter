@@ -1,3 +1,3 @@
-# AngellistApi.client_id = ENV['angellist_client_id']
-# AngellistApi.client_secret = ENV['angellist_client_secret']
-AngellistApi.access_token = ENV['angellist_token']
+AngellistApi.configure do |config|
+  config.access_token = ENV['angellist_token']
+end
