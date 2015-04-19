@@ -1,7 +1,6 @@
 require_relative '../../../lib/jobs/angel_client'
 require_relative '../../helpers/vcr_helpers'
 require 'spec_helper'
-require 'json'
 
 module Jobs
   describe AngelClient do
