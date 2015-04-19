@@ -1,0 +1,1101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.angel.co/1/jobs?access_token=ada8bbc6fad3d6ef2743999c3d9f194adcfca963dd7beab3&per_page=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 19 Apr 2015 21:11:32 GMT
+      Etag:
+      - ! '"51573a793a94ecbe33eba38029112936"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1999'
+      X-Request-Id:
+      - afa6d56042b53f46ea9d320dc8e0b012
+      X-Runtime:
+      - '0.642161'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"jobs":[{"id":62339,"title":"Weekend Happiness Concierge","description":"Customer
+        happiness at Crew is 7 days a week. We have members in 32 countries and we
+        have a goal of replying to all emails within an hour. We''re not quite there
+        yet but we''re working ''round the clock to get there.\n\nEvery interaction
+        we have with our customers, whether it comes from our product or one of our
+        customers, is should feel like a ''wow moment.''\n\nThis is why we think our
+        Happiness Team is so important.\n\nAlthough we don''t work set hours at Crew,
+        customer happiness is one of the parts of our company where the demands of
+        the position require operating on somewhat of a schedule.\n\nCurrently our
+        Happiness Team has been covering all happiness, every day of the week but
+        we know that''s not sustainable long-term. We want to give our customers the
+        best support possible but at the same time we don''t think anyone should be
+        working 7 days a week or feel stress from work on days they decide to take
+        off.\n\nThat''s why we''re looking to welcome a member to our Happiness Team
+        who''s schedule is flexible enough to help take care of members on weekends.\n\nThe
+        day-to-day of this position is the same as the Happiness Concierge position
+        and is full-time. Everything you''re doing will be similar, but the one exception
+        is your schedule will be shifted a few days to help cover weekends.\n\nEvery
+        day we get to chat, tweet, and exchange messages with innovative people and
+        some of the most talented creative professionals in the world.\n\nWe\u2019re
+        looking for someone to work with us to help our members have a memorable experience
+        using Crew every day, not just Monday through Friday.","created_at":"2015-04-19T20:17:54Z","updated_at":"2015-04-19T20:28:45Z","equity_cliff":"1.0","equity_min":"0.1","equity_max":"0.2","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":40000,"salary_max":65000,"angellist_url":"https://angel.co/crew/jobs/62339-weekend-happiness-concierge","tags":[{"id":23977,"tag_type":"SkillTag","name":"customer
+        relationship management","display_name":"Customer Relationship Management","angellist_url":"https://angel.co/customer-relationship-management"},{"id":1776,"tag_type":"LocationTag","name":"montreal","display_name":"Montreal","angellist_url":"https://angel.co/montreal"},{"id":80488,"tag_type":"RoleTag","name":"sales","display_name":"Sales","angellist_url":"https://angel.co/sales-2"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":true,"startup":{"id":65467,"hidden":false,"community_profile":false,"name":"Crew","angellist_url":"https://angel.co/crew","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/65467-4b3e46561abf4c2727186ffb1aec54cf-medium_jpg.jpg?buster=1397077465","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/65467-4b3e46561abf4c2727186ffb1aec54cf-thumb_jpg.jpg?buster=1397077465","quality":8,"product_desc":"Crew
+        connects vetted projects with a handpicked community of independent designers
+        and developers who have worked on products like Hotel Tonight, Dropbox, and
+        Path.\n\n1. Submit your idea\n2. Get a budget recommendation\n3. Start working
+        with the best maker for your project\n\nWithin a day.\n\nWe are at the start
+        of the most significant economic movement since the Industrial Revolution.
+        With the tools available today, work is being redefined.\n\nWe have more power
+        than ever before to be our own bosses. To stay independent. To develop our
+        own passions. And work from any space, any place, anytime, anywhere.\n\nAt
+        Crew, we''re building a system for this new economy. One that values the results
+        of the work done, not just the dollar price. Where people receive quality
+        results, independent professionals get consistent quality work, and products
+        are created that both client and maker can be proud of.","high_concept":"Creativity
+        on demand.","follower_count":1327,"company_url":"http://pickcrew.com","created_at":"2012-01-26T20:42:31Z","updated_at":"2015-04-16T18:04:39Z"}},{"id":62338,"title":"Sales
+        and Business Development","description":"Responsibilities:\n - Sales (B2B)\n
+        - Marketing\n - Business development\n\nBackground:\n - Strong sales record\n
+        - Business network to logistical or retail companies preferred\n\nOpportunities:\n
+        - Promote the hottest product\n - Join a highly motivated team\n - Create
+        with us momentum\n\nRequirements:\n - Authorized to work in the U.S.\n - Country
+        of residence: USA","created_at":"2015-04-19T20:04:51Z","updated_at":"2015-04-19T20:12:28Z","equity_cliff":"1.0","equity_min":"0.2","equity_max":"2.0","equity_vest":"4.0","currency_code":"USD","job_type":"contract","salary_min":60000,"salary_max":100000,"angellist_url":"https://angel.co/skycart/jobs/62338-sales-and-business-development","tags":[{"id":15525,"tag_type":"SkillTag","name":"business
+        development","display_name":"Business Development","angellist_url":"https://angel.co/business-development-1"},{"id":23989,"tag_type":"SkillTag","name":"sales
+        and marketing","display_name":"Sales and Marketing","angellist_url":"https://angel.co/sales-and-marketing-2"},{"id":1693,"tag_type":"LocationTag","name":"san
+        jose","display_name":"San Jose","angellist_url":"https://angel.co/san-jose"},{"id":80488,"tag_type":"RoleTag","name":"sales","display_name":"Sales","angellist_url":"https://angel.co/sales-2"}],"remote_ok":true,"startup":{"id":350317,"hidden":false,"community_profile":false,"name":"Skycart","angellist_url":"https://angel.co/skycart","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/350317-cb9dd7bc7c528a5cab9c787b14f5650d-medium_jpg.jpg?buster=1423740079","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/350317-cb9dd7bc7c528a5cab9c787b14f5650d-thumb_jpg.jpg?buster=1423740079","quality":6,"product_desc":"Skycart
+        is a drone shipping service for retailers that delivers purchases to\u00a0customer''s
+        front door. In 30 minutes or less.\u00a0\n\nSkycart is the cutting-edge means
+        of shipping and receiving\u00a0nearly anything under 6.5 pounds anywhere within
+        city limits and always within 30\u00a0minutes. The package is delivered to
+        your front door or your recipient\u2019s.\u00a0Both pickups and deliveries
+        are ordered via a smartphone app. The same app tells\u00a0you exactly when
+        your package will arrive or be delivered. Skycart is the fastest, least\u00a0expensive,
+        and most assured service in the courier industry, period.\u00a0\n\nOur solution
+        helps retailers to offer a better delivery service for their customers. While
+        traditional delivery services aim same-day delivery, we go for same-hour delivery.
+        That''s exactly what retailers need. Skycart is disruptive solution for fast
+        shippings at low costs.\u00a0\n\nOur service is provided by a network of autonomously
+        flying drones. Flying almost everywhere. Available 24/7. Simple.","high_concept":"Drone
+        shipping solutions","follower_count":92,"company_url":"http://www.skycart.net","created_at":"2014-02-25T21:21:15Z","updated_at":"2015-02-12T11:22:23Z"}},{"id":62337,"title":"Viamigo
+        2.0 Founder Biz","description":"You have the tenacity to grow a business.","created_at":"2015-04-19T19:45:36Z","updated_at":"2015-04-19T19:45:36Z","equity_cliff":"1.0","equity_min":"5.0","equity_max":"10.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":null,"salary_max":null,"angellist_url":"https://angel.co/viamigo/jobs/62337-viamigo-2-0-founder-biz","tags":[{"id":15525,"tag_type":"SkillTag","name":"business
+        development","display_name":"Business Development","angellist_url":"https://angel.co/business-development-1"},{"id":16278,"tag_type":"SkillTag","name":"sales","display_name":"Sales","angellist_url":"https://angel.co/sales-1"},{"id":1692,"tag_type":"LocationTag","name":"san
+        francisco","display_name":"San Francisco","angellist_url":"https://angel.co/san-francisco"},{"id":80488,"tag_type":"RoleTag","name":"sales","display_name":"Sales","angellist_url":"https://angel.co/sales-2"}],"remote_ok":false,"startup":{"id":673754,"hidden":false,"community_profile":false,"name":"Viamigo","angellist_url":"https://angel.co/viamigo","logo_url":"https://angel.co/images/shared/nopic_startup.png","thumb_url":"https://angel.co/images/shared/nopic_startup.png","quality":0,"product_desc":null,"high_concept":null,"follower_count":1,"company_url":null,"created_at":"2015-04-19T19:37:11Z","updated_at":"2015-04-19T19:43:47Z"}},{"id":62336,"title":"Growth
+        Intern","description":"#The opportunity\nI\u2019m Alan (I co-founded Sharewave).
+        I\u2019m looking for a partner to work alongside me this summer to build our
+        growth engine. We have customers, but it\u2019s time to accelerate.\n\n#Why
+        this might be interesting\nUntil now we\u2019ve done little marketing, so
+        the next few months will be a series of strategic initiatives and experiments
+        that we\u2019ll develop. You\u2019ll work on narrative, partnerships, paid
+        search, business development, SEO, content, customer service, new product
+        & anything else that helps acquire and retain customers. You\u2019ll be talking
+        to lots of startup founders, CEOs, CFOs, VCs, angel investors, accountants
+        and lawyers.\n\n#Why this might not be interesting\nI believe in being methodical,
+        and in the scientific method. We\u2019re deploying investor capital; measurement
+        is critical so you must be comfortable with analytics tools and basic statistical
+        analysis. We\u2019ll be managing many concurrent initiatives, and I often
+        work long hours. For us to collaborate effectively, I expect the same effort
+        from you. There will be no checklist to work from; instead you will plan,
+        execute and own many projects with my support.\n\nThis internship is paid.","created_at":"2015-04-19T19:42:54Z","updated_at":"2015-04-19T19:55:08Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"USD","job_type":"internship","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/sharewave-1/jobs/62336-growth-intern","tags":[{"id":15731,"tag_type":"SkillTag","name":"data
+        analysis","display_name":"Data Analysis","angellist_url":"https://angel.co/data-analysis"},{"id":15878,"tag_type":"SkillTag","name":"product
+        marketing","display_name":"Product Marketing","angellist_url":"https://angel.co/product-marketing"},{"id":31349,"tag_type":"SkillTag","name":"web
+        analytics","display_name":"Web Analytics","angellist_url":"https://angel.co/web-analytics"},{"id":55549,"tag_type":"SkillTag","name":"copy
+        writing and editing","display_name":"Copy Writing and Editing","angellist_url":"https://angel.co/copy-writing-and-editing"},{"id":86646,"tag_type":"SkillTag","name":"product
+        demonstration","display_name":"Product Demonstration","angellist_url":"https://angel.co/product-demonstration"},{"id":1664,"tag_type":"LocationTag","name":"new
+        york, ny","display_name":"New York City","angellist_url":"https://angel.co/new-york-ny-1"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":false,"startup":{"id":190768,"hidden":false,"community_profile":false,"name":"Sharewave","angellist_url":"https://angel.co/sharewave-1","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/190768-a216f3fa23b9efc58927bd7e01460c69-medium_jpg.jpg?buster=1393266889","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/190768-a216f3fa23b9efc58927bd7e01460c69-thumb_jpg.jpg?buster=1393266889","quality":6,"product_desc":"Sharewave
+        is a software-as-a-service platform that startup founders use to manage and
+        model company ownership, issue company stock & options, and provide transparency
+        to investors and employees.","high_concept":"Where startups connect with their
+        shareholders","follower_count":60,"company_url":"http://www.sharewave.com","created_at":"2013-04-02T18:40:19Z","updated_at":"2015-04-19T20:06:34Z"}},{"id":62335,"title":"Viamigo
+        2.0 Founder Tech","description":"Viamigo has been around for almost 10 years
+        - it needs a new business model, and I''m happy to help you launch it. Perhaps
+        even help you find investors.","created_at":"2015-04-19T19:42:15Z","updated_at":"2015-04-19T19:46:08Z","equity_cliff":"1.0","equity_min":"5.0","equity_max":"10.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/viamigo/jobs/62335-viamigo-2-0-founder-tech","tags":[{"id":1692,"tag_type":"LocationTag","name":"san
+        francisco","display_name":"San Francisco","angellist_url":"https://angel.co/san-francisco"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":false,"startup":{"id":673754,"hidden":false,"community_profile":false,"name":"Viamigo","angellist_url":"https://angel.co/viamigo","logo_url":"https://angel.co/images/shared/nopic_startup.png","thumb_url":"https://angel.co/images/shared/nopic_startup.png","quality":0,"product_desc":null,"high_concept":null,"follower_count":1,"company_url":null,"created_at":"2015-04-19T19:37:11Z","updated_at":"2015-04-19T19:43:47Z"}},{"id":62334,"title":"CTO","description":"
+        I am running a consulting firm-Above Consulting Inc. as you can see on my
+        profile. However, I am also starting a few web projects. As my skill set is
+        in business, marketing and finance, I am looking for a CTO to compliment me
+        on the technology side.\nThe ideal candidate will be someone who is a very
+        good web designer/developer. I know how to build simple website myself and
+        have an engineering undergraduate degree and experience. But I also have an
+        MBA and most of my work experience is in business and finance.\nPlease be
+        local to San Francisco Bay Area.","created_at":"2015-04-19T19:09:40Z","updated_at":"2015-04-19T19:09:40Z","equity_cliff":"1.0","equity_min":"10.0","equity_max":"20.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":200000,"angellist_url":"https://angel.co/above-consulting-inc/jobs/62334-cto","tags":[{"id":1692,"tag_type":"LocationTag","name":"san
+        francisco","display_name":"San Francisco","angellist_url":"https://angel.co/san-francisco"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":false,"startup":{"id":650773,"hidden":false,"community_profile":false,"name":"Above
+        Consulting Inc.","angellist_url":"https://angel.co/above-consulting-inc","logo_url":"https://angel.co/images/shared/nopic_startup.png","thumb_url":"https://angel.co/images/shared/nopic_startup.png","quality":3,"product_desc":null,"high_concept":null,"follower_count":1,"company_url":null,"created_at":"2015-03-26T20:55:31Z","updated_at":"2015-04-19T19:12:11Z"}},{"id":62332,"title":"Robotics
+        Software Engineer","description":"The person who fills this position will
+        work within the Emoters team on the software side of the robotic system. Responsibilities
+        may include implementing live data collection from remote deployments, exploration
+        and integration of relevant software libraries (e.g., opencv and path-planning
+        libraries), and creating GUIs for testing and data visualization.\n \nRequired:\n-
+        Experience programming within the Robot Operating System (ROS)\n- Experience
+        in Java and C++\n- Strong Linux skills\n- Understanding of programming across
+        networks\n- Ability to work at least 10 hours per week (the closer to full
+        time, the better)\n- Be physically located in Austin\n- Flexibility \u2013
+        We are a startup, so you never know.\n \nDesired:\n- Python experience\n-
+        Expertise in computer vision\n- git experience\n- Enjoys partner programming\n
+        \nBonus:\n- Mechatronics experience\n\nThe ideal candidate will be in a position
+        to be paid mostly or all in Emoters stock. This position could be part time
+        or full time depending on the candidate\u2019s skills and availability. This
+        position could also migrate to a permanent employee if it is a good match.","created_at":"2015-04-19T18:52:11Z","updated_at":"2015-04-19T18:52:11Z","equity_cliff":"0.08","equity_min":"16.0","equity_max":"24.0","equity_vest":"4.0","currency_code":"USD","job_type":"contract","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/emoters/jobs/62332-robotics-software-engineer","tags":[{"id":14779,"tag_type":"SkillTag","name":"c++","display_name":"C++","angellist_url":"https://angel.co/c"},{"id":14780,"tag_type":"SkillTag","name":"java","display_name":"Java","angellist_url":"https://angel.co/java"},{"id":21135,"tag_type":"SkillTag","name":"git","display_name":"Git","angellist_url":"https://angel.co/git"},{"id":31586,"tag_type":"SkillTag","name":"linux","display_name":"Linux","angellist_url":"https://angel.co/linux-1"},{"id":144455,"tag_type":"SkillTag","name":"Robot
+        Operating System (ROS)","display_name":"Robot Operating System (ROS)","angellist_url":"https://angel.co/robot-operating-system-ros"},{"id":1617,"tag_type":"LocationTag","name":"austin","display_name":"Austin","angellist_url":"https://angel.co/austin"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":false,"startup":{"id":604517,"hidden":false,"community_profile":false,"name":"Emoters","angellist_url":"https://angel.co/emoters","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/604517-daab605512bf80ffbdf2bdac8da68be9-medium_jpg.jpg?buster=1429470177","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/604517-daab605512bf80ffbdf2bdac8da68be9-thumb_jpg.jpg?buster=1429470177","quality":3,"product_desc":"We
+        make lifelike robot pets for everyone.\n\nThe robots are small and simple,
+        akin to pets like lizards, grasshoppers, and ants in a colony. They interact
+        with people and each other, and they inspire caretaking.\n\nUnlike living
+        pets, Emoters can be owned by people who are allergic to pets, are too young
+        to have them, or are physically disabled. They can be cared for by people
+        who rent their dwellings or move around too much. Anyone can have an Emoter
+        as a pet.","high_concept":"Tiny lifelike robot pets","follower_count":3,"company_url":"http://www.emoterbots.com","created_at":"2015-02-09T22:04:32Z","updated_at":"2015-04-19T19:03:02Z"}},{"id":62331,"title":"CTO","description":"We
+        believe we have amazing and talented candidates in Montreal, that''s why we''re
+        only looking for a local talent.\n\nThe perfect candidate would have past
+        experience as a project manager, as a scrum master and good knowledge of cPanel,
+        Jira, Github, Laravel & Docker. And if you can speak both, French and English,
+        we already like your style!","created_at":"2015-04-19T18:52:07Z","updated_at":"2015-04-19T19:27:38Z","equity_cliff":"1.0","equity_min":"15.0","equity_max":"30.0","equity_vest":"4.0","currency_code":"CAD","job_type":"cofounder","salary_min":10000,"salary_max":35000,"angellist_url":"https://angel.co/nukern/jobs/62331-cto","tags":[{"id":14776,"tag_type":"SkillTag","name":"php","display_name":"PHP","angellist_url":"https://angel.co/php"},{"id":14781,"tag_type":"SkillTag","name":"javascript","display_name":"Javascript","angellist_url":"https://angel.co/javascript"},{"id":15592,"tag_type":"SkillTag","name":"html","display_name":"HTML","angellist_url":"https://angel.co/html"},{"id":15593,"tag_type":"SkillTag","name":"css","display_name":"CSS","angellist_url":"https://angel.co/css"},{"id":15594,"tag_type":"SkillTag","name":"jquery","display_name":"jQuery","angellist_url":"https://angel.co/jquery"},{"id":15843,"tag_type":"SkillTag","name":"nosql","display_name":"noSQL","angellist_url":"https://angel.co/nosql"},{"id":16126,"tag_type":"SkillTag","name":"cloud
+        computing","display_name":"Cloud Computing","angellist_url":"https://angel.co/cloud-computing-1"},{"id":16149,"tag_type":"SkillTag","name":"saas","display_name":"SaaS","angellist_url":"https://angel.co/saas-1"},{"id":16999,"tag_type":"SkillTag","name":"mongodb","display_name":"MongoDB","angellist_url":"https://angel.co/mongodb"},{"id":18252,"tag_type":"SkillTag","name":"system
+        administration","display_name":"System Administration","angellist_url":"https://angel.co/system-administration"},{"id":21135,"tag_type":"SkillTag","name":"git","display_name":"Git","angellist_url":"https://angel.co/git"},{"id":22817,"tag_type":"SkillTag","name":"infrastructure","display_name":"Infrastructure","angellist_url":"https://angel.co/infrastructure-1"},{"id":27143,"tag_type":"SkillTag","name":"centos","display_name":"Centos","angellist_url":"https://angel.co/centos"},{"id":31345,"tag_type":"SkillTag","name":"sass","display_name":"Sass","angellist_url":"https://angel.co/sass"},{"id":31586,"tag_type":"SkillTag","name":"linux","display_name":"Linux","angellist_url":"https://angel.co/linux-1"},{"id":31587,"tag_type":"SkillTag","name":"network
+        administration","display_name":"Network Administration","angellist_url":"https://angel.co/network-administration"},{"id":35110,"tag_type":"SkillTag","name":"memcached","display_name":"Memcached","angellist_url":"https://angel.co/memcached"},{"id":35226,"tag_type":"SkillTag","name":"domain
+        & web hosting","display_name":"Domain & Web Hosting","angellist_url":"https://angel.co/domain-web-hosting"},{"id":35772,"tag_type":"SkillTag","name":"network
+        architecture","display_name":"Network Architecture","angellist_url":"https://angel.co/network-architecture"},{"id":43053,"tag_type":"SkillTag","name":"jira","display_name":"Jira","angellist_url":"https://angel.co/jira"},{"id":44410,"tag_type":"SkillTag","name":"json","display_name":"JSON","angellist_url":"https://angel.co/json"},{"id":60054,"tag_type":"SkillTag","name":"api","display_name":"API","angellist_url":"https://angel.co/api-1"},{"id":75783,"tag_type":"SkillTag","name":"knockoutjs","display_name":"Knockoutjs","angellist_url":"https://angel.co/knockoutjs"},{"id":80008,"tag_type":"SkillTag","name":"cpanel","display_name":"Cpanel","angellist_url":"https://angel.co/cpanel"},{"id":81741,"tag_type":"SkillTag","name":"rest
+        apis","display_name":"REST APIs","angellist_url":"https://angel.co/rest-apis"},{"id":83715,"tag_type":"SkillTag","name":"rest","display_name":"REST","angellist_url":"https://angel.co/rest"},{"id":87409,"tag_type":"SkillTag","name":"load
+        balancing","display_name":"Load Balancing","angellist_url":"https://angel.co/load-balancing"},{"id":88939,"tag_type":"SkillTag","name":"laravel","display_name":"Laravel","angellist_url":"https://angel.co/laravel"},{"id":110461,"tag_type":"SkillTag","name":"docker","display_name":"docker","angellist_url":"https://angel.co/docker"},{"id":1776,"tag_type":"LocationTag","name":"montreal","display_name":"Montreal","angellist_url":"https://angel.co/montreal"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"},{"id":150979,"tag_type":"RoleTag","name":"devops","display_name":"DevOps","angellist_url":"https://angel.co/devops-3"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"}],"remote_ok":false,"startup":{"id":401116,"hidden":false,"community_profile":false,"name":"Nukern","angellist_url":"https://angel.co/nukern","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/401116-95bcadd85060c5273e0bbc337c307819-medium_jpg.jpg?buster=1427734982","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/401116-95bcadd85060c5273e0bbc337c307819-thumb_jpg.jpg?buster=1427734982","quality":5,"product_desc":"Nukern
+        is a billing software as a service that helps web hosting providers manage
+        their servers and clients more efficiently, while reducing their churn rate.
+        Nukern is doing, for the web hosting industry, what FreshBooks has done for
+        consultants. A beautiful and intuitive cloud service, starting from just $1/month.
+        Nukern allows hosting businesses to work and interact with employees and customers
+        in a faster, easier and more centralized way. It''s also accessible from any
+        mobile device with a clear and intuitive interface.","high_concept":"Web hosting
+        billing & management software","follower_count":27,"company_url":"https://www.nukern.com","created_at":"2014-05-19T17:43:28Z","updated_at":"2015-04-19T19:31:04Z"}},{"id":62330,"title":"Senior
+        Backend Engineer - IoT Cloud","description":"Centaur Technologies (www.centaurtek.com)
+        develops disruptive products for the Industrial Internet of Things . The company
+        runs on a fast track, driven by seasoned entrepreneurs who have done it before
+        . The company''s founder and CEO - Sotiris Bantas - was CTO and cofounder
+        of Helic, an EDA software company started in Athens which evolved into an
+        international technology player with customers and investors in Silicon Valley.\n\nWe
+        are looking for an experienced and motivated backend developer with DevOps
+        experience, to spearhead the buildout and maintenance of our mobile infrastructure,
+        which includes embedded servers, cloud servers, mobile terminals and wearable
+        devices. The position reports to the CEO and entails customer-facing responsibilities
+        with our growing customer base. Perks include participation in international
+        conferences and training opportunities.\n\nYou should have:\n\n- A BS/MS degree
+        in Electrical/Computer Engineering or a related subject.\n\n- Solid experience
+        in the administration of backend servers for high performance mobile or web
+        app stacks.\n\n- Experience in working with remote data via third-party APIs
+        and JSON.\n\n- Familiarity with virtualization and scale out IaaS/PaaS.\n\n-
+        Experience with automated deployment and test systems (e.g. Puppet).\n\n-
+        Extraordinary capacity in writing scripts (e.g. TCL, Perl, Python) to manipulate
+        and monitor all the above.\n\nYou should be entrepreneurial and willing to
+        take risks, but also customer-driven and devoted to a high quality and reliability
+        product. You should have great presentation and communication skills and the
+        leadership qualities needed for recruiting your own team and infusing your
+        DNA into the company.\n\nAre you this person? If so, come join the action!","created_at":"2015-04-19T18:49:53Z","updated_at":"2015-04-19T18:49:53Z","equity_cliff":"1.5","equity_min":"0.5","equity_max":"2.0","equity_vest":"5.0","currency_code":"EUR","job_type":"full-time","salary_min":17000,"salary_max":32000,"angellist_url":"https://angel.co/centaur-technologies/jobs/62330-senior-backend-engineer-iot-cloud","tags":[{"id":17000,"tag_type":"SkillTag","name":"node.js","display_name":"Node.js","angellist_url":"https://angel.co/node-js"},{"id":25893,"tag_type":"SkillTag","name":"perl","display_name":"Perl","angellist_url":"https://angel.co/perl"},{"id":31347,"tag_type":"SkillTag","name":"puppet","display_name":"Puppet","angellist_url":"https://angel.co/puppet-1"},{"id":110391,"tag_type":"SkillTag","name":"GNU
+        Make","display_name":"GNU Make","angellist_url":"https://angel.co/gnu-make"},{"id":91045,"tag_type":"LocationTag","name":"volos","display_name":"Volos","angellist_url":"https://angel.co/volos"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"}],"remote_ok":false,"startup":{"id":673187,"hidden":false,"community_profile":false,"name":"Centaur
+        Technologies","angellist_url":"https://angel.co/centaur-technologies","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673187-e8bf04d71577f9b3f04877cb37973573-medium_jpg.jpg?buster=1429385496","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673187-e8bf04d71577f9b3f04877cb37973573-thumb_jpg.jpg?buster=1429385496","quality":3,"product_desc":"Therminate.com
+        is a cloud-based solution addressing Intelligent Pest Management solutions
+        for the food industry and other verticals. It''s a batteries-included product
+        combining state-of-the-art wireless sensors and intuitive software, offered
+        as  SaaS. Typical customers include flour mills, pasta and tobacco factories,
+        pest control experts, logistics providers and any other industry segment with
+        a need for efficient, environment-friendly sanitation with the use of latest
+        technology.","high_concept":"Industrial Internet-of-Things solutions, sensors
+        to apps","follower_count":1,"company_url":"http://www.centaurtek.com","created_at":"2015-04-18T19:31:41Z","updated_at":"2015-04-19T19:00:21Z"}},{"id":62329,"title":"Enthusiastic,
+        innovative thinkers to join our team","description":"We are a marketing start-up
+        based in Dublin and looking for enthusiastic, innovative thinkers to join
+        our team.","created_at":"2015-04-19T18:48:17Z","updated_at":"2015-04-19T18:48:17Z","equity_cliff":"1.0","equity_min":"10.0","equity_max":"25.0","equity_vest":"4.0","currency_code":"EUR","job_type":"cofounder","salary_min":null,"salary_max":null,"angellist_url":"https://angel.co/valutions-digital-agency/jobs/62329-enthusiastic-innovative-thinkers-to-join-our-team","tags":[{"id":15668,"tag_type":"SkillTag","name":"video","display_name":"Video","angellist_url":"https://angel.co/video-1"},{"id":15875,"tag_type":"SkillTag","name":"viral
+        marketing","display_name":"Viral Marketing","angellist_url":"https://angel.co/viral-marketing"},{"id":17587,"tag_type":"SkillTag","name":"social
+        media marketing","display_name":"Social Media Marketing","angellist_url":"https://angel.co/social-media-marketing-1"},{"id":23989,"tag_type":"SkillTag","name":"sales
+        and marketing","display_name":"Sales and Marketing","angellist_url":"https://angel.co/sales-and-marketing-2"},{"id":28452,"tag_type":"SkillTag","name":"brand
+        design and strategy","display_name":"Brand Design and Strategy","angellist_url":"https://angel.co/brand-design-and-strategy"},{"id":35994,"tag_type":"SkillTag","name":"guerilla
+        marketing","display_name":"Guerilla Marketing","angellist_url":"https://angel.co/guerilla-marketing"},{"id":2334,"tag_type":"LocationTag","name":"dublin","display_name":"Dublin","angellist_url":"https://angel.co/dublin"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":true,"startup":{"id":673706,"hidden":false,"community_profile":false,"name":"Valutions
+        Digital Agency","angellist_url":"https://angel.co/valutions-digital-agency","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673706-ac593f30bf05b8d4f20d80606e4bc8b2-medium_jpg.jpg?buster=1429468944","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673706-ac593f30bf05b8d4f20d80606e4bc8b2-thumb_jpg.jpg?buster=1429468944","quality":0,"product_desc":null,"high_concept":"A
+        team of anti-corporate non traditional, ingenious, perceptive, Guerrilla lovers!","follower_count":1,"company_url":"http://www.valutions.ie","created_at":"2015-04-19T18:42:30Z","updated_at":"2015-04-19T19:34:26Z"}},{"id":62328,"title":"Graphic
+        Designer","description":"Must be able to create Logo''s, Banner Designs, Posters
+        etc. \n\nDesigning Fonts is an added advantage. ","created_at":"2015-04-19T18:40:33Z","updated_at":"2015-04-19T18:40:33Z","equity_cliff":"1.0","equity_min":null,"equity_max":null,"equity_vest":"4.0","currency_code":"USD","job_type":"internship","salary_min":null,"salary_max":null,"angellist_url":"https://angel.co/talent-flush/jobs/62328-graphic-designer","tags":[{"id":15520,"tag_type":"SkillTag","name":"graphic
+        design","display_name":"Graphic Design","angellist_url":"https://angel.co/graphic-design"},{"id":16311,"tag_type":"SkillTag","name":"design","display_name":"Design","angellist_url":"https://angel.co/design-1"},{"id":38078,"tag_type":"SkillTag","name":"adobe
+        photoshop","display_name":"Adobe Photoshop","angellist_url":"https://angel.co/adobe-photoshop"},{"id":38177,"tag_type":"SkillTag","name":"logo
+        design","display_name":"Logo Design","angellist_url":"https://angel.co/logo-design"},{"id":78510,"tag_type":"SkillTag","name":"corel
+        draw","display_name":"Corel Draw","angellist_url":"https://angel.co/corel-draw"},{"id":111996,"tag_type":"SkillTag","name":"Brochure
+        designing, Logo designing, Creative writing","display_name":"Brochure designing,
+        Logo designing, Creative writing","angellist_url":"https://angel.co/brochure-designing-logo-designing-creative-writing"},{"id":178471,"tag_type":"SkillTag","name":"Album
+        cover art design, Magazine Cover Design, Architecture Design, Concept art,
+        Digital Painting, Drawing/Illustration, Interior Design, Logo Design, Photo
+        Editor/Photomanipulation","display_name":"Album Cover Art Design, Magazine
+        Cover Design, Architecture Design, Concept Art, Digital Painting, Drawing/Illustration,
+        Interior Design, Logo Design, Photo Editor/Photomanipulation","angellist_url":"https://angel.co/album-cover-art-design-magazine-cover-design-architecture-design-concept-art-digital-painting-drawing-illustration-interior-design-logo-design-photo-editor-photomanipulation"},{"id":1647,"tag_type":"LocationTag","name":"india","display_name":"India","angellist_url":"https://angel.co/india"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"}],"remote_ok":true,"startup":{"id":485536,"hidden":false,"community_profile":false,"name":"Talent
+        Flush","angellist_url":"https://angel.co/talent-flush","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/485536-184e2c470f12faf567015a3fcff23e98-medium_jpg.jpg?buster=1410474470","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/485536-184e2c470f12faf567015a3fcff23e98-thumb_jpg.jpg?buster=1410474470","quality":3,"product_desc":"Talent
+        Flush is a worldwide stage which welcomes all sorts of talents, artistic works
+        and creativity. It provides budding artists with a stage to showcase their
+        work, get appreciation from global audience both online and offline and life
+        changing opportunities to grow via Music Videos, Book Publishing, Art Exhibitions,
+        Live Music Events, Poetry Events etc.","high_concept":"Bringing together Talent
+        and Creativity from every nook and corner of earth.","follower_count":12,"company_url":"https://www.talentflush.com","created_at":"2014-09-11T22:11:39Z","updated_at":"2015-02-28T21:57:39Z"}},{"id":62327,"title":"iOS
+        Developer","description":"Responsibilities:\n============\n\nYou will be the
+        core developer of Volt\u2019s iOS client reporting to the CTO.\n\nYou will
+        work very closely with the business team and participate in the decision-making
+        process regarding feature development to meet business and UX needs.\n\n\n\nRequirements:\n===========\n\nGood
+        command of English.\n\nAt least 3 years of experience with iOS development.\n\n2
+        or more published apps on the App Store.\n\nWell-versed in API integration,
+        working with RESTful APIs.\n\nExperience with location based apps is a plus.\n\nAny
+        previous work or code you can provide, specifically your GitHub profile or
+        similar open source contribution examples will help a lot during the interview
+        process.","created_at":"2015-04-19T18:34:32Z","updated_at":"2015-04-19T18:42:03Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":30000,"salary_max":35000,"angellist_url":"https://angel.co/volt-1/jobs/62327-ios-developer","tags":[{"id":14777,"tag_type":"SkillTag","name":"objective
+        c","display_name":"Objective C","angellist_url":"https://angel.co/objective-c"},{"id":16366,"tag_type":"SkillTag","name":"location
+        based services","display_name":"Location Based Services","angellist_url":"https://angel.co/location-based-services-1"},{"id":17363,"tag_type":"SkillTag","name":"ios
+        development","display_name":"iOS Development","angellist_url":"https://angel.co/ios-development"},{"id":18963,"tag_type":"SkillTag","name":"restful
+        services","display_name":"RESTful Services","angellist_url":"https://angel.co/restful-services"},{"id":160914,"tag_type":"SkillTag","name":"Swift","display_name":"Swift","angellist_url":"https://angel.co/swift-2"},{"id":174866,"tag_type":"SkillTag","name":"IOS
+        Swift","display_name":"Ios Swift","angellist_url":"https://angel.co/ios-swift"},{"id":2122,"tag_type":"LocationTag","name":"istanbul","display_name":"Istanbul","angellist_url":"https://angel.co/istanbul-1"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":false,"startup":{"id":290706,"hidden":false,"community_profile":false,"name":"Volt","angellist_url":"https://angel.co/volt-1","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/290706-fd37c980d722d3892dd71bfda82c80b2-medium_jpg.jpg?buster=1429468344","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/290706-fd37c980d722d3892dd71bfda82c80b2-thumb_jpg.jpg?buster=1429468344","quality":5,"product_desc":"Volt
+        is a social ride sharing app that connects people going in the same direction.
+        Volt uses Facebook connect and Real Communities to create trust between users.
+        Accordingly, Volt users can choose to ride with friends, friends of friends,
+        or public. Volt users can also choose to ride with members of their real communities
+        such as colleagues, neighbors or students who go to the same university. On
+        top, Volt has a ratings and reviews system where both passengers and drivers
+        get to rate each other at the end of each trip.","high_concept":"Social Ridesharing
+        App","follower_count":31,"company_url":"http://thevoltapp.com","created_at":"2013-11-06T16:18:01Z","updated_at":"2015-04-19T18:38:18Z"}},{"id":62326,"title":"Mobile
+        Lead","description":"Looking for you to come in and run the mobile show for
+        DoStuff. \n\nStuff You\u2019ll Do\n* maintain/extend iOS app that''s launching
+        in May\n* Start and lead development on Android app \n* Coach other 3 members
+        of dev team on adding native mobile dev to their toolkit\n* Share and implement
+        your ideas on things we should be doing/testing\n* Get your hands dirty in
+        back-end tweaking APIs you need or helping out with another project\n\nStuff
+        You Have\n* Solid iOS and Android\n* Ruby/Rails experience (or willingness
+        to learn)\n* You are or were (recently) someone that fits squarely in our
+        target psychographic: Going out (often to concerts) a couple times a week
+        or more.\n* you enjoy working with other awesome people to figure out needs
+        and get stuff right","created_at":"2015-04-19T17:57:06Z","updated_at":"2015-04-19T17:57:54Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.25","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":80000,"salary_max":120000,"angellist_url":"https://angel.co/dostuff-media/jobs/62326-mobile-lead","tags":[{"id":16680,"tag_type":"SkillTag","name":"android","display_name":"Android","angellist_url":"https://angel.co/android-1"},{"id":17363,"tag_type":"SkillTag","name":"ios
+        development","display_name":"iOS Development","angellist_url":"https://angel.co/ios-development"},{"id":1617,"tag_type":"LocationTag","name":"austin","display_name":"Austin","angellist_url":"https://angel.co/austin"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":false,"startup":{"id":19770,"hidden":false,"community_profile":false,"name":"DoStuff
+        Media","angellist_url":"https://angel.co/dostuff-media","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/19770-cb33e27e3ab12980626ac30d4574a970-medium_jpg.jpg?buster=1380817620","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/19770-cb33e27e3ab12980626ac30d4574a970-thumb_jpg.jpg?buster=1380817620","quality":7,"product_desc":"DoStuff
+        helps people do awesome stuff. \n\nWe''re the platform behind 16 local city
+        event guides, owned and operated by folks with real, local roots and relationships.
+        Giving them the muscle to become local cultural institutions like Alt Weeklies
+        and Radio used to be.\n\ncheck it out: do512.com, do312.com, donyc.com, hazdf.com...","high_concept":"Scene
+        Level Engagement at Scale","follower_count":149,"company_url":"http://dostuffmedia.com","created_at":"2011-06-11T15:34:01Z","updated_at":"2015-04-16T22:11:08Z"}},{"id":62324,"title":"UI/UX
+        Intern","description":"","created_at":"2015-04-19T17:22:10Z","updated_at":"2015-04-19T17:22:10Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"INR","job_type":"internship","salary_min":10000,"salary_max":15000,"angellist_url":"https://angel.co/stockroom/jobs/62324-ui-ux-intern","tags":[{"id":14781,"tag_type":"SkillTag","name":"javascript","display_name":"Javascript","angellist_url":"https://angel.co/javascript"},{"id":15592,"tag_type":"SkillTag","name":"html","display_name":"HTML","angellist_url":"https://angel.co/html"},{"id":15593,"tag_type":"SkillTag","name":"css","display_name":"CSS","angellist_url":"https://angel.co/css"},{"id":38078,"tag_type":"SkillTag","name":"adobe
+        photoshop","display_name":"Adobe Photoshop","angellist_url":"https://angel.co/adobe-photoshop"},{"id":38079,"tag_type":"SkillTag","name":"adobe
+        illustrator","display_name":"Adobe Illustrator","angellist_url":"https://angel.co/adobe-illustrator"},{"id":81246,"tag_type":"SkillTag","name":"twitter
+        bootstrap","display_name":"Twitter Bootstrap","angellist_url":"https://angel.co/twitter-bootstrap"},{"id":92418,"tag_type":"SkillTag","name":"zurb
+        foundation","display_name":"Zurb Foundation","angellist_url":"https://angel.co/zurb-foundation"},{"id":96544,"tag_type":"SkillTag","name":"sketch","display_name":"Sketch","angellist_url":"https://angel.co/sketch"},{"id":3003,"tag_type":"LocationTag","name":"hyderabad","display_name":"Hyderabad","angellist_url":"https://angel.co/hyderabad"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"}],"remote_ok":false,"startup":{"id":598565,"hidden":false,"community_profile":false,"name":"Stockroom","angellist_url":"https://angel.co/stockroom","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-medium_jpg.jpg?buster=1423001648","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-thumb_jpg.jpg?buster=1423001648","quality":4,"product_desc":"Stockroom
+        helps developers to build their portfolio with just a click. We are quickly
+        adding lot of other features too!","high_concept":"Build your developer portfolio
+        with just a click!","follower_count":3,"company_url":"http://stockroom.io/","created_at":"2015-02-03T22:14:13Z","updated_at":"2015-04-19T19:36:38Z"}},{"id":62323,"title":"Senior
+        Java Programmer","description":"","created_at":"2015-04-19T17:20:05Z","updated_at":"2015-04-19T17:20:05Z","equity_cliff":"1.0","equity_min":"0.25","equity_max":"0.5","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":100000,"salary_max":130000,"angellist_url":"https://angel.co/inginious/jobs/62323-senior-java-programmer","tags":[{"id":14780,"tag_type":"SkillTag","name":"java","display_name":"Java","angellist_url":"https://angel.co/java"},{"id":18963,"tag_type":"SkillTag","name":"restful
+        services","display_name":"RESTful Services","angellist_url":"https://angel.co/restful-services"},{"id":45160,"tag_type":"SkillTag","name":"spring","display_name":"Spring","angellist_url":"https://angel.co/spring"},{"id":151282,"tag_type":"LocationTag","name":"San
+        Francisco Bay Area","display_name":"San Francisco Bay Area","angellist_url":"https://angel.co/san-francisco-bay-area"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":false,"startup":{"id":673656,"hidden":false,"community_profile":false,"name":"inginious","angellist_url":"https://angel.co/inginious","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673656-71e0162096f4349dfd2820141de804d7-medium_jpg.jpg?buster=1429465240","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673656-71e0162096f4349dfd2820141de804d7-thumb_jpg.jpg?buster=1429465240","quality":0,"product_desc":"Enterprises
+        in the real world work on multiple projects but manage them individually.
+        With Inginious enterprises can apply financial portfolio concepts to projects
+        to objectively measure performance, status, risk, and ROI going beyond project
+        management.","high_concept":"Portfolio Management for Projects","follower_count":1,"company_url":"https://www.inginious.com","created_at":"2015-04-19T17:06:08Z","updated_at":"2015-04-19T17:40:44Z"}},{"id":62322,"title":"Python
+        Intern","description":"","created_at":"2015-04-19T17:19:34Z","updated_at":"2015-04-19T17:23:44Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"INR","job_type":"internship","salary_min":10000,"salary_max":15000,"angellist_url":"https://angel.co/stockroom/jobs/62322-python-intern","tags":[{"id":14775,"tag_type":"SkillTag","name":"python","display_name":"Python","angellist_url":"https://angel.co/python"},{"id":17473,"tag_type":"SkillTag","name":"databases","display_name":"Databases","angellist_url":"https://angel.co/databases-1"},{"id":30161,"tag_type":"SkillTag","name":"web
+        architecture","display_name":"Web Architecture","angellist_url":"https://angel.co/web-architecture"},{"id":84903,"tag_type":"SkillTag","name":"html/css/javascript/django","display_name":"HTML/CSS/Javascript/Django","angellist_url":"https://angel.co/html-css-javascript-django"},{"id":3003,"tag_type":"LocationTag","name":"hyderabad","display_name":"Hyderabad","angellist_url":"https://angel.co/hyderabad"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"}],"remote_ok":false,"startup":{"id":598565,"hidden":false,"community_profile":false,"name":"Stockroom","angellist_url":"https://angel.co/stockroom","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-medium_jpg.jpg?buster=1423001648","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-thumb_jpg.jpg?buster=1423001648","quality":4,"product_desc":"Stockroom
+        helps developers to build their portfolio with just a click. We are quickly
+        adding lot of other features too!","high_concept":"Build your developer portfolio
+        with just a click!","follower_count":3,"company_url":"http://stockroom.io/","created_at":"2015-02-03T22:14:13Z","updated_at":"2015-04-19T19:36:38Z"}},{"id":62321,"title":"UI/UX
+        Designer","description":"","created_at":"2015-04-19T17:16:05Z","updated_at":"2015-04-19T17:17:13Z","equity_cliff":"1.0","equity_min":"0.05","equity_max":"0.5","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":360000,"salary_max":600000,"angellist_url":"https://angel.co/stockroom/jobs/62321-ui-ux-designer","tags":[{"id":15537,"tag_type":"SkillTag","name":"user
+        experience design","display_name":"User Experience Design","angellist_url":"https://angel.co/user-experience-design-1"},{"id":15592,"tag_type":"SkillTag","name":"html","display_name":"HTML","angellist_url":"https://angel.co/html"},{"id":15593,"tag_type":"SkillTag","name":"css","display_name":"CSS","angellist_url":"https://angel.co/css"},{"id":19659,"tag_type":"SkillTag","name":"visual
+        design","display_name":"Visual Design","angellist_url":"https://angel.co/visual-design"},{"id":23742,"tag_type":"SkillTag","name":"ui/ux
+        design","display_name":"UI/UX Design","angellist_url":"https://angel.co/ui-ux-design-1"},{"id":38078,"tag_type":"SkillTag","name":"adobe
+        photoshop","display_name":"Adobe Photoshop","angellist_url":"https://angel.co/adobe-photoshop"},{"id":38079,"tag_type":"SkillTag","name":"adobe
+        illustrator","display_name":"Adobe Illustrator","angellist_url":"https://angel.co/adobe-illustrator"},{"id":96544,"tag_type":"SkillTag","name":"sketch","display_name":"Sketch","angellist_url":"https://angel.co/sketch"},{"id":3003,"tag_type":"LocationTag","name":"hyderabad","display_name":"Hyderabad","angellist_url":"https://angel.co/hyderabad"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"}],"remote_ok":false,"startup":{"id":598565,"hidden":false,"community_profile":false,"name":"Stockroom","angellist_url":"https://angel.co/stockroom","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-medium_jpg.jpg?buster=1423001648","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-thumb_jpg.jpg?buster=1423001648","quality":4,"product_desc":"Stockroom
+        helps developers to build their portfolio with just a click. We are quickly
+        adding lot of other features too!","high_concept":"Build your developer portfolio
+        with just a click!","follower_count":3,"company_url":"http://stockroom.io/","created_at":"2015-02-03T22:14:13Z","updated_at":"2015-04-19T19:36:38Z"}},{"id":62320,"title":"Android
+        Developer","description":"","created_at":"2015-04-19T17:13:54Z","updated_at":"2015-04-19T17:13:54Z","equity_cliff":"1.0","equity_min":"0.05","equity_max":"0.5","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":360000,"salary_max":600000,"angellist_url":"https://angel.co/stockroom/jobs/62320-android-developer","tags":[{"id":14780,"tag_type":"SkillTag","name":"java","display_name":"Java","angellist_url":"https://angel.co/java"},{"id":16680,"tag_type":"SkillTag","name":"android","display_name":"Android","angellist_url":"https://angel.co/android-1"},{"id":46387,"tag_type":"SkillTag","name":"mobile
+        application development","display_name":"Mobile Application Development","angellist_url":"https://angel.co/mobile-application-development"},{"id":3003,"tag_type":"LocationTag","name":"hyderabad","display_name":"Hyderabad","angellist_url":"https://angel.co/hyderabad"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":false,"startup":{"id":598565,"hidden":false,"community_profile":false,"name":"Stockroom","angellist_url":"https://angel.co/stockroom","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-medium_jpg.jpg?buster=1423001648","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-thumb_jpg.jpg?buster=1423001648","quality":4,"product_desc":"Stockroom
+        helps developers to build their portfolio with just a click. We are quickly
+        adding lot of other features too!","high_concept":"Build your developer portfolio
+        with just a click!","follower_count":3,"company_url":"http://stockroom.io/","created_at":"2015-02-03T22:14:13Z","updated_at":"2015-04-19T19:36:38Z"}},{"id":62319,"title":"Admin
+        OF A www.songspk.soy Job At Post","description":"Latest Songs Download, Indian
+        Songs, SongsPK","created_at":"2015-04-19T17:10:09Z","updated_at":"2015-04-19T17:10:09Z","equity_cliff":"1.0","equity_min":"2.0","equity_max":"3.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":5000,"salary_max":7000,"angellist_url":"https://angel.co/songspk-soy/jobs/62319-admin-of-a-www-songspk-soy-job-at-post","tags":[{"id":23400,"tag_type":"SkillTag","name":"blogger","display_name":"Blogger","angellist_url":"https://angel.co/blogger-1"},{"id":96529,"tag_type":"LocationTag","name":"jalalabad,
+        india","display_name":"Jalalabad, India","angellist_url":"https://angel.co/jalalabad-india"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":false,"startup":{"id":673658,"hidden":false,"community_profile":false,"name":"SongsPk.Soy","angellist_url":"https://angel.co/songspk-soy","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673658-33dd97ef6fd0f45d99c54fbd6ce0c563-medium_jpg.jpg?buster=1429463293","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673658-33dd97ef6fd0f45d99c54fbd6ce0c563-thumb_jpg.jpg?buster=1429463293","quality":0,"product_desc":"Music,
+        Songs","high_concept":"Mp3, Songs, Download, SongsPk","follower_count":1,"company_url":"http://www.songspk.soy","created_at":"2015-04-19T17:08:18Z","updated_at":"2015-04-19T17:10:52Z"}},{"id":62318,"title":"Django
+        Developer","description":"","created_at":"2015-04-19T17:02:47Z","updated_at":"2015-04-19T17:02:47Z","equity_cliff":"1.0","equity_min":"0.05","equity_max":"0.5","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":360000,"salary_max":600000,"angellist_url":"https://angel.co/stockroom/jobs/62318-django-developer","tags":[{"id":14775,"tag_type":"SkillTag","name":"python","display_name":"Python","angellist_url":"https://angel.co/python"},{"id":16135,"tag_type":"SkillTag","name":"django","display_name":"Django","angellist_url":"https://angel.co/django"},{"id":16999,"tag_type":"SkillTag","name":"mongodb","display_name":"MongoDB","angellist_url":"https://angel.co/mongodb"},{"id":17473,"tag_type":"SkillTag","name":"databases","display_name":"Databases","angellist_url":"https://angel.co/databases-1"},{"id":18963,"tag_type":"SkillTag","name":"restful
+        services","display_name":"RESTful Services","angellist_url":"https://angel.co/restful-services"},{"id":24952,"tag_type":"SkillTag","name":"algorithms","display_name":"Algorithms","angellist_url":"https://angel.co/algorithms-1"},{"id":43048,"tag_type":"SkillTag","name":"amazon
+        web services","display_name":"Amazon Web Services","angellist_url":"https://angel.co/amazon-web-services-1"},{"id":3003,"tag_type":"LocationTag","name":"hyderabad","display_name":"Hyderabad","angellist_url":"https://angel.co/hyderabad"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"}],"remote_ok":false,"startup":{"id":598565,"hidden":false,"community_profile":false,"name":"Stockroom","angellist_url":"https://angel.co/stockroom","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-medium_jpg.jpg?buster=1423001648","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/598565-c9eb00c86f4ac435baf1a6b5102be1b7-thumb_jpg.jpg?buster=1423001648","quality":4,"product_desc":"Stockroom
+        helps developers to build their portfolio with just a click. We are quickly
+        adding lot of other features too!","high_concept":"Build your developer portfolio
+        with just a click!","follower_count":3,"company_url":"http://stockroom.io/","created_at":"2015-02-03T22:14:13Z","updated_at":"2015-04-19T19:36:38Z"}},{"id":62317,"title":"CTO","description":"","created_at":"2015-04-19T16:59:23Z","updated_at":"2015-04-19T16:59:23Z","equity_cliff":"1.0","equity_min":"10.0","equity_max":"21.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":null,"salary_max":null,"angellist_url":"https://angel.co/keycircl/jobs/62317-cto","tags":[{"id":15609,"tag_type":"SkillTag","name":"machine
+        learning","display_name":"Machine Learning","angellist_url":"https://angel.co/machine-learning-1"},{"id":16132,"tag_type":"SkillTag","name":"big
+        data","display_name":"Big Data","angellist_url":"https://angel.co/big-data-1"},{"id":20263,"tag_type":"SkillTag","name":"front
+        end development","display_name":"Front-End Development","angellist_url":"https://angel.co/front-end-development"},{"id":46387,"tag_type":"SkillTag","name":"mobile
+        application development","display_name":"Mobile Application Development","angellist_url":"https://angel.co/mobile-application-development"},{"id":57045,"tag_type":"SkillTag","name":"backend
+        development","display_name":"Backend Development","angellist_url":"https://angel.co/backend-development"},{"id":1691,"tag_type":"LocationTag","name":"washington,
+        dc","display_name":"Washington, DC","angellist_url":"https://angel.co/washington-dc"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":false,"startup":{"id":673646,"hidden":false,"community_profile":false,"name":"Keycircl","angellist_url":"https://angel.co/keycircl","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673646-95586a35f9e43a1533cd6eb807f2e60e-medium_jpg.jpg?buster=1429463125","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673646-95586a35f9e43a1533cd6eb807f2e60e-thumb_jpg.jpg?buster=1429463125","quality":0,"product_desc":"Keycircl
+        is a technology company that aggregates social capital to enhance brand discovery.
+        That means we help people find your products and services and enhance the
+        customer experience. The goal is to make it easier for small businesses to
+        compete more effectively online and provide added value to the consumer. Our
+        target audiences are small businesses and ultimately their customers.","high_concept":"Better
+        social discovery","follower_count":1,"company_url":"http://www.keycircl.com","created_at":"2015-04-19T16:43:33Z","updated_at":"2015-04-19T18:05:02Z"}},{"id":62316,"title":"Senior
+        Electrical Engineer","description":"Bolt (www.bolt.io) is looking to add a
+        senior electrical engineer to our full time staff in San Francisco. This role
+        includes a mix of design engineering and product management. You will be a
+        key member in driving product development with the companies we invest in.
+        You will be the go-to resource for expertise in all aspects of electrical
+        design and help our companies make strategic decisions regarding early stage
+        product development. You will have an enormous amount of autonomy in this
+        role.","created_at":"2015-04-19T16:56:23Z","updated_at":"2015-04-19T16:56:23Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.5","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":100000,"salary_max":150000,"angellist_url":"https://angel.co/bolt-boston/jobs/62316-senior-electrical-engineer","tags":[{"id":21392,"tag_type":"SkillTag","name":"embedded
+        systems","display_name":"Embedded Systems","angellist_url":"https://angel.co/embedded-systems"},{"id":23044,"tag_type":"SkillTag","name":"electrical
+        engineering","display_name":"Electrical Engineering","angellist_url":"https://angel.co/electrical-engineering"},{"id":28279,"tag_type":"SkillTag","name":"hardware
+        engineering","display_name":"Hardware Engineering","angellist_url":"https://angel.co/hardware-engineering"},{"id":36337,"tag_type":"SkillTag","name":"pcb
+        design","display_name":"PCB Design","angellist_url":"https://angel.co/pcb-design"},{"id":81836,"tag_type":"SkillTag","name":"schematic
+        capture","display_name":"Schematic Capture","angellist_url":"https://angel.co/schematic-capture"},{"id":1692,"tag_type":"LocationTag","name":"san
+        francisco","display_name":"San Francisco","angellist_url":"https://angel.co/san-francisco"},{"id":103478,"tag_type":"RoleTag","name":"hardware_engineer","display_name":"Hardware
+        Engineer","angellist_url":"https://angel.co/hardware_engineer"}],"remote_ok":false,"startup":{"id":174682,"hidden":false,"community_profile":false,"name":"Bolt","angellist_url":"https://angel.co/bolt-boston","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/174682-4688713e439d58d99c7d212e94411782-medium_jpg.jpg?buster=1366120490","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/174682-4688713e439d58d99c7d212e94411782-thumb_jpg.jpg?buster=1366120490","quality":8,"product_desc":"Bolt
+        (www.bolt.io) is a seed-stage fund that invests capital, personnel, equipment,
+        and expertise in hardware startups. Portfolio companies get access to our
+        high-end prototyping shop, support from a full-time engineering/design staff,
+        assistance with manufacturing/commercialization, and seed capital. Together,
+        Bolt''s founding team has developed over 20 commercially successful hardware
+        products, manufactured tens of millions of units and invested 100s of millions
+        of venture capital. Bolt is supported by a world class group of hardware-centric
+        angel investors including Brad Feld (Foundry Group), Mick Mountz (Kiva Systems)
+        and Eran Egozy (Harmonix Music Systems).","high_concept":"Hands-on seed fund
+        for hardware startups","follower_count":248,"company_url":"http://www.bolt.io/","created_at":"2013-02-26T13:56:10Z","updated_at":"2015-04-19T16:58:02Z"}},{"id":62315,"title":"Senior
+        Mechanical Engineer","description":"Bolt (www.bolt.io) is looking to add a
+        senior mechanical engineer to our full time staff in San Francisco. This role
+        includes a mix of design engineering and product management. You will be a
+        key member in driving product development with the companies we invest in.
+        You will be the go-to resource for expertise in all aspects of mechanical
+        design and help our companies make strategic decisions regarding early stage
+        product development. You will have an enormous amount of autonomy in this
+        role.","created_at":"2015-04-19T16:48:51Z","updated_at":"2015-04-19T16:48:51Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.5","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":100000,"salary_max":150000,"angellist_url":"https://angel.co/bolt-boston/jobs/62315-senior-mechanical-engineer","tags":[{"id":17618,"tag_type":"SkillTag","name":"mechanical
+        engineering","display_name":"Mechanical Engineering","angellist_url":"https://angel.co/mechanical-engineering"},{"id":28277,"tag_type":"SkillTag","name":"consumer
+        electronics","display_name":"Consumer Electronics","angellist_url":"https://angel.co/consumer-electronics-1"},{"id":28279,"tag_type":"SkillTag","name":"hardware
+        engineering","display_name":"Hardware Engineering","angellist_url":"https://angel.co/hardware-engineering"},{"id":87197,"tag_type":"SkillTag","name":"injection
+        molding","display_name":"Injection Molding","angellist_url":"https://angel.co/injection-molding"},{"id":115445,"tag_type":"SkillTag","name":"DFM","display_name":"DFM","angellist_url":"https://angel.co/dfm"},{"id":1692,"tag_type":"LocationTag","name":"san
+        francisco","display_name":"San Francisco","angellist_url":"https://angel.co/san-francisco"},{"id":103478,"tag_type":"RoleTag","name":"hardware_engineer","display_name":"Hardware
+        Engineer","angellist_url":"https://angel.co/hardware_engineer"}],"remote_ok":false,"startup":{"id":174682,"hidden":false,"community_profile":false,"name":"Bolt","angellist_url":"https://angel.co/bolt-boston","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/174682-4688713e439d58d99c7d212e94411782-medium_jpg.jpg?buster=1366120490","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/174682-4688713e439d58d99c7d212e94411782-thumb_jpg.jpg?buster=1366120490","quality":8,"product_desc":"Bolt
+        (www.bolt.io) is a seed-stage fund that invests capital, personnel, equipment,
+        and expertise in hardware startups. Portfolio companies get access to our
+        high-end prototyping shop, support from a full-time engineering/design staff,
+        assistance with manufacturing/commercialization, and seed capital. Together,
+        Bolt''s founding team has developed over 20 commercially successful hardware
+        products, manufactured tens of millions of units and invested 100s of millions
+        of venture capital. Bolt is supported by a world class group of hardware-centric
+        angel investors including Brad Feld (Foundry Group), Mick Mountz (Kiva Systems)
+        and Eran Egozy (Harmonix Music Systems).","high_concept":"Hands-on seed fund
+        for hardware startups","follower_count":248,"company_url":"http://www.bolt.io/","created_at":"2013-02-26T13:56:10Z","updated_at":"2015-04-19T16:58:02Z"}},{"id":62314,"title":"SOFTWARE
+        ENGINNER","description":"I AM A SOFTWARE ENGINNER","created_at":"2015-04-19T16:35:32Z","updated_at":"2015-04-19T16:35:32Z","equity_cliff":"1.0","equity_min":"15.0","equity_max":"15.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":20000,"salary_max":40000,"angellist_url":"https://angel.co/karni-infotech/jobs/62314-software-enginner","tags":[{"id":84549,"tag_type":"SkillTag","name":".net
+        developer","display_name":".Net Developer","angellist_url":"https://angel.co/net-developer-1"},{"id":8582,"tag_type":"LocationTag","name":"jaipur","display_name":"Jaipur","angellist_url":"https://angel.co/jaipur"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":false,"startup":{"id":673641,"hidden":false,"community_profile":false,"name":"karni
+        infotech","angellist_url":"https://angel.co/karni-infotech","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673641-3b5ca104ae70118fedff8ebfa20da1f4-medium_jpg.jpg?buster=1429461148","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673641-3b5ca104ae70118fedff8ebfa20da1f4-thumb_jpg.jpg?buster=1429461148","quality":0,"product_desc":"ning
+        lets you create your own social network for anytihing. for free.","high_concept":"jonwal
+        sir company is the best","follower_count":1,"company_url":"http://www.karninfotech.com","created_at":"2015-04-19T16:32:33Z","updated_at":"2015-04-19T16:33:36Z"}},{"id":62313,"title":"Mechatronics
+        Engineer","description":"The mechatronics engineer will focus on creating
+        custom prototypes of the robots with inexpensive parts and integrating them
+        with the broader platform. She or he will quickly iterate the design based
+        on observations from user testing.\n \nRequired:\n- Expertise in mechatronics
+        (at least 3 of the following w/ basic understanding of the rest)\nPCB design,
+        layout (preferably in Altium)\nPCB bring-up & debug\nQuick turn board\nQuick
+        lab prototyping\nMechanical CAD (Solidworks or ProE)\nMechanical prototyping
+        and fabrication using CNC, water table, laser cutter, SLA, and 3D printing\n-
+        Ability to rapidly prototype\n- Ability to work at least 10 hours per week
+        (the closer to full time, the better)\n- Be physically located in Austin\n-
+        Flexibility \u2013 We are a startup, so you never know.\n \nDesired:\n- Additional
+        expertise in mechatronics\nFirmware development with embedded software design
+        using at least Arduino but preferably also some customized microcontroller
+        circuits (AVR, Microchip, ST, \u2026)\nWireless communication (e.g., via bluetooth,
+        wifi, or other RF)\nControl engineering\n- Experience with manufacturing\n-
+        Experience building mobile robots\n \nBonus:\n- Experience working with the
+        Robot Operating System (ROS\n- Comfortable using Linux\n\nThe ideal candidate
+        will be in a position to be paid mostly or all in Emoters stock. This position
+        could be part time or full time depending on the candidate\u2019s skills and
+        availability. This position could also migrate to a permanent employee if
+        it is a good match.","created_at":"2015-04-19T16:33:01Z","updated_at":"2015-04-19T16:33:01Z","equity_cliff":"0.08","equity_min":"16.0","equity_max":"24.0","equity_vest":"4.0","currency_code":"USD","job_type":"contract","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/emoters/jobs/62313-mechatronics-engineer","tags":[{"id":17618,"tag_type":"SkillTag","name":"mechanical
+        engineering","display_name":"Mechanical Engineering","angellist_url":"https://angel.co/mechanical-engineering"},{"id":17880,"tag_type":"SkillTag","name":"rapid
+        prototyping","display_name":"Rapid Prototyping","angellist_url":"https://angel.co/rapid-prototyping"},{"id":23044,"tag_type":"SkillTag","name":"electrical
+        engineering","display_name":"Electrical Engineering","angellist_url":"https://angel.co/electrical-engineering"},{"id":25255,"tag_type":"SkillTag","name":"cad","display_name":"CAD","angellist_url":"https://angel.co/cad"},{"id":36337,"tag_type":"SkillTag","name":"pcb
+        design","display_name":"PCB Design","angellist_url":"https://angel.co/pcb-design"},{"id":169264,"tag_type":"SkillTag","name":"Robotics/Mechatronics","display_name":"Robotics/Mechatronics","angellist_url":"https://angel.co/robotics-mechatronics"},{"id":1617,"tag_type":"LocationTag","name":"austin","display_name":"Austin","angellist_url":"https://angel.co/austin"},{"id":103478,"tag_type":"RoleTag","name":"hardware_engineer","display_name":"Hardware
+        Engineer","angellist_url":"https://angel.co/hardware_engineer"}],"remote_ok":false,"startup":{"id":604517,"hidden":false,"community_profile":false,"name":"Emoters","angellist_url":"https://angel.co/emoters","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/604517-daab605512bf80ffbdf2bdac8da68be9-medium_jpg.jpg?buster=1429470177","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/604517-daab605512bf80ffbdf2bdac8da68be9-thumb_jpg.jpg?buster=1429470177","quality":3,"product_desc":"We
+        make lifelike robot pets for everyone.\n\nThe robots are small and simple,
+        akin to pets like lizards, grasshoppers, and ants in a colony. They interact
+        with people and each other, and they inspire caretaking.\n\nUnlike living
+        pets, Emoters can be owned by people who are allergic to pets, are too young
+        to have them, or are physically disabled. They can be cared for by people
+        who rent their dwellings or move around too much. Anyone can have an Emoter
+        as a pet.","high_concept":"Tiny lifelike robot pets","follower_count":3,"company_url":"http://www.emoterbots.com","created_at":"2015-02-09T22:04:32Z","updated_at":"2015-04-19T19:03:02Z"}},{"id":62312,"title":"Cofounder/CTO","description":"You
+        love music?\nKomponant (Techgrind W15 batch) is seeking a Cofounder/CTO to
+        help us create a new music application, SING. For music producers, pretty
+        much anything that could be desired in terms of software and virtual instruments
+        already exists in the market place today. There is a major exception though
+        : the voice. To create vocals, producers still have to resort to traditional,
+        costly, time-consuming, uncertain methods. \nSING will solve this problem
+        by enabling producers to create stunning vocals using only a computer, eliminating
+        the need for singers, hardware equipment and recording rooms. It will also
+        open mind-blowing creative possibilities.\n\nTogether we can make a big impact
+        on the music industry by introducing a disruptive innovation. We will work
+        together to specify, design, and build our first product, SING. Your skill
+        sets :\n- Core OO language skills (C/C++, Java, etc) - required\n- Web-app
+        & Mobile-app front-ends & back-ends - required\n- Experience in Text-To-Speech
+        technology - a bonus\n- Experience in Audio Engineering & Signal Processing
+        - a bonus\nYou also need to be able to find elegant solutions to complex problems,
+        and to have a strong interest for music/music technology. \n\nYou will get
+        the chance, if so desired, to work in a rewarding environment in central Bangkok
+        (work permit included). Your application will be considered regardless of
+        where you live. Remote collaboration and company retreats on a Thai tropical
+        island sound just great!\n\nThis is your chance to grow, learn, and drive
+        innovation. Our first demo is here:\nwww.komponant.com\nInterested? Let''s
+        talk!","created_at":"2015-04-19T16:17:31Z","updated_at":"2015-04-19T17:14:00Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/komponant/jobs/62312-cofounder-cto","tags":[{"id":14779,"tag_type":"SkillTag","name":"c++","display_name":"C++","angellist_url":"https://angel.co/c"},{"id":14780,"tag_type":"SkillTag","name":"java","display_name":"Java","angellist_url":"https://angel.co/java"},{"id":24823,"tag_type":"SkillTag","name":"audio
+        technology","display_name":"Audio Technology","angellist_url":"https://angel.co/audio-technology"},{"id":24825,"tag_type":"SkillTag","name":"music
+        technology","display_name":"Music Technology","angellist_url":"https://angel.co/music-technology"},{"id":32961,"tag_type":"SkillTag","name":"web
+        applications","display_name":"Web Applications","angellist_url":"https://angel.co/web-applications"},{"id":90505,"tag_type":"SkillTag","name":"dsp","display_name":"DSP","angellist_url":"https://angel.co/dsp"},{"id":8853,"tag_type":"LocationTag","name":"bangkok","display_name":"Bangkok","angellist_url":"https://angel.co/bangkok"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":true,"startup":{"id":653967,"hidden":false,"community_profile":false,"name":"Komponant","angellist_url":"https://angel.co/komponant","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/653967-b4df005665e2870b0f46cec7bf7d0405-medium_jpg.jpg?buster=1429462796","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/653967-b4df005665e2870b0f46cec7bf7d0405-thumb_jpg.jpg?buster=1429462796","quality":3,"product_desc":"For
+        music producers, pretty much anything that could be desired in terms of software
+        and virtual instruments already exists in the market place today. There is
+        a major exception though: the voice. To create vocals, producers still have
+        to resort to traditional, costly, time-consuming, uncertain methods. \nKomponant
+        SING will solve this problem by enabling producers to create stunning vocals
+        using only a computer, eliminating the need for singers, hardware equipment
+        and recording rooms. It will also open mind-blowing creative possibilities.
+        For example a producer may create a whole song with a given voice (e.g. a
+        UK pop female singer), and at any point switch to a totally different one
+        (e.g. a US soul male singer) in a few seconds. This technology is a game changer
+        for the music production industry. \nSING will be an easy-to-use desktop app
+        (Mac/Windows). Importing/typing the lyrics and melody will be enough to create
+        a convincing, highly usable vocal track. \nOur demo: Komponant.com","high_concept":"Virtual
+        Vocalist Technology","follower_count":1,"company_url":"http://www.komponant.com","created_at":"2015-03-30T18:20:42Z","updated_at":"2015-04-19T18:13:15Z"}},{"id":62311,"title":"CTO","description":"","created_at":"2015-04-19T16:04:15Z","updated_at":"2015-04-19T16:04:15Z","equity_cliff":"1.0","equity_min":"2.0","equity_max":"10.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":5000,"salary_max":20000,"angellist_url":"https://angel.co/thenewu/jobs/62311-cto","tags":[{"id":2203,"tag_type":"LocationTag","name":"new
+        delhi","display_name":"New Delhi","angellist_url":"https://angel.co/new-delhi"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":false,"startup":{"id":673614,"hidden":false,"community_profile":false,"name":"TheNewU","angellist_url":"https://angel.co/thenewu","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673614-1dcfab1fc93ae8dfca1d9763d978fae0-medium_jpg.jpg?buster=1429458422","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673614-1dcfab1fc93ae8dfca1d9763d978fae0-thumb_jpg.jpg?buster=1429458422","quality":0,"product_desc":"A
+        gamified fitness platform/app which helps you win rewards for loosing weight
+        and staying fit. \n- Track daily calorie burn through workout tracking on
+        mobile/wearables app\n- Convert calories burnt to reward points (SweetSweats)\n-
+        Redeem SweetSweats against what you like to indulge in most \n\nFuel \u2013
+        Health & Fitness food hampers\nFab \u2013 Workout gear kits \u2013 Run/Walk/Cycle/Zumba++\nFun
+        \u2013 Order In, Dine Out \nFixers \u2013 Gyms, Trainers, Nutritionists, Therapists\nFresheners
+        \u2013 Spas, Vacations\nFor all else \u2013 Coupons, Digital Goods\n\nTargeting
+        India market to start with. Huge market with growing smartphone population
+        and growing interest in fitness, wearables and couponing.","high_concept":"Get
+        Rewarded to Stay Fit","follower_count":1,"company_url":"http://In Stealth
+        Mode","created_at":"2015-04-19T15:47:07Z","updated_at":"2015-04-19T16:02:01Z"}},{"id":62310,"title":"Marketing
+        Director","description":"","created_at":"2015-04-19T15:46:03Z","updated_at":"2015-04-19T15:46:03Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":30000,"salary_max":40000,"angellist_url":"https://angel.co/amilabs-co/jobs/62310-marketing-director","tags":[{"id":8853,"tag_type":"LocationTag","name":"bangkok","display_name":"Bangkok","angellist_url":"https://angel.co/bangkok"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":false,"startup":{"id":673605,"hidden":false,"community_profile":false,"name":"Amilabs.co","angellist_url":"https://angel.co/amilabs-co","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673605-142d83c061b22e8e0bef4e14336167e3-medium_jpg.jpg?buster=1429457842","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673605-142d83c061b22e8e0bef4e14336167e3-thumb_jpg.jpg?buster=1429457842","quality":0,"product_desc":"MidasRezerv.com,
+        a decentralized distributed 100% physical gold-backed token platform designed
+        to enhance investments, trading, capital preservation, and payments in physical
+        gold represented by its digital equivalent. Trading token is 1 MRCoin equal
+        1 gold gram. The coin backing gold holdings are stored in non-bank, fully-insured
+        vaults located in Free Trade Zones, with a permanent proof of holdings available
+        for public access online and via the blockchain.","high_concept":"Blockchain
+        Development company specializing in bitcoin 2.0 infrastructure ","follower_count":1,"company_url":"http://www.amilabs.co","created_at":"2015-04-19T15:37:27Z","updated_at":"2015-04-19T16:10:05Z"}},{"id":62309,"title":"Cofounder","description":"Develop
+        beta MVP, working part time for equity. Salary to come when revenue comes
+        in. ","created_at":"2015-04-19T15:39:45Z","updated_at":"2015-04-19T15:50:34Z","equity_cliff":"1.0","equity_min":"10.0","equity_max":"15.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/venvii/jobs/62309-cofounder","tags":[{"id":14777,"tag_type":"SkillTag","name":"objective
+        c","display_name":"Objective C","angellist_url":"https://angel.co/objective-c"},{"id":14781,"tag_type":"SkillTag","name":"javascript","display_name":"Javascript","angellist_url":"https://angel.co/javascript"},{"id":15592,"tag_type":"SkillTag","name":"html","display_name":"HTML","angellist_url":"https://angel.co/html"},{"id":15593,"tag_type":"SkillTag","name":"css","display_name":"CSS","angellist_url":"https://angel.co/css"},{"id":17184,"tag_type":"SkillTag","name":"ruby","display_name":"Ruby","angellist_url":"https://angel.co/ruby"},{"id":1813,"tag_type":"LocationTag","name":"salt
+        lake city","display_name":"Salt Lake City","angellist_url":"https://angel.co/salt-lake-city"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":true,"startup":{"id":673604,"hidden":false,"community_profile":false,"name":"Venvii","angellist_url":"https://angel.co/venvii","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673604-c910842dbb596278826e47478da4569e-medium_jpg.jpg?buster=1429457796","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673604-c910842dbb596278826e47478da4569e-thumb_jpg.jpg?buster=1429457796","quality":0,"product_desc":"We
+        are building an application that allows you to collect feedback from others
+        in the entrepreneur community in as easy as interacting in one of your favorite
+        social networks. Founders upload their pitch with a product description, some
+        pictures, and a short film. Based on our customization process, people who
+        can provide valuable feedback leave comments on your pitch (or vote to agree
+        with another comment) which show through a feed for others to see.\n\n We
+        track when you pivot/change features for your product and develop reports.
+        This data combined with other variables gets created in portfolios for potential
+        investors whom we have partnered with to review.","high_concept":"Startup
+        Mentoring and Funding Leads","follower_count":1,"company_url":"http://www.venvii.com","created_at":"2015-04-19T15:36:41Z","updated_at":"2015-04-19T15:49:14Z"}},{"id":62308,"title":"Ipad
+        App Developer","description":"Development specification\n\nTechnically brilliant
+        developer sought for ipad application development. \n\nDevelopment specification
+        (trademarked)\n\n-\tE-reader ipad application that users can use for reading
+        books downloaded via the both the kindle app and ibooks app.\n-\tA \u201cscribble\u201d
+        function that allows the user to use one finger to:\no\tUnderline;\no\tHighlight;\no\tDraw;
+        and\no\tWrite notes.\n-\tFull resolution zoom \u2013 two finger zoom and pan
+        function that allows the user to resize text and move the text to the margin
+        of the book page. \n-\tThe ability to save the book with the annotations intact.\n\nIf
+        you have the expertise and drive for this project, please contact Helena.ferreira@brightwalkers.com
+        and provide the following information:\n\n1.\tWhy you are suitable for this
+        project;\n2.\tExpected hours for project completion;\n3.\tExpected hourly
+        pay rate;\n4.\tExpected time frame to complete the necessary hours.\n\nThe
+        closing date for applications is 30 April 2015 at 5pm GMT. Applications received
+        after this cut off will not be considered. Between 5-8 applicants will be
+        shortlisted for skype interview and a decision will be made after one round
+        of interviews.\n\nWe look forward to hearing from you,\n\nThe Brightwalkers
+        Ltd team\n","created_at":"2015-04-19T15:13:05Z","updated_at":"2015-04-19T15:13:05Z","equity_cliff":"1.0","equity_min":"1.0","equity_max":"5.0","equity_vest":"4.0","currency_code":"USD","job_type":"cofounder","salary_min":1000,"salary_max":1000,"angellist_url":"https://angel.co/brightwalkers/jobs/62308-ipad-app-developer","tags":[{"id":15889,"tag_type":"SkillTag","name":"mobile
+        application design","display_name":"Mobile Application Design","angellist_url":"https://angel.co/mobile-application-design"},{"id":17363,"tag_type":"SkillTag","name":"ios
+        development","display_name":"iOS Development","angellist_url":"https://angel.co/ios-development"},{"id":32961,"tag_type":"SkillTag","name":"web
+        applications","display_name":"Web Applications","angellist_url":"https://angel.co/web-applications"},{"id":1695,"tag_type":"LocationTag","name":"london","display_name":"London","angellist_url":"https://angel.co/london"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":true,"startup":{"id":673590,"hidden":false,"community_profile":false,"name":"Brightwalkers","angellist_url":"https://angel.co/brightwalkers","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673590-fc6e99dea065bc01ebe5f5ae0f23c8d7-medium_jpg.jpg?buster=1429455781","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673590-fc6e99dea065bc01ebe5f5ae0f23c8d7-thumb_jpg.jpg?buster=1429455781","quality":0,"product_desc":"iPad
+        Application (trademarked)\n\nE-reader application that allows users to edit,
+        annotate and note take, revolutionising the e-reading experience.","high_concept":"Book
+        Annotator (trademarked)","follower_count":1,"company_url":"http://Description
+        to follow","created_at":"2015-04-19T15:03:05Z","updated_at":"2015-04-19T17:20:58Z"}},{"id":62307,"title":"Chief
+        Technology Officer (CTO)","description":"Currently product is being developed
+        by a 3rd party developer which will be delivered within next 2 months. CTO
+        needs to develop an in-house tech team and improve upon the product for future
+        upgrades.","created_at":"2015-04-19T14:51:13Z","updated_at":"2015-04-19T15:05:26Z","equity_cliff":"1.0","equity_min":"10.0","equity_max":"15.0","equity_vest":"4.0","currency_code":"INR","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/blybcars/jobs/62307-chief-technology-officer-cto","tags":[{"id":22939,"tag_type":"LocationTag","name":"mumbai","display_name":"Mumbai","angellist_url":"https://angel.co/mumbai"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":false,"startup":{"id":673571,"hidden":false,"community_profile":false,"name":"Blybcars","angellist_url":"https://angel.co/blybcars","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673571-57732a51ad07a116723f87f9503f0487-medium_jpg.jpg?buster=1429454331","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673571-57732a51ad07a116723f87f9503f0487-thumb_jpg.jpg?buster=1429454331","quality":0,"product_desc":"Mobile
+        application which will provide P2P real time rideshare using GPS technology.
+        It will match driver and rider going in the same route with same organization/profession/interests
+        effectively making the ride enjoyable, reducing cost, congestion and carbon
+        footprint.","high_concept":"Realtime Peer-to-Peer Ridesharing","follower_count":3,"company_url":"http://www.blybcars.com","created_at":"2015-04-19T14:38:55Z","updated_at":"2015-04-19T15:14:37Z"}},{"id":62306,"title":"Mobile
+        Developer","description":"Looking for a mobile developer who has developed
+        Android, iOS applications. Must have apps that are live and in store.","created_at":"2015-04-19T13:38:12Z","updated_at":"2015-04-19T13:38:12Z","equity_cliff":"1.0","equity_min":"1.0","equity_max":"2.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":300000,"salary_max":450000,"angellist_url":"https://angel.co/artzolo-com-1/jobs/62306-mobile-developer","tags":[{"id":16680,"tag_type":"SkillTag","name":"android","display_name":"Android","angellist_url":"https://angel.co/android-1"},{"id":17363,"tag_type":"SkillTag","name":"ios
+        development","display_name":"iOS Development","angellist_url":"https://angel.co/ios-development"},{"id":80376,"tag_type":"SkillTag","name":"html5
+        & css3","display_name":"HTML5 & CSS3","angellist_url":"https://angel.co/html5-css3"},{"id":22939,"tag_type":"LocationTag","name":"mumbai","display_name":"Mumbai","angellist_url":"https://angel.co/mumbai"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":true,"startup":{"id":673549,"hidden":false,"community_profile":false,"name":"ArtZolo.com","angellist_url":"https://angel.co/artzolo-com-1","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673549-dbb0461476800095944dee924bc7352c-medium_jpg.jpg?buster=1429450020","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673549-dbb0461476800095944dee924bc7352c-thumb_jpg.jpg?buster=1429450020","quality":0,"product_desc":"ArtZolo
+        allows emerging and established artists to exhibit, promote, and sell their
+        works directly to the art aficionados/ lovers who value idea, quality, craftsmanship
+        and originality thus making art more accessible and art market more transparent.\nConsumers
+        are always on the look out to own a piece of unique product and not a mass
+        manufactured product and we at ArtZolo provide exclusive paintings and uniquely
+        crafted products by talented artists across the globe from rural/urban regions.\nArtZolo
+        takes immense care to deliver quality and authentic works thus providing the
+        buyer Authenticity Certificate signed directly by the artist with every painting
+        and art print. ArtZolo\u2019s platform connects art buyers directly with talented
+        artists allowing them to acquire affordable yet truly unique items, while
+        at the same time supporting the artist behind the work.","high_concept":"Online
+        marketplace for artist and art lovers to meet. Our aim is to make art for
+        all","follower_count":1,"company_url":"http://www.artzolo.com","created_at":"2015-04-19T13:27:05Z","updated_at":"2015-04-19T13:40:24Z"}},{"id":62305,"title":"Client
+        Engagement Internship (Part Time/Full Time)","description":"This position
+        would suit a young, presentable individual who is interested in becoming involved
+        in the Health and Wellness industry.  We are delivering a holistic and bespoke
+        wellness program in a highly prestigious Abu Dhabi government institution,
+        and the applicant would be responsible for onsite client liaison, first line
+        support, assisting with running the wellness programme, and basic problem
+        solving.  This position can grow into a full-time position with Tupelo.\n\uf0a7\tThis
+        internship will be from Mid April \u2013 until 31 December, with a very good
+        possibility of turning full time\n\uf0a7\tYou will only be required to work
+        3 days in a week (5 days a week also negotiable)\n\n\nRequirements\nThis will
+        be a client facing role. So the requirements are:\n\uf0a7\tExcellent communication
+        skills\n\uf0a7\tHighly presentable\n\uf0a7\tGood organisational skills\n\uf0a7\tCulturally
+        sensitive\n\uf0a7\tPreferred Arabic Speaker\n\uf0a7\tInterest in Health and
+        Wellness an advantage\n\uf0a7\tOwn transportation\n\uf0a7\tMust be extremely
+        reliable\n\uf0a7\tDemonstrated organisational and communication skills\n \n
+        \nAdditional Remarks\n\uf0a7\tThis internship will be from Mid April \u2013
+        until 31 December, with a very good possibility of turning full time\n\uf0a7\tYou
+        will only be required to work 3 days in a week\n\uf0a7\tCandidate must have
+        their own visa & transportation\n\n","created_at":"2015-04-19T13:21:06Z","updated_at":"2015-04-19T13:23:09Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"USD","job_type":"internship","salary_min":1000,"salary_max":3000,"angellist_url":"https://angel.co/tupelo-1/jobs/62305-client-engagement-internship-part-time-full-time","tags":[{"id":51383,"tag_type":"SkillTag","name":"arabic","display_name":"Arabic","angellist_url":"https://angel.co/arabic"},{"id":75254,"tag_type":"SkillTag","name":"cross-cultural
+        communication","display_name":"Cross-Cultural Communication","angellist_url":"https://angel.co/cross-cultural-communication"},{"id":137751,"tag_type":"SkillTag","name":"excellent
+        communications skills","display_name":"Excellent Communications Skills","angellist_url":"https://angel.co/excellent-communications-skills"},{"id":231025,"tag_type":"SkillTag","name":"Highly
+        Presentable","display_name":"Highly Presentable","angellist_url":"https://angel.co/highly-presentable"},{"id":8880,"tag_type":"LocationTag","name":"abu
+        dhabi","display_name":"Abu Dhabi","angellist_url":"https://angel.co/abu-dhabi"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":true,"startup":{"id":421855,"hidden":false,"community_profile":false,"name":"Tupelo
+        ","angellist_url":"https://angel.co/tupelo-1","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/421855-479f60e443ba3fa72678459ee6929854-medium_jpg.jpg?buster=1403177832","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/421855-479f60e443ba3fa72678459ee6929854-thumb_jpg.jpg?buster=1403177832","quality":3,"product_desc":"Tupelo
+        is making it easier to manage & prevent health problems by using wearables
+        to create the first outcome-based health driver. The DHS system collects all
+        the available health data from your wearable devices, analyze it in your own
+        personal cloud, and give you daily step-by-step guidance to reach your health
+        goals via our DHS tablet and app.\n\nOur system is designed to to prevent
+        and manage a number of health problems including diabetes, chronic disease,
+        pregnancy, and weight loss. What sets our programs apart is that they provide
+        the user with step-by-step guidance based on proven clinical research with
+        very specific outcomes in mind. When combined with our portfolio of wearable
+        devices and 24/7 access to doctors via video link, we are able to build responsive
+        programs that offer tremendous value to individuals, health care providers,
+        and insurers. \n\nDHS System = Wearables + Cloud Based Applications + Clinically
+        Proven Programs + 24/7 video link to doctors","high_concept":"Step-By-Step
+        Digital Health Navigation via Wearables","follower_count":16,"company_url":"http://www.TupeloLife.com","created_at":"2014-06-19T11:37:18Z","updated_at":"2014-12-08T13:13:58Z"}},{"id":62304,"title":"PHP
+        Developers","description":"PHP Developers. Preference will be given to candidates
+        with NODEJS experience.","created_at":"2015-04-19T13:00:10Z","updated_at":"2015-04-19T13:00:10Z","equity_cliff":"1.0","equity_min":"0.1","equity_max":"0.5","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":300000,"salary_max":360000,"angellist_url":"https://angel.co/anvati-technologies/jobs/62304-php-developers","tags":[{"id":14776,"tag_type":"SkillTag","name":"php","display_name":"PHP","angellist_url":"https://angel.co/php"},{"id":2280,"tag_type":"LocationTag","name":"gurgaon","display_name":"Gurgaon","angellist_url":"https://angel.co/gurgaon"},{"id":129175,"tag_type":"RoleTag","name":"operations","display_name":"Operations","angellist_url":"https://angel.co/operations-1"}],"remote_ok":false,"startup":{"id":673529,"hidden":false,"community_profile":false,"name":"AnVaTi
+        Technologies","angellist_url":"https://angel.co/anvati-technologies","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673529-621458cadc7d5124fbcbb8918c2e094f-medium_jpg.jpg?buster=1429448160","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673529-621458cadc7d5124fbcbb8918c2e094f-thumb_jpg.jpg?buster=1429448160","quality":0,"product_desc":"Non
+        Voice Suit for Enterprises\n- Email Management Solution using Sentiment Analysis
+        and NLP\n- Social Perception Management","high_concept":"Non Voice Suit for
+        Enterprises","follower_count":1,"company_url":"http://www.protonycs.com","created_at":"2015-04-19T12:56:04Z","updated_at":"2015-04-19T13:08:15Z"}},{"id":62303,"title":"Investment
+        Manager","description":"http://www.ec1capital.com/portfolio-jobs/view/id/26/investment-manager\n\nDescription:\n\nEC1
+        Capital started 3 years ago and is now one of the most active early stage
+        web and mobile technology investors in London with 22 investments in fast
+        growing, disruptive companies.\n\nRole & Responsibilities \n\nDeal sourcing:
+        you will be taking many first meetings with entrepreneurs and CEO\u2019s and
+        your job will be to filter through them based on our investment criteria.
+        You will be writing investment notes with the help of the partners.  You will
+        be attending events and conferences, evangelising our brand and mingling with
+        other investors and entrepreneurs, building your own network and personal
+        brand;\n\nResearch & analysis: you will be proactive in analysing markets,
+        sectors and companies and identifying technology trends and how they impact
+        our investment activity and our portfolio companies as well as managing an
+        outreach program.\n\nDeal execution: you will be supporting the partners in
+        executing investments and carrying out due diligence, with a view to take
+        more and more responsibilities as you progress.\n\nAdmin: you will be supporting
+        the partners with portfolio management, CRM, pipeline, reporting, documentation,
+        log meeting notes etc;\n\nYou will not be actively supervised on a day-to-day
+        basis. You must be a self-starter and be self-motivated and will have to work
+        under your own initiative, combining frequent reporting with good communication
+        skills.\n\nDesired Skills\n\nSome degree of operational experience, ideally
+        working at or founding a high growth startup\n\nExceptional with quantitative
+        analyses and detail oriented, but also able to take strategic views on markets,
+        sectors, trends etc; excellent judgment\n\nAbility to credibly liaise, build
+        and maintain relationships with entrepreneurs, naturally sociable and personable\n\nStrong
+        network in the technology sector is a plus\n\nMinimum degree qualified or
+        relevant experience\n\n________________\n\nNO agencies please\n\nNon smokers
+        only please.","created_at":"2015-04-19T12:38:11Z","updated_at":"2015-04-19T12:38:11Z","equity_cliff":"0.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"0.0","currency_code":"GBP","job_type":"full-time","salary_min":50000,"salary_max":65000,"angellist_url":"https://angel.co/ec1-capital/jobs/62303-investment-manager","tags":[{"id":15528,"tag_type":"SkillTag","name":"information
+        technology","display_name":"Information Technology","angellist_url":"https://angel.co/information-technology-1"},{"id":21167,"tag_type":"SkillTag","name":"deal
+        structuring","display_name":"Deal Structuring","angellist_url":"https://angel.co/deal-structuring"},{"id":29625,"tag_type":"SkillTag","name":"financial
+        analysis","display_name":"Financial Analysis","angellist_url":"https://angel.co/financial-analysis"},{"id":31400,"tag_type":"SkillTag","name":"competitive
+        analysis","display_name":"Competitive Analysis","angellist_url":"https://angel.co/competitive-analysis"},{"id":45841,"tag_type":"SkillTag","name":"deal
+        sourcing","display_name":"Deal Sourcing","angellist_url":"https://angel.co/deal-sourcing"},{"id":1695,"tag_type":"LocationTag","name":"london","display_name":"London","angellist_url":"https://angel.co/london"},{"id":103477,"tag_type":"RoleTag","name":"finance","display_name":"Finance","angellist_url":"https://angel.co/finance-3"}],"remote_ok":false,"startup":{"id":68957,"hidden":false,"community_profile":false,"name":"EC1
+        Capital","angellist_url":"https://angel.co/ec1-capital","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/68957-59b4c320114d94691908630ff12f5a9d-medium_jpg.jpg?buster=1330688428","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/68957-59b4c320114d94691908630ff12f5a9d-thumb_jpg.jpg?buster=1330688428","quality":7,"product_desc":"We
+        invest in early stage to growth web and mobile startups addressing a large
+        market with a burning pain point primarily in London, Edinburgh and Dublin.","high_concept":"We
+        invest between $70,000-$1.5m in early stage web startups.","follower_count":522,"company_url":"http://www.ec1capital.com","created_at":"2012-02-11T23:11:21Z","updated_at":"2015-04-19T12:41:48Z"}},{"id":62302,"title":"Back-end
+        developer","description":"We want to scale our platform towards a website
+        that is able to show tens of thousands of rooms (advertisements). Next to
+        that, all these rooms need to be booked through a payment/transaction system.
+        \n\nCurrently, the website is built using Go (golang) backed by a Postgres
+        database and a simple payment/transaction system. The server components are
+        hosted on a \u2018cloud\u2019 architecture that allows easy scaling.\n\nOur
+        tech team currently consists of two people, both \u2018full-stack\u2019 developers.
+        We are looking to expand this team with a talented developer who has proven
+        work experience writing Go code or extensive experience in alternative languages
+        (e.g. C, Python, Java) and who is eager to learn Go.\n \nYou will solve complex
+        challenges with the development team and the founding team!\n\nSounds challenging?
+        Be part of building our startup!\n\nCool things:\n\n\u00b7\tYou will work
+        in an international and venture-backed start-up company, with a young, dynamic
+        team. of 20 people coming from 10 different nationalities\n\u00b7\tHigh responsibility,
+        changes to the website are visible to a global audience\n\u00b7\tWe work in
+        the Netherlands, in Rotterdam.\n\nRequired experience:\n \n\u00b7\tAn educational
+        background in the field of Information Technology or similar is preferable,
+        although passionate career changers are also welcome.\n\u00b7\tExperience
+        with online marketplaces, service providers and API development\n\u00b7\tDatabase
+        knowledge on queries and maintenance\n\u00b7\tGood proficiency using a.o.\n\u00b7\tOne
+        or more of the following languages: C, PHP, Perl, Python, Ruby, JavaScript,
+        Java, etc\n\u00b7\tFront-end technologies like Javascript, CSS3 and HTML5\n\u00b7\tGit\n\u00b7\tBasic
+        understanding of computer security fundamentals and security-minded programming.\n\u00b7\tBasic
+        understanding of (web) user interface design and development.\n\n","created_at":"2015-04-19T12:13:16Z","updated_at":"2015-04-19T12:15:28Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"3.0","equity_vest":"5.0","currency_code":"EUR","job_type":"full-time","salary_min":40000,"salary_max":60000,"angellist_url":"https://angel.co/housinganywhere-com-2/jobs/62302-back-end-developer","tags":[{"id":14775,"tag_type":"SkillTag","name":"python","display_name":"Python","angellist_url":"https://angel.co/python"},{"id":14781,"tag_type":"SkillTag","name":"javascript","display_name":"Javascript","angellist_url":"https://angel.co/javascript"},{"id":15593,"tag_type":"SkillTag","name":"css","display_name":"CSS","angellist_url":"https://angel.co/css"},{"id":17184,"tag_type":"SkillTag","name":"ruby","display_name":"Ruby","angellist_url":"https://angel.co/ruby"},{"id":21135,"tag_type":"SkillTag","name":"git","display_name":"Git","angellist_url":"https://angel.co/git"},{"id":23388,"tag_type":"SkillTag","name":"c","display_name":"C","angellist_url":"https://angel.co/c-2"},{"id":44312,"tag_type":"SkillTag","name":"go","display_name":"Go","angellist_url":"https://angel.co/go-1"},{"id":100998,"tag_type":"SkillTag","name":"HTML5","display_name":"HTML5","angellist_url":"https://angel.co/html5-4"},{"id":12952,"tag_type":"LocationTag","name":"rotterdam","display_name":"Rotterdam","angellist_url":"https://angel.co/rotterdam"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"}],"remote_ok":false,"startup":{"id":519224,"hidden":false,"community_profile":false,"name":"HousingAnywhere.com","angellist_url":"https://angel.co/housinganywhere-com-2","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/519224-d246255860b2c73ee9095ccccbdb91cd-medium_jpg.jpg?buster=1414241221","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/519224-d246255860b2c73ee9095ccccbdb91cd-thumb_jpg.jpg?buster=1414241221","quality":4,"product_desc":"HousingAnywhere.com
+        is a venture-backed start-up that provides an online platform helping students
+        rent rooms to and from each other while they go abroad for an internship or
+        study abroad semester. Universities sign up to this platform so that their
+        students can use it for free. Universities gain an extra tool to increase
+        their supply of off-campus housing and students have a platform to find and
+        rent out rooms when they are going abroad.\n\nCompleting a second investment
+        round enables us to extend our service. In the coming year, we will develop
+        a payments service that solves the problem of distrust in cross-border and
+        faceless payments. HousingAnywhere.com is going to act as a third party custodian
+        in order to prevent students from being scammed. Developing this functionality
+        is our next target and in order to achieve this, we need the help of skillful
+        developers to develop a solid, conversion-oriented product.","high_concept":"The
+        International Housing platform for exchange and internship students","follower_count":22,"company_url":"http://www.HousingAnywhere.com","created_at":"2014-10-25T12:47:05Z","updated_at":"2015-02-11T13:18:19Z"}},{"id":62301,"title":"Frontend
+        Developer","description":"","created_at":"2015-04-19T10:59:05Z","updated_at":"2015-04-19T10:59:05Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"1.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":40000,"salary_max":60000,"angellist_url":"https://angel.co/smart-pack/jobs/62301-frontend-developer","tags":[{"id":14781,"tag_type":"SkillTag","name":"javascript","display_name":"Javascript","angellist_url":"https://angel.co/javascript"},{"id":73040,"tag_type":"SkillTag","name":"mssql","display_name":"MSSQL","angellist_url":"https://angel.co/mssql"},{"id":75783,"tag_type":"SkillTag","name":"knockoutjs","display_name":"Knockoutjs","angellist_url":"https://angel.co/knockoutjs"},{"id":80376,"tag_type":"SkillTag","name":"html5
+        & css3","display_name":"HTML5 & CSS3","angellist_url":"https://angel.co/html5-css3"},{"id":81410,"tag_type":"SkillTag","name":"angular.js","display_name":"Angular.JS","angellist_url":"https://angel.co/angular-js"},{"id":111924,"tag_type":"SkillTag","name":"microsoft
+        azure","display_name":"Microsoft Azure","angellist_url":"https://angel.co/microsoft-azure-1"},{"id":2452,"tag_type":"LocationTag","name":"tel
+        aviv-yafo","display_name":"Tel Aviv-yafo","angellist_url":"https://angel.co/tel-aviv-yafo"},{"id":151711,"tag_type":"RoleTag","name":"frontend
+        developer","display_name":"Frontend Developer","angellist_url":"https://angel.co/frontend-developer"}],"remote_ok":false,"startup":{"id":673500,"hidden":false,"community_profile":false,"name":"Smart
+        Pack","angellist_url":"https://angel.co/smart-pack","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673500-9a0210b347c29d0bb8dc6b4f7fc4a637-medium_jpg.jpg?buster=1429445188","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673500-9a0210b347c29d0bb8dc6b4f7fc4a637-thumb_jpg.jpg?buster=1429445188","quality":0,"product_desc":"Smart
+        Pack is a solution for SMB\u2019s to  plan, manage and synchronize internal
+        and external projects and processes.  Smart Pack gives analytic tools from
+        the initial planning phases through implementation till the final piece is
+        in place.  Our core mission is to get things done seamlessly, efficiently
+        with as little waste of time and resources as possible.  We believe that every
+        person that\u2019s a part of the project - from the manager to the customer
+        should have full transparency of their part of the process and know exactly
+        where things stand at any time giving confidence to the customer and clarity
+        and control to the company.","high_concept":"Business Planning Management","follower_count":2,"company_url":"http://smartpack.me","created_at":"2015-04-19T10:51:45Z","updated_at":"2015-04-19T12:06:32Z"}},{"id":62300,"title":"Graphic
+        Designer (m/f) - Freelancer/Intern","description":"Your Role:\n\n- You take
+        the responsibility to design and create different sets of banners, icons and
+        advertising materials which will be used to promote our campaigns in all our
+        traffic sources\n- You will work on the improvement of brand and corporate
+        identity in the context of the Hyperlocal market\n- You think creatively to
+        produce your own ideas and concepts with regards to the website design, communication
+        materials and visuals\n- You adapt your designs to meet the overall look and
+        feel of our brand\n- You mainly design original sets of banner ads, communication
+        materials, visuals for the website and corporate identity documents","created_at":"2015-04-19T10:45:39Z","updated_at":"2015-04-19T10:45:39Z","equity_cliff":"1.0","equity_min":null,"equity_max":null,"equity_vest":"4.0","currency_code":"USD","job_type":"internship","salary_min":null,"salary_max":null,"angellist_url":"https://angel.co/nokyooz/jobs/62300-graphic-designer-m-f-freelancer-intern","tags":[{"id":17284,"tag_type":"SkillTag","name":"illustrator","display_name":"Illustrator","angellist_url":"https://angel.co/illustrator"},{"id":38078,"tag_type":"SkillTag","name":"adobe
+        photoshop","display_name":"Adobe Photoshop","angellist_url":"https://angel.co/adobe-photoshop"},{"id":79996,"tag_type":"SkillTag","name":"adobe
+        flash","display_name":"Adobe Flash","angellist_url":"https://angel.co/adobe-flash"},{"id":1904,"tag_type":"LocationTag","name":"bangalore","display_name":"Bangalore","angellist_url":"https://angel.co/bangalore"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"}],"remote_ok":true,"startup":{"id":578942,"hidden":false,"community_profile":false,"name":"nokyooz","angellist_url":"https://angel.co/nokyooz","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/578942-63f1e29a15c23a6d62952f60d059a3d3-medium_jpg.jpg?buster=1421232497","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/578942-63f1e29a15c23a6d62952f60d059a3d3-thumb_jpg.jpg?buster=1421232497","quality":3,"product_desc":"''nokyooz.com''
+        is a unique online listing & booking platform designed to meet the needs of
+        the rapidly growing beauty & wellness industry in India.\n\nIt allows businesses
+        like salons/spas and personal services providers like hairdressers, makeup
+        & tattoo artists, beauticians & massage therapists to showcase their offerings
+        to the broader market. On the other hand, customers can filter service providers
+        by service type, price, location & user ratings and make online bookings,
+        as per their requirements.\n\nnokyooz.com as an idea has evolved over time.
+        Drawing inspiration from the European beauty & wellness industry, where the
+        advent of new technologies is aiding not only businesses to engage and acquire
+        customers like never before, but is also proving to be highly beneficial for
+        the customers who are increasingly becoming concious about their beauty &
+        wellness needs, the founders decided to bring this idea to the Indian market.\n\nAnd
+        thus began the journey of nokyooz.com in early 2015.","high_concept":"Zomato
+        for Hair & Beauty Services","follower_count":5,"company_url":"http://www.nokyooz.com","created_at":"2015-01-14T10:48:21Z","updated_at":"2015-04-19T10:40:16Z"}},{"id":62299,"title":"Back
+        End Software Developer- TummTumm","description":"Description Responsibilities\n\u2022\tAnalyze  business
+        problems critically from more than one perspective.\n\u2022\tDevelop  object-oriented
+        models and design data structures, implement business logic and data models
+        with suitable class design.\n\u2022\tAbility to break-down larger problems
+        into smaller ones and scopes.\n\u2022\tSound soft skills to gel with colleagues
+        from other teams in order to harness the development process.\n\u2022\tAn
+        understanding of the industry\u2019s coding standards and an ability to create
+        appropriate technical documentation.\n\n\n\nRequirements\n\n\n\u2022\tExcellent
+        analytical and problem solving ability.\n\u2022\t1+ Year of work experience
+        and very strong knowledge of a programming language(Django, PHP,Python, Ruby
+        on Rails, Spring etc)\n\u2022\tA solid foundation in computer science, with
+        strong competencies in data structures, algorithms, and software design.\n\u2022\tGood
+        Exposure to SQLite\n\u2022\tExperience using Web Services and Data parsing
+        using RESTful,  JSON , Soap and XML etc,  JavaScript MVC frameworks, such
+        as Angular.js and Backbone.js. \n\u2022\tGood understanding of caching techniques.
+        , SQL tuning , pub-sub\n\u2022\tExperience in building highly scalable business
+        applications, which involve implementing large complex business flows and
+        dealing with huge amount of data. Experience with multi-threading and concurrency
+        programming\n\u2022\tShould be able to convert design into code fluently.
+        Good skills to write unit & integration tests with reasonable coverage of
+        code & interfaces \n\n\nCompensation:\n\nRs 500K-Rs800K\n1% Equity\n","created_at":"2015-04-19T09:07:34Z","updated_at":"2015-04-19T09:07:34Z","equity_cliff":"1.0","equity_min":"1.0","equity_max":"1.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":500000,"salary_max":800000,"angellist_url":"https://angel.co/potato-labs/jobs/62299-back-end-software-developer-tummtumm","tags":[{"id":14776,"tag_type":"SkillTag","name":"php","display_name":"PHP","angellist_url":"https://angel.co/php"},{"id":16135,"tag_type":"SkillTag","name":"django","display_name":"Django","angellist_url":"https://angel.co/django"},{"id":72008,"tag_type":"SkillTag","name":"mathematical
+        algorithms/data analysis","display_name":"Mathematical Algorithms/Data Analysis","angellist_url":"https://angel.co/mathematical-algorithms-data-analysis"},{"id":72469,"tag_type":"SkillTag","name":"sqlite","display_name":"SQLite","angellist_url":"https://angel.co/sqlite"},{"id":75785,"tag_type":"SkillTag","name":"oop","display_name":"OOP","angellist_url":"https://angel.co/oop"},{"id":82532,"tag_type":"SkillTag","name":"ruby
+        on rails","display_name":"Ruby on Rails","angellist_url":"https://angel.co/ruby-on-rails-1"},{"id":106087,"tag_type":"SkillTag","name":"algorithms
+        & data structures","display_name":"Algorithms & Data Structures","angellist_url":"https://angel.co/algorithms-data-structures"},{"id":2203,"tag_type":"LocationTag","name":"new
+        delhi","display_name":"New Delhi","angellist_url":"https://angel.co/new-delhi"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":false,"startup":{"id":673477,"hidden":false,"community_profile":false,"name":"Potato
+        Labs ","angellist_url":"https://angel.co/potato-labs","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673477-8ccef1a353b7ca48b8078f61a3bbb0e3-medium_jpg.jpg?buster=1429431047","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673477-8ccef1a353b7ca48b8078f61a3bbb0e3-thumb_jpg.jpg?buster=1429431047","quality":1,"product_desc":"At
+        Potato Labs  we are aiming to build world\u2019s largest on demand  platform
+        of Home Made meals  and dishes through TummTumm with the help of Chefs,  Home
+        Chefs and Small Food Operators\n\nWe provide the following services to all
+        the Homechefs and small food owners:\n \u2022A technology platform for selling
+        their meals/dishes and receiving orders.\n \u2022An awesome delivery service
+        for delivering their food to the customer.\n \u2022Online Order Management
+        System to manage their orders real time.","high_concept":"Hyperlocal platform
+        for Chefs, Home Chefs and Small Food Operators","follower_count":1,"company_url":"http://www.tummtumm.in","created_at":"2015-04-19T08:10:53Z","updated_at":"2015-04-19T09:05:59Z"}},{"id":62298,"title":"Laravel
+        / Php Developer","description":"Peachmode is bootstrapped by founders and
+        is one of a kind e-commerce company with no funding but growing fast and looking
+        to be profitable this year. Business is in the DNA of founders and hence it''s
+        traditionally run but its very effective. Founder Mr. Anupam Tulsyan himself
+        has done MS in computer science from USC, Los Angeles and hence understands
+        the importance of engineering and analytics in e-commerce business. With good
+        work environment and pay packages you get to learn a lot and be a lead in
+        developing things at peachmode.\n\n\n\nWe are looking for someone who is at
+        core a backend engineer with good knowledge of Linux and PHP but also understand
+        the dynamics of frontend. Candidate should have Minimum 1 year experience
+        at a company working on PHP.","created_at":"2015-04-19T08:53:07Z","updated_at":"2015-04-19T08:54:33Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":400000,"salary_max":600000,"angellist_url":"https://angel.co/peachmode/jobs/62298-laravel-php-developer","tags":[{"id":14775,"tag_type":"SkillTag","name":"python","display_name":"Python","angellist_url":"https://angel.co/python"},{"id":14776,"tag_type":"SkillTag","name":"php","display_name":"PHP","angellist_url":"https://angel.co/php"},{"id":14781,"tag_type":"SkillTag","name":"javascript","display_name":"Javascript","angellist_url":"https://angel.co/javascript"},{"id":16309,"tag_type":"SkillTag","name":"mysql","display_name":"MySQL","angellist_url":"https://angel.co/mysql-1"},{"id":31586,"tag_type":"SkillTag","name":"linux","display_name":"Linux","angellist_url":"https://angel.co/linux-1"},{"id":80376,"tag_type":"SkillTag","name":"html5
+        & css3","display_name":"HTML5 & CSS3","angellist_url":"https://angel.co/html5-css3"},{"id":88939,"tag_type":"SkillTag","name":"laravel","display_name":"Laravel","angellist_url":"https://angel.co/laravel"},{"id":145219,"tag_type":"SkillTag","name":"Laravel
+        Framework","display_name":"Laravel Framework","angellist_url":"https://angel.co/laravel-framework"},{"id":22939,"tag_type":"LocationTag","name":"mumbai","display_name":"Mumbai","angellist_url":"https://angel.co/mumbai"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"}],"remote_ok":false,"startup":{"id":542847,"hidden":false,"community_profile":false,"name":"Peachmode","angellist_url":"https://angel.co/peachmode","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/542847-1eb17226017b8be0735c8f7db00abfe6-medium_jpg.jpg?buster=1416889139","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/542847-1eb17226017b8be0735c8f7db00abfe6-thumb_jpg.jpg?buster=1416889139","quality":3,"product_desc":"Peachmode
+        is an e-commerce website which sells women''s ethnic wear. We source clothes
+        from various suppliers and designers across India and sell it at the right
+        price without overcharging customers. We do not offer discounts as such and
+        that is the moto of the company to sell ''Right Product @ Right Price''. We
+        are bootstrapped and have our own resources to run the company.","high_concept":"High
+        Quality Ethnic Wear at Affordable Price","follower_count":2,"company_url":"http://peachmode.com","created_at":"2014-11-25T04:15:32Z","updated_at":"2014-11-25T04:40:02Z"}},{"id":62297,"title":"Senior
+        iOS Developer (full stack preferred)","description":"If you''re deeply into
+        Swift or Obj-c and love making modern and sexy UIs, we''d love to hear from
+        you. \n\nWe need a guru who can architect mobile apps in their sleep. \nWho
+        understands queueing, threads, messaging and relational databases. \nSomeone
+        who consistently achieves great quality, loves unit testing and code reviews.\n\nDoes
+        this sound like you?\n\n- I expect to earn \u00a330,000 - \u00a350,000 with
+        my uber skills\n- I\u2019m experienced in writing iOS UI animations, UI.\n-
+        I''m happy to spend 6 hours getting an animation just right\n- I experiment
+        with new technologies in my spare time\n- I dabble with Sketch and Photoshop\n-
+        I''ve also got experience of the server side, writing middle tier code, db
+        code, API''s\n- I think I''ll get along great in a mixed iOS, Android and
+        Ruby on Rails team\n- I don''t just do mobile, I''m interested in other tech
+        too\n- I\u2019m far more comfortable having my code under unit test\n- I hate
+        waiting for tests to run\n- Every project feels like a hackathon\n- I\u2019m
+        avoiding contracting \u00a3\u00a3\u00a3 because it\u2019s more important to
+        work with people and make products that make a difference long term\n- I don\u2019t
+        mind getting my hands dirty and helping out on boring jobs if the company
+        needs it\n- Git is easy\n- I\u2019ve been doing this for 6+ years. Still loving
+        it.\n- I enjoy a beer on Fridays and bantering about software\n\nOur fun,
+        friendly team is based in Leeds, UK. \n\nYou''ll be working on a variety of
+        projects. Some are internal, some are client facing. \n\nOur business goal
+        is to work purely on our own projects, and we''re getting there...\n\nIf this
+        sounds cool, please send...\n\n- Github account\n- Stack Overflow profile\n-
+        App store links\n- Open source projects you work on\n- App screenshots\n-
+        Any pretty graphics :)\n- Anything else you think is cool or important","created_at":"2015-04-19T08:51:39Z","updated_at":"2015-04-19T08:51:39Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"GBP","job_type":"full-time","salary_min":30000,"salary_max":50000,"angellist_url":"https://angel.co/pocketworks/jobs/62297-senior-ios-developer-full-stack-preferred","tags":[{"id":14777,"tag_type":"SkillTag","name":"objective
+        c","display_name":"Objective C","angellist_url":"https://angel.co/objective-c"},{"id":15889,"tag_type":"SkillTag","name":"mobile
+        application design","display_name":"Mobile Application Design","angellist_url":"https://angel.co/mobile-application-design"},{"id":17363,"tag_type":"SkillTag","name":"ios
+        development","display_name":"iOS Development","angellist_url":"https://angel.co/ios-development"},{"id":82532,"tag_type":"SkillTag","name":"ruby
+        on rails","display_name":"Ruby on Rails","angellist_url":"https://angel.co/ruby-on-rails-1"},{"id":111569,"tag_type":"SkillTag","name":"Unit
+        Testing","display_name":"Unit Testing","angellist_url":"https://angel.co/unit-testing"},{"id":160914,"tag_type":"SkillTag","name":"Swift","display_name":"Swift","angellist_url":"https://angel.co/swift-2"},{"id":13780,"tag_type":"LocationTag","name":"leeds","display_name":"Leeds","angellist_url":"https://angel.co/leeds"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":true,"startup":{"id":673481,"hidden":false,"community_profile":false,"name":"Pocketworks","angellist_url":"https://angel.co/pocketworks","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673481-205986d7295c8334ec6d45a4896b2eec-medium_jpg.jpg?buster=1429434410","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673481-205986d7295c8334ec6d45a4896b2eec-thumb_jpg.jpg?buster=1429434410","quality":2,"product_desc":"PocketFORMS
+        lets marketing directors create mobile data capture forms in minutes, so they
+        can use them in exhibitions, surveys and other field work. PocketFORMS is
+        fully native and works in realtime. It goes beyond simple text entry forms;
+        our field types include geofences, audio and collaborative whiteboards.","high_concept":"Build
+        beautiful, elegant native mobile forms","follower_count":1,"company_url":"http://pocketworks.co.uk/ipad-forms","created_at":"2015-04-19T08:41:59Z","updated_at":"2015-04-19T09:06:54Z"}},{"id":62296,"title":"Mobile
+        Developer- TummTumm","description":"Description of Responsibilities:\n\n\u2022\tEnd
+        to end ownership of the mobile products you work on including but not limited
+        to design, development, testing and delivery\n\u2022\tMaintenance and sustenance
+        of the products across Mobile OS versions\n\u2022\tResponsibility of lifecycle
+        management of the product on various delivery platforms and app stores\n\u2022\tStrong
+        cross-functional contribution in defining and delivering the roadmap for products
+        on mobile and tablet devices\n\u2022\tConforming to industry standards for
+        mobile application development, creating internal technical documents.\n\n\nRequirements\n\n\n\u2022\t3+
+        Years of Native application development experience on Smartphones with expertise
+        in one or more of the following platforms/programming languages:\n\n\u2022\tAndroid
+        SDK+Java\n\u2022\tIOS SDKs (iPhone and iPad) and Objective-C\n\n\u2022\tExperience
+        using mobile platform programming environments such as Eclipse(Android), XCode(IOS)\n\u2022\tExperience
+        in developing and building real time route optimization and location tracking
+        applications.\n\u2022\tExperience using Web Services and Data parsing using
+        RESTful,  JSON , Soap and XML etc,  JavaScript MVC frameworks, such as Angular.js
+        and Backbone.js, Node.js \n\u2022\tPassionate for Mobile UI & UX to make apps
+        engaging for users\n\u2022\tExperience developing applications using multi-client
+        development platforms such as Phonegap and Titanium a strong plus\n\u2022\tBE/BTech
+        in Computer Science , Computer Engineering or Related disciplines\n\u2022\tStrong
+        design principles with exposure to scalable client-server architectures\n\u2022\tSoftware
+        engineer with strong analytical skills and verbal as well as written communication
+        skills\n\u2022\tSelf-starter with ability cope with sharp learning curves\n\u2022\tStrong
+        individual contributor who can work independently as well as in a high energy
+        team\n\n\nCompensation:\n\nRs 500K-Rs800K\n1% Equity\n\nNon Self Starters
+        and Those  looking for money, please don\u2019t apply. Would save us time
+        and botheration.\n","created_at":"2015-04-19T08:44:02Z","updated_at":"2015-04-19T08:44:02Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":500000,"salary_max":800000,"angellist_url":"https://angel.co/potato-labs/jobs/62296-mobile-developer-tummtumm","tags":[{"id":17000,"tag_type":"SkillTag","name":"node.js","display_name":"Node.js","angellist_url":"https://angel.co/node-js"},{"id":18172,"tag_type":"SkillTag","name":"titanium
+        developer","display_name":"Titanium Developer","angellist_url":"https://angel.co/titanium-developer"},{"id":40925,"tag_type":"SkillTag","name":"phonegap","display_name":"Phonegap","angellist_url":"https://angel.co/phonegap"},{"id":44410,"tag_type":"SkillTag","name":"json","display_name":"JSON","angellist_url":"https://angel.co/json"},{"id":81410,"tag_type":"SkillTag","name":"angular.js","display_name":"Angular.JS","angellist_url":"https://angel.co/angular-js"},{"id":81741,"tag_type":"SkillTag","name":"rest
+        apis","display_name":"REST APIs","angellist_url":"https://angel.co/rest-apis"},{"id":2203,"tag_type":"LocationTag","name":"new
+        delhi","display_name":"New Delhi","angellist_url":"https://angel.co/new-delhi"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":false,"startup":{"id":673477,"hidden":false,"community_profile":false,"name":"Potato
+        Labs ","angellist_url":"https://angel.co/potato-labs","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673477-8ccef1a353b7ca48b8078f61a3bbb0e3-medium_jpg.jpg?buster=1429431047","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673477-8ccef1a353b7ca48b8078f61a3bbb0e3-thumb_jpg.jpg?buster=1429431047","quality":1,"product_desc":"At
+        Potato Labs  we are aiming to build world\u2019s largest on demand  platform
+        of Home Made meals  and dishes through TummTumm with the help of Chefs,  Home
+        Chefs and Small Food Operators\n\nWe provide the following services to all
+        the Homechefs and small food owners:\n \u2022A technology platform for selling
+        their meals/dishes and receiving orders.\n \u2022An awesome delivery service
+        for delivering their food to the customer.\n \u2022Online Order Management
+        System to manage their orders real time.","high_concept":"Hyperlocal platform
+        for Chefs, Home Chefs and Small Food Operators","follower_count":1,"company_url":"http://www.tummtumm.in","created_at":"2015-04-19T08:10:53Z","updated_at":"2015-04-19T09:05:59Z"}},{"id":62295,"title":"Co-founder
+        / CTO","description":"We are looking for a partner cum CTO to join our team
+        of finance and banking professionals to craft the upcoming fintech star. \n\nIn
+        Cardalogs, we are going forward to catch the epoch of consumer insight analysis
+        and mobile payment! We will work together and build OUR company.\n\n\nJob
+        Responsibilities:\n-The role is responsible for developing, coding, designing
+        and maintaining website and application, from layout to function.\n\n\nJob
+        Duties:\n-As a CTO, candidate has the authority and scope to apply your expertise
+        to many interesting technical problems.\n-Candidate must have a strong understanding
+        of UI and cross-browser compatibility (Chrome, firefox,IE),\n-Deep expertise
+        and hands on experience with Web Applications and programming languages such
+        as HTML, CSS, JavaScript, JQuery and API''s.\n-Deep functional knowledge or
+        hands on design experience with Web Services (REST, SOAP, etc) is needed to
+        be successful in this position.\n-Strong grasp of security principles and
+        how they apply to E-Commerce applications.\n\nSkills and Qualifications:\nJavaScript,
+        JQuery, HTML, HTML5, CSS, CSS3, Web Programming Skills, E-Commerce, Teamwork,
+        cross-browser compatibility, Web User Interface Design (UI), Security Principles,
+        Object-Oriented Design, Web Services (REST/SOAP), Multimedia Content Development,
+        API''s\n\n\nWe are looking forward to understanding YOU more! Feel free to
+        click Interested on us and we can see how things work out!\n","created_at":"2015-04-19T08:04:06Z","updated_at":"2015-04-19T08:16:57Z","equity_cliff":"1.0","equity_min":"15.0","equity_max":"30.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":20000,"salary_max":50000,"angellist_url":"https://angel.co/cardalogs/jobs/62295-co-founder-cto","tags":[{"id":1644,"tag_type":"LocationTag","name":"hong
+        kong","display_name":"Hong Kong","angellist_url":"https://angel.co/hong-kong"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":true,"startup":{"id":673471,"hidden":false,"community_profile":false,"name":"Cardalogs","angellist_url":"https://angel.co/cardalogs","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673471-8ac360314d428204b204e9d5ef0000c1-medium_jpg.jpg?buster=1429428761","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673471-8ac360314d428204b204e9d5ef0000c1-thumb_jpg.jpg?buster=1429428761","quality":3,"product_desc":"Launched
+        Hong Kong in 2014, Cardalogs provides metropolitans with credit card offers
+        that truly matters to you. With your unique credit card profile, we only generate
+        spending information that you need to be concerned, without any information
+        that waste your time reading.\n\nWith our unique analytics technology, we
+        can foresee your next transaction and suggest offers and information before
+        you search it, wherever and whenever.\n\nA metropolitan way of life is to
+        live your life to its fullest. Realise now with www.cardalogs.com. What are
+        you waiting for?","high_concept":"Cardalogs is the Only Personalized Credit
+        Card Offers Portal in the market.","follower_count":1,"company_url":"http://www.cardalogs.com","created_at":"2015-04-19T07:32:45Z","updated_at":"2015-04-19T08:14:35Z"}},{"id":62294,"title":"Software
+        Developer","description":"Position Responsibilities: \n\nAs a Software Engineer
+        of the Customer Success team you will be responsible to \n\u2022\tWork through
+        the entire Software Development Life Cycle, from gathering customer requirements,
+        analysing, developing, and deploying them. \n\u2022\tUnderstand the product
+        thoroughly and be a functional expert throughout the breadth of Cloud Lending\u2019s
+        products. Analyse customer cases and advise the customer community about the
+        product functionalities, gaps, workarounds, and customizations required to
+        resolve any product shortcomings.\n\u2022\tResolve production issues reported
+        by customers.\n\u2022\tAssist a wide range of clients with technical queries,
+        troubleshoot customer and product code issues, by interacting with customer
+        techno-functional team and Product Management. \n\u2022\tBe driven, determined,
+        self-motivated, possess good analytical skills, be a genuine people person,
+        be team oriented, and project a confident, professional demeanour.\n\u25cf\tCollaborate
+        with Solutions Team, QA during design and implementation phases of customer-driven
+        projects.\n\u25cf\tBe flexible to directly work with US/EMEA clients\n\nDesired
+        Skills and Expertise\nPosition Qualifications:\n\u25cf\tDegree in Engineering,
+        MCA, or equivalent \n\u25cf\tExceptional communication skills - both verbal
+        and written is a must.\n\u25cf\tStrong Business Acumen.\n\u25cf\tExcellent
+        coding, troubleshooting, documentation, problem solving and presentation skills.\n\u25cf\tDetailed,
+        organized and results oriented.\n\u25cf\tMust be a quick learner\n\nDesired
+        Qualifications:\n\u25cf\tOverall 2+ years of experience in Software Industry\n\u25cf\tWorking
+        knowledge of Salesforce, JAVA including but not limited to apex classes, VF
+        pages & components, Profile & Roles Setup, data uploading & migration, automation
+        through triggers, approval process, workflow rules, integration with different
+        platforms, deployment through ANT script & Eclipse plug in.\n\u25cf\tSalesforce
+        Experience/Certification is a plus\n\u25cf\tFinancial domain knowledge is
+        also a plus \n","created_at":"2015-04-19T08:02:17Z","updated_at":"2015-04-19T08:02:17Z","equity_cliff":"1.0","equity_min":"0.0","equity_max":"0.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":800000,"salary_max":1400000,"angellist_url":"https://angel.co/cloud-lending-1/jobs/62294-software-developer","tags":[{"id":1904,"tag_type":"LocationTag","name":"bangalore","display_name":"Bangalore","angellist_url":"https://angel.co/bangalore"},{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"https://angel.co/developer"}],"remote_ok":false,"startup":{"id":445635,"hidden":false,"community_profile":false,"name":"Cloud
+        Lending","angellist_url":"https://angel.co/cloud-lending-1","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/445635-3c2535fc4dd86c84585438fc23ff24ef-medium_jpg.jpg?buster=1406253080","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/445635-3c2535fc4dd86c84585438fc23ff24ef-thumb_jpg.jpg?buster=1406253080","quality":5,"product_desc":"Cloud
+        Lending Inc. is leading innovations in addressing the technology needs of
+        the financial services industry. We don''t believe in making just software
+        products. Instead, we believe in creating solutions for the financial services
+        industry to help financial institutions to be a step ahead in meeting the
+        demands of today''s highly competitive and uncertain market.\u00a0\n\nOur
+        vision is to be a company that helps financial institutions to scale and innovate
+        continually and stay competitive in a changing business environment by offering
+        world-class banking & lending experience to their borrowers, irrespective
+        of the company size. We do this with the help of technology by offering cutting-edge,
+        cloud-based solutions which empower them with the agility to take advantage
+        of the infinite opportunities out there in the market.\n\nWe\u2019re headquartered
+        in Foster City, California and have another office in Bangalore India.","high_concept":"Lending
+        Technology Platform","follower_count":26,"company_url":"http://www.cloudlendinginc.com","created_at":"2014-07-25T01:51:24Z","updated_at":"2015-02-06T13:08:04Z"}},{"id":62293,"title":"Smart
+        Creative","description":"Has deep technical knowledge in how to use the tools
+        of his/her trade and plenty of hands-on experience.\n\n- Analytically smart\n-
+        Business smart\n- Competitive smart\n- Curious\n- Risky\n- Self directed\n-
+        Open minded\n- Communicative\n\nWilling to question the status quo and attack
+        things differently. ","created_at":"2015-04-19T06:12:59Z","updated_at":"2015-04-19T06:12:59Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"3.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/parking-duck/jobs/62293-smart-creative","tags":[{"id":8853,"tag_type":"LocationTag","name":"bangkok","display_name":"Bangkok","angellist_url":"https://angel.co/bangkok"},{"id":80487,"tag_type":"RoleTag","name":"product_manager","display_name":"Product
+        Manager","angellist_url":"https://angel.co/product_manager"},{"id":80488,"tag_type":"RoleTag","name":"sales","display_name":"Sales","angellist_url":"https://angel.co/sales-2"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"},{"id":129175,"tag_type":"RoleTag","name":"operations","display_name":"Operations","angellist_url":"https://angel.co/operations-1"},{"id":103477,"tag_type":"RoleTag","name":"finance","display_name":"Finance","angellist_url":"https://angel.co/finance-3"},{"id":103479,"tag_type":"RoleTag","name":"human_resources","display_name":"Human
+        Resources","angellist_url":"https://angel.co/human_resources"}],"remote_ok":true,"startup":{"id":620552,"hidden":false,"community_profile":false,"name":"Parking
+        Duck","angellist_url":"https://angel.co/parking-duck","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-medium_jpg.jpg?buster=1424859028","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-thumb_jpg.jpg?buster=1424859028","quality":3,"product_desc":"Parking
+        Duck is the Airbnb for parking spaces.\nhttp://www.parkingduck.com\n\nResidential
+        owners (hosts) can rent out their unused parking spaces for free on our platform.
+        Drivers in need can find, book and pay online. Host and drivers use our internal
+        chat system to set up meetings to exchange parking stickers/pass/cards.\n\nWhy
+        do host want to use Parking Duck?\n1. Free to list\n2. Easy communication
+        with drivers\n3. Accept or decline drivers\n4. Earn money!\n\nWhy do drivers
+        want to use Parking Duck?\n1. Save time\n2. Save money\n3. Save nerves!\n\nUser
+        Security:\n- Validate identity through social media accounts (Facebook, Email,
+        etc)\n- Validate identity through official documents (Driver''s license, car
+        registration, etc)\n- Validate identity by connecting with PayPal or Bank
+        Accounts\n- Photography service and parking space verification\n- We accept
+        payment and issue the payout after the driver parks!","high_concept":"Parking
+        Duck is the Airbnb for parking spaces","follower_count":7,"company_url":"http://www.parkingduck.com","created_at":"2015-02-25T10:08:12Z","updated_at":"2015-04-19T05:46:35Z"}},{"id":62292,"title":"iOS
+        Developer","description":"***We want to work with the best engineers/developers/programmers
+        we find, regardless of your coding preferences. The coding language inevitably
+        will change in a startup, we want someone who can adapt and learn***\n\nParking
+        Duck is seeking a Jedi master level iOS developer to lead the development
+        and implementation of a freaking cool, first of its kind, parking reservation
+        app.\n\nRequirements: \n1. Code Apple''s stuff (SWIFT, Objective C, etc)\n2.
+        Be able to develop a complex mobile app and wield a light saber \n2. Able
+        to drink and remain focus at work \n3. Does not get easily drawn into the
+        dark side \n4. Able to work in teams, meet new people, talk to strangers >>>
+        strong communication skills \n5. Interested in the business side of things
+        from legal to marketing to design (a Jedi does not only wield a light saber,
+        but also learns to use the \"force\") \n6. Have deep technical knowledge,
+        curiosity, and is not afraid to fail/adapt/work independently\n\nWhat you
+        get: \n1. Define your work hours (a Jedi''s work is not a 9-5 work) \n2. Unlimited
+        days off (trust is what guides us, if you need a break, take it, but work
+        must be complete) \n3. Equity (contribute to us and own a part of us!) \n4.
+        Experience of a lifetime \n5. You will have a very big impact to what we do\n\nWe
+        are very flexible on your terms. If interested, inbox me with a Linkedin link
+        or Facebook acct and github link.\n\n*Preffered: current/former colleague
+        or employee''s recommendation.","created_at":"2015-04-19T05:41:59Z","updated_at":"2015-04-19T06:15:27Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"3.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/parking-duck/jobs/62292-ios-developer","tags":[{"id":14777,"tag_type":"SkillTag","name":"objective
+        c","display_name":"Objective C","angellist_url":"https://angel.co/objective-c"},{"id":160914,"tag_type":"SkillTag","name":"Swift","display_name":"Swift","angellist_url":"https://angel.co/swift-2"},{"id":8853,"tag_type":"LocationTag","name":"bangkok","display_name":"Bangkok","angellist_url":"https://angel.co/bangkok"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"},{"id":151711,"tag_type":"RoleTag","name":"frontend
+        developer","display_name":"Frontend Developer","angellist_url":"https://angel.co/frontend-developer"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":true,"startup":{"id":620552,"hidden":false,"community_profile":false,"name":"Parking
+        Duck","angellist_url":"https://angel.co/parking-duck","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-medium_jpg.jpg?buster=1424859028","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-thumb_jpg.jpg?buster=1424859028","quality":3,"product_desc":"Parking
+        Duck is the Airbnb for parking spaces.\nhttp://www.parkingduck.com\n\nResidential
+        owners (hosts) can rent out their unused parking spaces for free on our platform.
+        Drivers in need can find, book and pay online. Host and drivers use our internal
+        chat system to set up meetings to exchange parking stickers/pass/cards.\n\nWhy
+        do host want to use Parking Duck?\n1. Free to list\n2. Easy communication
+        with drivers\n3. Accept or decline drivers\n4. Earn money!\n\nWhy do drivers
+        want to use Parking Duck?\n1. Save time\n2. Save money\n3. Save nerves!\n\nUser
+        Security:\n- Validate identity through social media accounts (Facebook, Email,
+        etc)\n- Validate identity through official documents (Driver''s license, car
+        registration, etc)\n- Validate identity by connecting with PayPal or Bank
+        Accounts\n- Photography service and parking space verification\n- We accept
+        payment and issue the payout after the driver parks!","high_concept":"Parking
+        Duck is the Airbnb for parking spaces","follower_count":7,"company_url":"http://www.parkingduck.com","created_at":"2015-02-25T10:08:12Z","updated_at":"2015-04-19T05:46:35Z"}},{"id":62291,"title":"Website
+        Designer","description":"***We want to work with the best engineers/developers/programmers
+        we find, regardless of your coding preferences. The coding language inevitably
+        will change in a startup, we want someone who can adapt and learn***\n\nParking
+        Duck is seeking a Jedi master level website designer to lead the UI/UX development
+        and implementation of a freaking cool, first of its kind, parking reservation
+        website/app.\n\nRequirements:\n1. Code HTML/CSS with Rails\n2. Be able to
+        develop a complex website and wield a light saber\n2. Able to drink and remain
+        focus at work\n3. Does not get easily drawn into the dark side\n4. Able to
+        work in teams, meet new people, talk to strangers >>> strong communication
+        skills\n5. Interested in the business side of things from legal to marketing
+        to design (a Jedi does not only wield a light saber, but also learns to use
+        the \"force\")\n6. Have deep technical knowledge, curiosity, and is not afraid
+        to fail/adapt/work independently\n\nWhat you get:\n1. Define your work hours
+        (a Jedi''s work is not a 9-5 work)\n2. Unlimited days off (trust is what guides
+        us, if you need a break, take it, but work must be complete)\n3. Equity (contribute
+        to us and own a part of us!)\n4. Experience of a lifetime\n5. You will have
+        a very big impact to what we do\n\nWe are very flexible on your terms. If
+        interested, inbox me with a Linkedin link or Facebook acct and github link.\n\n*Preffered:
+        current/former colleague or employee''s recommendation.","created_at":"2015-04-19T05:38:23Z","updated_at":"2015-04-19T06:15:43Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"3.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/parking-duck/jobs/62291-website-designer","tags":[{"id":15592,"tag_type":"SkillTag","name":"html","display_name":"HTML","angellist_url":"https://angel.co/html"},{"id":15593,"tag_type":"SkillTag","name":"css","display_name":"CSS","angellist_url":"https://angel.co/css"},{"id":82532,"tag_type":"SkillTag","name":"ruby
+        on rails","display_name":"Ruby on Rails","angellist_url":"https://angel.co/ruby-on-rails-1"},{"id":8853,"tag_type":"LocationTag","name":"bangkok","display_name":"Bangkok","angellist_url":"https://angel.co/bangkok"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"},{"id":151711,"tag_type":"RoleTag","name":"frontend
+        developer","display_name":"Frontend Developer","angellist_url":"https://angel.co/frontend-developer"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":true,"startup":{"id":620552,"hidden":false,"community_profile":false,"name":"Parking
+        Duck","angellist_url":"https://angel.co/parking-duck","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-medium_jpg.jpg?buster=1424859028","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-thumb_jpg.jpg?buster=1424859028","quality":3,"product_desc":"Parking
+        Duck is the Airbnb for parking spaces.\nhttp://www.parkingduck.com\n\nResidential
+        owners (hosts) can rent out their unused parking spaces for free on our platform.
+        Drivers in need can find, book and pay online. Host and drivers use our internal
+        chat system to set up meetings to exchange parking stickers/pass/cards.\n\nWhy
+        do host want to use Parking Duck?\n1. Free to list\n2. Easy communication
+        with drivers\n3. Accept or decline drivers\n4. Earn money!\n\nWhy do drivers
+        want to use Parking Duck?\n1. Save time\n2. Save money\n3. Save nerves!\n\nUser
+        Security:\n- Validate identity through social media accounts (Facebook, Email,
+        etc)\n- Validate identity through official documents (Driver''s license, car
+        registration, etc)\n- Validate identity by connecting with PayPal or Bank
+        Accounts\n- Photography service and parking space verification\n- We accept
+        payment and issue the payout after the driver parks!","high_concept":"Parking
+        Duck is the Airbnb for parking spaces","follower_count":7,"company_url":"http://www.parkingduck.com","created_at":"2015-02-25T10:08:12Z","updated_at":"2015-04-19T05:46:35Z"}},{"id":62290,"title":"Android
+        Developer","description":"","created_at":"2015-04-19T05:37:32Z","updated_at":"2015-04-19T05:37:32Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"4.0","currency_code":"INR","job_type":"full-time","salary_min":600000,"salary_max":900000,"angellist_url":"https://angel.co/jobhash/jobs/62290-android-developer","tags":[{"id":14775,"tag_type":"SkillTag","name":"python","display_name":"Python","angellist_url":"https://angel.co/python"},{"id":14780,"tag_type":"SkillTag","name":"java","display_name":"Java","angellist_url":"https://angel.co/java"},{"id":16680,"tag_type":"SkillTag","name":"android","display_name":"Android","angellist_url":"https://angel.co/android-1"},{"id":21135,"tag_type":"SkillTag","name":"git","display_name":"Git","angellist_url":"https://angel.co/git"},{"id":2597,"tag_type":"LocationTag","name":"pune","display_name":"Pune","angellist_url":"https://angel.co/pune"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"}],"remote_ok":false,"startup":{"id":673436,"hidden":false,"community_profile":false,"name":"Jobhash","angellist_url":"https://angel.co/jobhash","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673436-e5c6ce1d8197ae08a83fc8a28ab22bf2-medium_jpg.jpg?buster=1429421522","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/673436-e5c6ce1d8197ae08a83fc8a28ab22bf2-thumb_jpg.jpg?buster=1429421522","quality":2,"product_desc":"At
+        Jobhash, we''re making job search fast and fun. Jobhash matches job seekers
+        and employers, based on skills, experience and relevance. Jobhash enables
+        employers to connect with and hire skilled software professionals quickly
+        and more efficiently.","high_concept":"Tinder for jobs","follower_count":1,"company_url":"http://jobhashapp.com","created_at":"2015-04-19T05:32:06Z","updated_at":"2015-04-19T05:34:09Z"}},{"id":62289,"title":"Android
+        Developer","description":"***We want to work with the best engineers/developers/programmers
+        we find, regardless of your coding preferences. The coding language inevitably
+        will change in a startup, we want someone who can adapt and learn***\n\nParking
+        Duck is seeking a Jedi master level Android developer to lead the development
+        of a freaking cool, first of its kind, parking reservation app.\n\nRequirements:\n1.
+        Be able to develop an Android app and wield a light saber\n2. Able to drink
+        and remain focus at work\n3. Does not get easily drawn into the dark side\n4.
+        Able to work in teams, meet new people, talk to strangers >>> strong communication
+        skills\n5. Interested in the business side of things from legal to marketing
+        to design (a Jedi does not only wield a light saber, but also learns to use
+        the \"force\")\n6. Have deep technical knowledge, curiosity, and is not afraid
+        to fail/adapt/work independently\n\nWhat you get:\n1. Define your work hours
+        (a Jedi''s work is not a 9-5 work)\n2. Unlimited days off (trust is what guides
+        us, if you need a break, take it, but work must be complete)\n3. Equity (contribute
+        to us and own a part of us!)\n4. Experience of a lifetime\n5. You will have
+        a very big impact to what we do\n\nWe are very flexible on your terms. If
+        interested, inbox me with a Linkedin link or Facebook acct and github link.\n\n*Preffered:
+        current/former colleague or employee''s recommendation.","created_at":"2015-04-19T05:32:54Z","updated_at":"2015-04-19T06:15:35Z","equity_cliff":"1.0","equity_min":"0.5","equity_max":"1.0","equity_vest":"3.0","currency_code":"USD","job_type":"cofounder","salary_min":0,"salary_max":0,"angellist_url":"https://angel.co/parking-duck/jobs/62289-android-developer","tags":[{"id":8853,"tag_type":"LocationTag","name":"bangkok","display_name":"Bangkok","angellist_url":"https://angel.co/bangkok"},{"id":14739,"tag_type":"RoleTag","name":"mobile_developer","display_name":"Mobile
+        Developer","angellist_url":"https://angel.co/mobile_developer"},{"id":14883,"tag_type":"RoleTag","name":"designer","display_name":"Designer","angellist_url":"https://angel.co/designer"},{"id":151647,"tag_type":"RoleTag","name":"backend
+        developer","display_name":"Backend Developer","angellist_url":"https://angel.co/backend-developer"},{"id":151718,"tag_type":"RoleTag","name":"full
+        stack developer","display_name":"Full Stack Developer","angellist_url":"https://angel.co/full-stack-developer-1"}],"remote_ok":true,"startup":{"id":620552,"hidden":false,"community_profile":false,"name":"Parking
+        Duck","angellist_url":"https://angel.co/parking-duck","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-medium_jpg.jpg?buster=1424859028","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/620552-7862c0072a10f7785247b10f3844951b-thumb_jpg.jpg?buster=1424859028","quality":3,"product_desc":"Parking
+        Duck is the Airbnb for parking spaces.\nhttp://www.parkingduck.com\n\nResidential
+        owners (hosts) can rent out their unused parking spaces for free on our platform.
+        Drivers in need can find, book and pay online. Host and drivers use our internal
+        chat system to set up meetings to exchange parking stickers/pass/cards.\n\nWhy
+        do host want to use Parking Duck?\n1. Free to list\n2. Easy communication
+        with drivers\n3. Accept or decline drivers\n4. Earn money!\n\nWhy do drivers
+        want to use Parking Duck?\n1. Save time\n2. Save money\n3. Save nerves!\n\nUser
+        Security:\n- Validate identity through social media accounts (Facebook, Email,
+        etc)\n- Validate identity through official documents (Driver''s license, car
+        registration, etc)\n- Validate identity by connecting with PayPal or Bank
+        Accounts\n- Photography service and parking space verification\n- We accept
+        payment and issue the payout after the driver parks!","high_concept":"Parking
+        Duck is the Airbnb for parking spaces","follower_count":7,"company_url":"http://www.parkingduck.com","created_at":"2015-02-25T10:08:12Z","updated_at":"2015-04-19T05:46:35Z"}},{"id":62288,"title":"VP
+        Marketing","description":"M\u00fcV is looking for a VP of Marketing to join
+        our early stage start up. This position will oversee our marketing initiatives
+        and crafting inbound user acquisition initiatives to drive users to our website
+        and mobile apps. This highly collaborative role will be instrumental in accomplishing
+        exponential growth. We want someone who has the skills for the day to day
+        marketing of the product as well as strategic vision in order to expand to
+        new geographies.  If you are interested in having a meaningful impact to people\u2019s
+        daily lives by revolutionizing transportation options, are interested in social
+        networking while helping the environment, are enthusiastic and energetic then
+        M\u00fcV is the place for you. Salary is available upon Series A financing.\n\nRequirements:\n-
+        Entrepreneurial and tech savvy \u2013 you should understand the demands of
+        an early stage start up. \n- Successful track record of digital marketing
+        activity generating masses of users. You should be strategically and tactically
+        adept at maximizing conversion and retention. \n- Prior experience as a VP/Director
+        of Marketing with a successful track record of building, leading and managing
+        a marketing team preferred \n-Ability and experience to expand to new markets\nPrimary
+        Responsibilities: \n- Develop and lead our marketing strategy \n- Build marketing
+        process and execute on the strategy \n- Build metrics/reporting/analytics
+        to quickly gauge user response and understand user behavior\n-Customer engagement
+        through social media and other local channels\n","created_at":"2015-04-19T03:49:59Z","updated_at":"2015-04-19T03:49:59Z","equity_cliff":"1.0","equity_min":"1.0","equity_max":"7.0","equity_vest":"4.0","currency_code":"USD","job_type":"full-time","salary_min":70000,"salary_max":100000,"angellist_url":"https://angel.co/muv-technologies/jobs/62288-vp-marketing","tags":[{"id":151282,"tag_type":"LocationTag","name":"San
+        Francisco Bay Area","display_name":"San Francisco Bay Area","angellist_url":"https://angel.co/san-francisco-bay-area"},{"id":80489,"tag_type":"RoleTag","name":"marketing","display_name":"Marketing","angellist_url":"https://angel.co/marketing-2"}],"remote_ok":false,"startup":{"id":602149,"hidden":false,"community_profile":false,"name":"M\u00fcV
+        Technologies","angellist_url":"https://angel.co/muv-technologies","logo_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/602149-f0c8677c5a974b588f7f0ab89f2fed06-medium_jpg.jpg?buster=1423434831","thumb_url":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/602149-f0c8677c5a974b588f7f0ab89f2fed06-thumb_jpg.jpg?buster=1423434831","quality":3,"product_desc":"An
+        iOS and Android mobile app that connects solo drivers with passengers for
+        common travel.  Our technology provides comfort and security to our users
+        on a social networking platform.","high_concept":"Scheduled Ridesharing","follower_count":3,"company_url":"http://muv2work.com/","created_at":"2015-02-07T01:49:11Z","updated_at":"2015-04-19T03:39:49Z"}}],"total":20559,"per_page":50,"page":1,"last_page":412}'
+    http_version: 
+  recorded_at: Sun, 19 Apr 2015 21:11:31 GMT
+recorded_with: VCR 2.9.3

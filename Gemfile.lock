@@ -71,6 +71,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     debug_inspector (0.0.2)
     devise (3.4.1)
       bcrypt (~> 3.0)
@@ -204,6 +206,7 @@ GEM
       rspec-mocks (~> 3.2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    safe_yaml (1.0.4)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -240,8 +243,12 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    vcr (2.9.3)
     warden (1.2.3)
       rack (>= 1.0)
+    webmock (1.21.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -274,3 +281,5 @@ DEPENDENCIES
   spring
   turbolinks
   uglifier (>= 1.3.0)
+  vcr
+  webmock

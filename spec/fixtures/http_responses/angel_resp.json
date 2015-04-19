@@ -1,0 +1,71 @@
+{
+    "jobs": [
+        {
+            "angellist_url": "https://angel.co/skycart/jobs/62338-sales-and-business-development",
+            "created_at": "2015-04-19T20:04:51Z",
+            "currency_code": "USD",
+            "description": "Responsibilities:\n - Sales (B2B)\n - Marketing\n - Business development\n\nBackground:\n - Strong sales record\n - Business network to logistical or retail companies preferred\n\nOpportunities:\n - Promote the hottest product\n - Join a highly motivated team\n - Create with us momentum\n\nRequirements:\n - Authorized to work in the U.S.\n - Country of residence: USA",
+            "equity_cliff": "1.0",
+            "equity_max": "2.0",
+            "equity_min": "0.2",
+            "equity_vest": "4.0",
+            "id": 62338,
+            "job_type": "contract",
+            "remote_ok": true,
+            "salary_max": 100000,
+            "salary_min": 60000,
+            "startup": {
+                "angellist_url": "https://angel.co/skycart",
+                "community_profile": false,
+                "company_url": "http://www.skycart.net",
+                "created_at": "2014-02-25T21:21:15Z",
+                "follower_count": 92,
+                "hidden": false,
+                "high_concept": "Drone shipping solutions",
+                "id": 350317,
+                "logo_url": "https://d1qb2nb5cznatu.cloudfront.net/startups/i/350317-cb9dd7bc7c528a5cab9c787b14f5650d-medium_jpg.jpg?buster=1423740079",
+                "name": "Skycart",
+                "product_desc": "Skycart is a drone shipping service for retailers that delivers purchases to\u00a0customer's front door. In 30 minutes or less.\u00a0\n\nSkycart is the cutting-edge means of shipping and receiving\u00a0nearly anything under 6.5 pounds anywhere within city limits and always within 30\u00a0minutes. The package is delivered to your front door or your recipient\u2019s.\u00a0Both pickups and deliveries are ordered via a smartphone app. The same app tells\u00a0you exactly when your package will arrive or be delivered. Skycart is the fastest, least\u00a0expensive, and most assured service in the courier industry, period.\u00a0\n\nOur solution helps retailers to offer a better delivery service for their customers. While traditional delivery services aim same-day delivery, we go for same-hour delivery. That's exactly what retailers need. Skycart is disruptive solution for fast shippings at low costs.\u00a0\n\nOur service is provided by a network of autonomously flying drones. Flying almost everywhere. Available 24/7. Simple.",
+                "quality": 6,
+                "thumb_url": "https://d1qb2nb5cznatu.cloudfront.net/startups/i/350317-cb9dd7bc7c528a5cab9c787b14f5650d-thumb_jpg.jpg?buster=1423740079",
+                "updated_at": "2015-02-12T11:22:23Z"
+            },
+            "tags": [
+                {
+                    "angellist_url": "https://angel.co/business-development-1",
+                    "display_name": "Business Development",
+                    "id": 15525,
+                    "name": "business development",
+                    "tag_type": "SkillTag"
+                },
+                {
+                    "angellist_url": "https://angel.co/sales-and-marketing-2",
+                    "display_name": "Sales and Marketing",
+                    "id": 23989,
+                    "name": "sales and marketing",
+                    "tag_type": "SkillTag"
+                },
+                {
+                    "angellist_url": "https://angel.co/san-jose",
+                    "display_name": "San Jose",
+                    "id": 1693,
+                    "name": "san jose",
+                    "tag_type": "LocationTag"
+                },
+                {
+                    "angellist_url": "https://angel.co/sales-2",
+                    "display_name": "Sales",
+                    "id": 80488,
+                    "name": "sales",
+                    "tag_type": "RoleTag"
+                }
+            ],
+            "title": "Sales and Business Development",
+            "updated_at": "2015-04-19T20:12:28Z"
+        }
+    ],
+    "last_page": 20558,
+    "page": 1,
+    "per_page": 1,
+    "total": 20558
+}
