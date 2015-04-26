@@ -52,6 +52,4 @@ not_avaliable = JobCategory.create(
   display_name: "Not Avaliable",
   name: "not_avaliable"
 )
-60.times do
-  FactoryGirl.create :job
-end
+
