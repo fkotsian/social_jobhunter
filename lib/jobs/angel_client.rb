@@ -70,21 +70,23 @@ module Jobs
 
         job_attrs[:job_category] = job_categories.index(category)
         job_attrs[:location] = location
-        job_attrs[:title] = job[:title]
-        job_attrs[:url] = job[:angellist_url]
-        job_attrs[:description] = job[:description]
-        job_attrs[:salary_bottom] = job[:salary_min]
-        job_attrs[:salary_top] = job[:salary_max]
+
+        job_attrs[:title] = job['title']
+        job_attrs[:url] = job['angellist_url']
+        job_attrs[:description] = job['description']
+        job_attrs[:salary_bottom] = job['salary_min']
+        job_attrs[:salary_top] = job['salary_max']
 
         # job_attrs[:currency_code] = job[:currency_code]
-        job_attrs[:last_updated] = job[:updated_at]
-
+        job_attrs[:last_updated] = job['updated_at']
+        
         job_attrs
       end
     end
    
     def api_token
-      ENV['angellist_token']
+      t = ENV['angellist_token']
+      t ? t : (raise "Missing #{self.class.name} API token.")
     end
     
     def job_categories

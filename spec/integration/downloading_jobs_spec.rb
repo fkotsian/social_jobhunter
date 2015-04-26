@@ -11,8 +11,8 @@ module Jobs
         VCR.use_cassette('angel_jobs') do
           client = AngelClient.new
           downloader = JobDownloader.new(client)
-          expect(Job).to receive(:create).exactly(50).times
           downloader.download_jobs
+          expect(Job.count).to eq 50
         end
       end
     end
@@ -22,8 +22,8 @@ module Jobs
         VCR.use_cassette('indeed_jobs') do
           client = IndeedClient.new
           downloader = JobDownloader.new(client)
-          expect(Job).to receive(:create).exactly(25).times
           downloader.download_jobs
+          expect(Job.count).to eq 25
         end
       end
     end

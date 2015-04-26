@@ -43,15 +43,15 @@ module Jobs
         # category = 'software'
         # job_attrs[:job_category] = job_categories.index(category)
         
-        job_attrs[:location] = job[:formatted_location]
-        job_attrs[:title] = job[:jobtitle]
-        job_attrs[:url] = job[:url]
-        job_attrs[:description] = job[:snippet]
-        job_attrs[:salary_bottom] = job[:salary_min]
-        job_attrs[:salary_top] = job[:salary_max]
+        job_attrs[:location] = job['formatted_location']
+        job_attrs[:title] = job['jobtitle']
+        job_attrs[:url] = job['url']
+        job_attrs[:description] = job['snippet']
+        job_attrs[:salary_bottom] = job['salary_min']
+        job_attrs[:salary_top] = job['salary_max']
 
         # job_attrs[:currency_code] = job[:currency_code]
-        job_attrs[:last_updated] = job[:date]
+        job_attrs[:last_updated] = job['date']
 
         job_attrs
       end

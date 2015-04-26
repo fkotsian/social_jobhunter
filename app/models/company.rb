@@ -20,10 +20,6 @@ class Company < ActiveRecord::Base
   
   before_save :ensure_description!
 
-  def ensure_description!
-    self.description ||= "No description yet given"
-  end
-  
   def display_description
     if self.description.nil?
       "<em>No description yet given<em>".html_safe
@@ -33,4 +29,14 @@ class Company < ActiveRecord::Base
       self.description
     end
   end
+  
+  def self.unknown_co
+    self.new(name: 'UnknownCo', description: "We're not really too sure which company this job applies to. Check the URL?")
+  end
+
+  private
+  
+  def ensure_description!
+    self.description ||= "No description yet given"
+  end 
 end

@@ -10,7 +10,13 @@ module Jobs
     
     def download_jobs
       jobs = get_jobs
-      jobs.each {|j| Job.create(j)}
+      unknown_co = Company.unknown_co
+      
+      jobs.each do |j_params| 
+        j = Job.new(j_params)
+        j.company = unknown_co unless j.company
+        j.save!
+      end
     end
     
     attr_reader :client

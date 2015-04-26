@@ -16,26 +16,63 @@ module Jobs
     context 'downloading jobs' do
       it 'creates a database entry for each job downloaded' do
         client = double('any client')
+        company = Company.create!(name: 'fakeco')
         downloader = JobDownloader.new(client)
         jobs = [
           {
-            title: 'job1',
-            salary_bottom: 75000,
-            salary_top: 80000,
-            url: 'job1.com',
-            company: {},
+            'title' => 'job1',
+            'salary_bottom' => 75000,
+            'salary_top' => 80000,
+            'url' => 'job1.com',
+            'company' => company
           },
           {
-            title: 'job2',
-            salary_bottom: 60000,
-            salary_top: 70000,
-            url: 'job2.com',
-            company: {},
+            'title' => 'job2',
+            'salary_bottom' => 60000,
+            'salary_top' => 70000,
+            'url' => 'job2.com',
+            'company' => company
           }
         ]
         allow(client).to receive(:get_jobs).and_return jobs
-        expect(Job).to receive(:create).twice
         downloader.download_jobs
+        expect(Job.count).to eq 2
+      end
+      
+      context 'when downloading an already existing job' do
+        it 'updates the existing entry instead of creating a new one' do
+          skip('have to figure out which keys constitute a "duplicate job" - name and company AND URL? What if URL changes and we want to update?')
+          
+          client = double('any client')
+          company = Company.create!(name: 'fakeco')
+          downloader = JobDownloader.new(client)
+          jobs = [
+            {
+              'title' => 'job1',
+              'salary_bottom' => 75000,
+              'salary_top' => 80000,
+              'url' => 'job1.com',
+              'company' => company
+            },
+            {
+              'title' => 'job2',
+              'salary_bottom' => 60000,
+              'salary_top' => 70000,
+              'url' => 'job2.com',
+              'company' => company
+            },
+            {
+              'title' => 'job2',
+              'salary_bottom' => 60000,
+              'salary_top' => 70000,
+              'url' => 'job2again.com',
+              'company' => company
+            }
+          ]
+          allow(client).to receive(:get_jobs).and_return jobs
+          downloader.download_jobs
+          expect(Job.count).to eq 2   # still has only 2 jobs in table
+        end
       end
     end
   end

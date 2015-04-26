@@ -53,3 +53,4 @@ not_avaliable = JobCategory.create(
   name: "not_avaliable"
 )
 
+unknown_co = Company.unknown_co.save!
