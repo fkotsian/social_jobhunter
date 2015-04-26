@@ -1,11 +1,11 @@
 require 'rufus-scheduler'
-require_relative '../../lib/angel_client'
-require_relative '../../lib/indeed_client'
-require_relative '../../lib/job_downloader'
+require_relative '../../lib/jobs/angel_client'
+require_relative '../../lib/jobs/indeed_client'
+require_relative '../../lib/jobs/job_downloader'
 
 
 s = Rufus::Scheduler.singleton
-schedulable_clients = [Jobs::AngelClient Jobs::IndeedClient]
+schedulable_clients = [Jobs::AngelClient, Jobs::IndeedClient]
 
 downloaders = schedulable_clients.map do |client_class|
   Jobs::JobDownloader.new(client_class.new)
