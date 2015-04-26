@@ -7,8 +7,8 @@ require_relative '../../lib/job_downloader'
 s = Rufus::Scheduler.singleton
 schedulable_clients = [AngelClient IndeedClient]
 
-downloaders = schedulable_clients.map do |client|
-  Jobs::JobDownloader.new(client)
+downloaders = schedulable_clients.map do |client_class|
+  Jobs::JobDownloader.new(client_class.new)
 end
 
 s.cron '0 0 12 * *' do
