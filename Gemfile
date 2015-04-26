@@ -21,8 +21,8 @@ gem 'annotate'
 gem 'factory_girl_rails'
 gem 'faker'
 
-gem 'angellist_api'
 gem 'figaro'
+gem 'rufus-scheduler'
 
 group :development do
   gem 'better_errors', '< 2.0.0'
