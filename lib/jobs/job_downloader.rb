@@ -10,14 +10,16 @@ module Jobs
     
     def download_jobs
       jobs = get_jobs
-      unknown_co = Company.unknown_co
-      
       jobs.each do |j_params| 
-        j = Job.new(j_params)
-        j.company = unknown_co unless j.company
-        j.save!
+        # fake company temporarily until can create it
+        j_params['company'] ||= Company.unknown_co
+        
+        j = Job.matching_record_for(j_params)
+        j.update_attributes(j_params)
       end
     end
+    
+    private
     
     attr_reader :client
   end

@@ -31,7 +31,7 @@ class Company < ActiveRecord::Base
   end
   
   def self.unknown_co
-    self.new(name: 'UnknownCo', description: "We're not really too sure which company this job applies to. Check the URL?")
+    @@unknown_co ||= self.create!(name: 'UnknownCo', description: "We're not too sure which company this job applies to. Check the URL?")
   end
 
   private

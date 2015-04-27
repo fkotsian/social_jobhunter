@@ -25,4 +25,12 @@ class Job < ActiveRecord::Base
   validates :url, uniqueness: true, allow_nil: true
   
   attr_reader :description
+  
+  def self.matching_record_for(attrs)
+    job_title = attrs['title']
+    job_company = attrs['company']
+        
+    match = where(title: job_title, company_id: job_company.id)
+    match.first_or_initialize(attrs)
+  end
 end

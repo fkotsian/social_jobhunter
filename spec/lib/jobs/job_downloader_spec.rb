@@ -41,8 +41,6 @@ module Jobs
       
       context 'when downloading an already existing job' do
         it 'updates the existing entry instead of creating a new one' do
-          skip('have to figure out which keys constitute a "duplicate job" - name and company AND URL? What if URL changes and we want to update?')
-          
           client = double('any client')
           company = Company.create!(name: 'fakeco')
           downloader = JobDownloader.new(client)
@@ -72,6 +70,7 @@ module Jobs
           allow(client).to receive(:get_jobs).and_return jobs
           downloader.download_jobs
           expect(Job.count).to eq 2   # still has only 2 jobs in table
+          expect(Job.find_by(title: 'job2').url).to eq 'job2again.com'
         end
       end
     end
