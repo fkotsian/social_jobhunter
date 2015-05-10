@@ -18,6 +18,8 @@
 config/application.yml
 config/secrets.yml
 
+.ruby-version
+
 .DS_Store
 */.DS_Store
 */*/.DS_Store
