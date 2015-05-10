@@ -11,15 +11,13 @@
 #  note         :string(255)
 #
 
-require 'spec_helper'
 require 'factory_girl'
-require_relative '../../app/models/job'
+require 'spec_helper'
 require_relative '../../app/models/job_application'
 
 module Jobs
   describe JobApplication do
-
-    let(:app)   { FactoryGirl.create(:job_application) }
+    let(:app) { FactoryGirl.create(:job_application) }
   
     context "validations" do
       it "has a valid factory" do
@@ -36,8 +34,12 @@ module Jobs
       end
     end
   
-    context "create a new application" do
-      it "creates a job if necessary"
+    context "creating a new application" do
+      it "creates a job if necessary" do
+        job_attrs = {}
+        
+        job_application = JobApplication.new
+      end
     end
   
   end
