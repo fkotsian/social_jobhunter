@@ -20,6 +20,7 @@ config/secrets.yml
 
 .ruby-version
 bbin/
+Gemfile.lock
 
 .DS_Store
 */.DS_Store
