@@ -33,10 +33,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'webmock'
   gem 'vcr'
+  gem 'byebug'
 end
 
 group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'guard-rspec'
+  
 end
