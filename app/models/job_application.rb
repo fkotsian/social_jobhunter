@@ -20,6 +20,8 @@ class JobApplication < ActiveRecord::Base
   has_one :job_category, 
            through: :job, 
            source: :job_category
+           
+  accepts_nested_attributes_for :job
 
   validates :job, :applicant, :status, presence: true
 

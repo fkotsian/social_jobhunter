@@ -17,30 +17,22 @@ require_relative '../../app/models/job_application'
 
 module Jobs
   describe JobApplication do
-    let(:app) { FactoryGirl.create(:job_application) }
-  
     context "validations" do
       it "has a valid factory" do
         FactoryGirl.create(:job_application).should be_valid
       end
       it "belongs to a job" do
+        app = FactoryGirl.create :job_application
         expect(app.job_id).to be_a Integer
       end
       it "belongs to an applicant" do
+        app = FactoryGirl.create :job_application
         expect(app.applicant.id).to be_a Integer
       end
       it "has a status" do
+        app = FactoryGirl.create :job_application
         expect(app.status).to eq("Applied")
       end
     end
-  
-    context "creating a new application" do
-      it "creates a job if necessary" do
-        job_attrs = {}
-        
-        job_application = JobApplication.new
-      end
-    end
-  
   end
 end

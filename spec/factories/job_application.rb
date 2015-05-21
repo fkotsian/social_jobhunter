@@ -1,9 +1,7 @@
 module Jobs
   FactoryGirl.define do
     factory :job_application do |f|
-      f.job_id        { FactoryGirl.create(:job).id }
       f.applicant_id  { FactoryGirl.create(:user).id }
-      f.status        { "Applied" }
   
       factory :application_to_existing_job do |f|
         f.job_id        1

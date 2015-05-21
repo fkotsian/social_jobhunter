@@ -1,44 +1,86 @@
 require 'spec_helper'
+require_relative '../helpers/request_helpers'
 
-module Jobs
-  describe JobApplicationsController do
+describe JobApplicationsController, type: :request do
+  include RequestHelpers
 
-    let(:user) { FactoryGirl.create(:user) }
-    let(:job)  { FactoryGirl.create(:job)  }
-    before(:all) do
-      # session[:user_id] = user.id
+  let(:user)    {FactoryGirl.create(:user)}
+  let(:company) {FactoryGirl.create(:company)}
+  before do
+    sign_in_as(user)
+  end
+
+  describe "CREATE new application" do
+    it "creates a valid job_application" do
+      params = {
+        job_application: {
+          applicant_id: user.id,
+          job_attributes: {
+            title: 'default job',
+            company_id: company.id
+          }
+        }
+      }
+      
+      expect{
+        post "/user/job_applications", 
+              params
+      }.to change(JobApplication, :count).by(1)
     end
-    
-  
-    describe "CREATE new application" do
-      it "creates a valid job_application" do
-        expect{
-          post :create, 
-            prefix: 'user/jobs',
-            job_id: job.id,
-            job_application: FactoryGirl.attributes_for(:job_application)
-        }.to change(JobApplication, :count).by(1)
-      end
 
-      it "creates a new Job if one does not exist" do
+    context 'when the associated Job does not exist' do
+      it "creates a new Job" do
+        params = {
+          job_application: {
+            applicant_id: user.id,
+            job_attributes: {
+              title: 'default job',
+              company_id: company.id
+            }
+          }
+        }
+        
         expect{
-          post :create,
-          prefix: 'user/jobs',
-          job_id: job.id,
-            job_application: FactoryGirl.attributes_for(:job_application)
+          post "/user/job_applications", 
+                params
         }.to change(Job, :count).by(1)
       end
-    
-      it "does not create a new Job if one does already exist" do
+    end
+  
+    context 'when the Job to be associated does exist' do
+      before do
+        Job.create(title: 'job_title', 
+                   company_id: company.id)
+      end
+      
+      it "does not create a new Job" do
+        expect(Job.count).to eq 1
         expect{
-          post :create,
-          prefix: 'user/jobs',
-          job_id: job.id,
-            job_application: 
-              FactoryGirl.create(:application_to_existing_job)
+          post "/user/job_applications",
+            job_application: {
+              applicant_id: user.id,
+              job_attributes: {
+                title: 'job_title',
+                company_id: company.id
+              }
+            }
         }.to_not change(Job, :count)
       end
-    
+      
+      it 'the application references the existing job' do
+        post "/user/job_applications",
+          job_application: {
+            applicant_id: user.id,
+            job_attributes: {
+              title: 'job_title',
+              company_id: company.id
+            }
+          }
+
+        app = JobApplication.first
+        job = Job.find_by_title_and_company_id('job_title', company.id)
+        expect(app.job).to eq job
+      end
     end
   end
 end

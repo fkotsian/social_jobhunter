@@ -6,24 +6,32 @@ class JobApplicationsController < ApplicationController
   end
 
   def new
-    @job = Job.new
-    @job_application = JobApplication.new
+    @job_application = JobApplication.new(job_application_params)
+    @job = @job_application.job.build
     @categories = JobCategory.all
   end
 
-  def create
-    @company = attempt_company
-    @job =     attempt_job
-    
-    @job_application = @job.applications.new(applicant_id: current_user.id)
+  def create    
+    @job_application = JobApplication.new(job_application_params)
+    job_attrs = job_application_params[:job_attributes]
+    job_title = job_attrs[:title]
+    job_company = job_attrs[:company_id]
 
+    found_job = Job.find_by_title_and_company_id(job_title, job_company) 
+    found_job ? @job_application.job = found_job : @job_application.build_job(job_attrs)
+    
     if @job_application.save
-      apps_today = JobApplication.where("created_at > ?", Date.today.to_time(:utc)).count
-      flash[:success] = "Congratulations! You have applied to #{apps_today} jobs today!"
+      apps_today = JobApplication.where(
+        "created_at > ?", 
+        Date.today.to_time(:utc)
+      ).count
+      flash[:success] = "Congratulations! " + 
+        "You have applied to #{apps_today} jobs today!"
       redirect_to my_applications_path
     else
-      flash[:error] = "Error: " + @job_application.errors.full_messages.to_s
-      redirect_to :back
+      flash[:error] = "Error: " + 
+        @job_application.errors.full_messages.to_s
+      redirect_to my_applications_path
     end
   end
 
@@ -68,8 +76,18 @@ class JobApplicationsController < ApplicationController
   end
   
   private
-  def application_params
-    params.require(:job_application).permit(:status, :note, :id)
+  def job_application_params
+    params.require(:job_application)
+          .permit(:applicant_id, 
+                  :status, 
+                  :note, 
+                  :id,
+                  job_attributes: [
+                    :id,
+                    :title,
+                    :company_id
+                    ]
+                  )
   end
   
   def company_params

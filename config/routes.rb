@@ -1,17 +1,31 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  devise_for :users, 
+              :path => '', 
+              :path_names => { 
+                :sign_in => "login", 
+                :sign_out => "logout", 
+                :sign_up => "register" 
+              }
 
-  get '/feed', to: 'job_applications#all_apps', as: 'feed'
+  get '/feed', 
+      to: 'job_applications#all_apps', 
+      as: 'feed'
+  
   resources :companies, only: [:index]
+  
   scope :user do
-    get '/applications', to: 'job_applications#index', as: 'my_applications'
+    get '/applications', 
+        to: 'job_applications#index', 
+        as: 'my_applications'
+        
     resources :job_applications, only: [:create]
+              
     resources :jobs, except: [:index] do
       resources :job_applications, 
-          except: [:index, :create], 
-          as: 'applications'
+                except: [:index, :create], 
+                as: 'applications'
     end
     
     # get 'applications/:company_id',
