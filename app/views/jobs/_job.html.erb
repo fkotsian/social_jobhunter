@@ -4,7 +4,7 @@
   <% if job.job_category %>
   <td class="col-sm-1"><%= job.job_category.display_name %></td>
   <% else %>
-  <td class="col-sm-1"><%= JobCategory.last.display_name %></td>
+  <td class="col-sm-1"><%= render partial: 'job_categories/dropdown' %></td>
   <% end %>
   <td class="col-sm-1"><%= "$#{number_with_delimiter(job.salary_bottom)} - #{number_with_delimiter(job.salary_top)}" %></td>
 </tr>
