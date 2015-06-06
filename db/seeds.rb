@@ -2,9 +2,6 @@ User.create(email: 'frank@test.com', password: 'aaaabbbb', password_confirmation
 
 User.create(email: 'guest@jobhunter.com', password: 'guest', password_confirmation: 'guest')
 
-User.create(email: 'angela@jobhunter.com', password: 'guest', password_confirmation: 'guest')
-
-
 # JobCategory.create(name: "sales", display_name: "Sales")
 # JobCategory.create(name: "biz_dev", display_name: "Biz Dev")
 # JobCategory.create(name: "engineering", display_name: "Engineering")
@@ -53,4 +50,4 @@ not_avaliable = JobCategory.create(
   name: "not_avaliable"
 )
 
-unknown_co = Company.unknown_co.save!
+# unknown_co = Company.unknown_co.save!
