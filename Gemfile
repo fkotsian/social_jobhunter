@@ -34,11 +34,11 @@ group :development, :test do
   gem 'webmock'
   gem 'vcr'
   gem 'byebug'
+  gem 'capybara'
 end
 
 group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'guard-rspec'
-  
 end

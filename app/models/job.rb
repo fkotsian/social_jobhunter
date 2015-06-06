@@ -29,6 +29,8 @@ class Job < ActiveRecord::Base
   validates :company, presence: true
   validates :url, uniqueness: true, allow_nil: true
   
+  accepts_nested_attributes_for :company
+  
   attr_reader :description
   
   def self.matching_record_for(attrs)
@@ -37,5 +39,14 @@ class Job < ActiveRecord::Base
         
     match = where(title: job_title, company_id: job_company.id)
     match.first_or_initialize(attrs)
+  end
+  
+  def self.find_by_title_and_company_name(title, co_name)
+    Job.joins(:company).where(
+      title: title, 
+      companies: {
+        name: co_name 
+      }
+    ).first
   end
 end

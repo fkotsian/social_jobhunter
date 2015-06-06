@@ -18,21 +18,26 @@ require 'spec_helper'
 require_relative '../../app/models/job'
 
 module Jobs
-  describe Job do
-    it "has a valid factory"
-    it "belongs to a company"
-    it "has one category"
-    it "has a title"
-    it "may have a URL"
-    it "may have a salary bottom"
-    it "may have a salary top"
-  
+  describe Job do  
     context "new Job" do
       it "has a status of 'Open'"
     end
   
     context "closed Job" do
       it "has a status of 'Closed'"
+    end
+    
+    it 'finds Jobs by title and company name' do
+      3.times { FactoryGirl.create(:job) }
+      job = Job.new(title: 'job_title')
+      job.build_company(name: 'defaultco')
+      job.save
+      
+      expect(
+        Job.find_by_title_and_company_name(
+        'job_title',
+        'defaultco')
+      ).to eq job
     end
   end
 end

@@ -35,4 +35,9 @@ class JobApplication < ActiveRecord::Base
       #{"Accepted Offer"}
     ]
   end
+  
+  def find_or_build_job(job_params)
+    j = Job.find_by(job_params) || self.build_job(job_params)
+    self.job = j
+  end
 end

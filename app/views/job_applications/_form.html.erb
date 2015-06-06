@@ -1,46 +1,30 @@
-<%= form_for [current_user, Job.new], url: { action: 'create' }, html: { class: 'form-inline text-center'} do |f| %>
+<%= form_for [current_user, @job_application], url: { action: 'create' }, html: { class: 'form-inline text-center', id: 'app-form'} do |f| %>
 
-  <%= fields_for :company do |builder| %>
+  <%= f.fields_for :job do |j| %>
+    <%= j.fields_for :company do |c| %>
+
+      <div class='form-group'>
+        <%= c.text_field :name,
+                          class: 'form-control',
+                          placeholder: "Company name" %>
+      </div>
   
-    <div class='form-group'>
-      <!-- <%= builder.label :company %> -->
-      <%= builder.text_field :name, class: 'form-control',
-          placeholder: "Company name" %>
-      <%#= builder.collection_select :company_name, Company.order(:name), "Company", class: 'form-control' %>
-    </div>
+    <% end %>
     
+    <div class='form-group'>
+      <%= j.text_field :title, 
+                        class: 'form-control', 
+                        placeholder: "Job title" %>
+    </div>
+      
+    <div class='form-group'>
+      <%= j.url_field :url, 
+                      class: 'form-control',
+                      placeholder: "http://" %>
+    </div>
+
   <% end %>
 
-  <%= fields_for :job do |builder| %>
-  
-    <div class='form-group'>
-      <!-- <%= builder.label :job_title %> -->
-      <%= builder.text_field :title, class: 'form-control', placeholder: "Job title" %>
-    </div>
-        
-    <!-- <div class='form-group'>
-      <%= builder.label :job_category %>
-      <%#= builder.text_field :category_id, class: 'form-control' %>
-      <%= builder.collection_select :category_id, JobCategory.all, :id, :id, class: 'form-control', prompt: "Select category" %>
-    </div> -->
-        
-    <div class='form-group'>
-      <!-- <%= builder.label "Job Listing URL" %> -->
-      <%= builder.url_field :url, class: 'form-control',
-          placeholder: "http://" %>
-    </div>
-
-<!--    <div class='form-group'>
-      <%= builder.label "Listed Salary Minimum" %>
-      <%= builder.number_field :salary_bottom, min: 0, class: 'form-control' %>
-    </div>
-
-    <div class='form-group'>
-      <%= builder.label "Listed Salary Maximum" %>
-      <%= builder.number_field :salary_top, min: 0, class: 'form-control' %>
-    </div>
-   -->
-  <% end %>
   
   <%= f.submit value: "Add App", class: "btn btn-default" %>
     

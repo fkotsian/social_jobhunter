@@ -3,28 +3,33 @@ class JobApplicationsController < ApplicationController
   
   def index
     @job_applications = JobApplication.where(applicant: current_user)
+    @job_application = JobApplication.new
+    @job_application.build_job.build_company
   end
 
   def new
-    @job_application = JobApplication.new(job_application_params)
+    @job_application = JobApplication.new
     @job = @job_application.job.build
     @categories = JobCategory.all
   end
 
-  def create    
-    @job_application = JobApplication.new(job_application_params)
-    job_attrs = job_application_params[:job_attributes]
-    job_title = job_attrs[:title]
-    job_company = job_attrs[:company_id]
-
-    found_job = Job.find_by_title_and_company_id(job_title, job_company) 
-    found_job ? @job_application.job = found_job : @job_application.build_job(job_attrs)
-    
+  def create
+    @job_application = JobApplication.new(applicant: current_user)
+    found_job = Job.find_by(job_params)
+    found_co = Company.find_by(company_params)
+        
+    @job_application.job ||= (found_job || @job_application.build_job(
+      job_params
+    ))
+    @job_application.job.company ||= (found_co || @job_application.job.build_company(
+      company_params
+    ))
     if @job_application.save
       apps_today = JobApplication.where(
-        "created_at > ?", 
+        "created_at > ?",
         Date.today.to_time(:utc)
       ).count
+      apps_today = 5
       flash[:success] = "Congratulations! " + 
         "You have applied to #{apps_today} jobs today!"
       redirect_to my_applications_path
@@ -85,17 +90,37 @@ class JobApplicationsController < ApplicationController
                   job_attributes: [
                     :id,
                     :title,
-                    :company_id
+                    company_attributes: [
+                      :id,
+                      :name
+                      ]
                     ]
                   )
   end
   
   def company_params
-    params.require(:company).permit(:name)
+    params.
+      require(:job_application).
+      require(:job_attributes).
+      require(:company_attributes).
+      permit(:name,
+             :id
+      )
   end
   
   def job_params
-    params.require(:job).permit(:title, :category_id, :url, :salary_bottom, :salary_top)
+    params.
+      require(:job_application).
+      require(:job_attributes).
+      permit(:title, 
+             :category_id, 
+             :url, 
+             :salary_bottom, 
+             :salary_top,
+             company: [
+               :id,
+               :name
+             ])
   end
   
   def attempt_company
