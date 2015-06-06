@@ -26,5 +26,5 @@ production:
 test:
   adapter: postgresql
   encoding: unicode
-  database: jobhunter_dev
+  database: jobhunter_test
   pool: 5
