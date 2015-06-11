@@ -10,19 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'spring',        group: :development
-
 gem 'devise'
 gem 'bootstrap-sass'
-gem 'backbone-on-rails'
 gem 'autoprefixer-rails'
 gem 'annotate'
-
-gem 'factory_girl_rails'
-gem 'faker'
-
 gem 'figaro'
-gem 'rufus-scheduler'
+
+gem 'delayed_job_active_record'
 
 group :development do
   gem 'better_errors', '< 2.0.0'
@@ -35,10 +29,12 @@ group :development, :test do
   gem 'vcr'
   gem 'byebug'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'spring'
 end
 
 group :test do
-  gem 'capybara'
   gem 'launchy'
   gem 'guard-rspec'
 end
