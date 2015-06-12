@@ -1,3 +1,6 @@
+require_relative '../../../lib/download/angel_client'
+require_relative '../../../lib/download/job_downloader'
+
 module Download
   class AngellistDownloaderController < ApplicationController
     def download
