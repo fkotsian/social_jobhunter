@@ -2,7 +2,7 @@ require 'net/http'
 require 'uri'
 require 'figaro'
 
-module Jobs
+module Download
   class AngelClient
     def get_jobs
       parse(query_for_jobs)

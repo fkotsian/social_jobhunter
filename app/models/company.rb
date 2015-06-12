@@ -31,7 +31,7 @@ class Company < ActiveRecord::Base
   end
   
   def self.unknown_co
-    @@unknown_co ||= self.create!(name: 'UnknownCo', description: "We're not too sure which company this job applies to. Check the URL?")
+    Company.find_by(name: 'UnknownCo') || self.create!(name: 'UnknownCo', description: "We're not too sure which company this job applies to. Check the URL?")
   end
 
   private

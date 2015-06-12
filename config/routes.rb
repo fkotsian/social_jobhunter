@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   devise_for :users, 
               :path => '', 
               :path_names => { 
@@ -38,10 +37,24 @@ Rails.application.routes.draw do
           to: 'job_applications#area_applications', 
           as: 'area_applications'      
   end
+  
   resources :jobs, only: [:index], as: 'all_jobs'
   get 'jobs/:category_id', to: 'jobs#category_jobs', as: 'category_jobs'
   get 'jobs/:company_id', to: 'jobs#company_jobs', as: 'company_jobs'
   get 'jobs/:area_id', to: 'jobs#area_jobs', as: 'area_jobs'  
+  
+  get 'download/angellist', 
+    to: 'download/angellist_downloader#download', 
+    as: 'download_from_angellist'
+  get 'download/indeed/development', 
+    to: 'download/indeed_downloader#download_development', 
+    as: 'download_from_indeed_development'
+  get 'download/indeed/nursing', 
+    to: 'download/indeed_downloader#download_nursing', 
+    as: 'download_from_indeed_nursing'
+  get 'download/indeed/marketing', 
+    to: 'download/indeed_downloader#download_marketing', 
+    as: 'download_from_indeed_marketing'
   
   devise_scope :user do
     root to: 'static_pages#home'

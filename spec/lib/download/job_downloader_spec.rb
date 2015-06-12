@@ -1,7 +1,7 @@
 require 'spec_helper'
-require_relative '../../../lib/jobs/job_downloader'
+require_relative '../../../lib/download/job_downloader'
 
-module Jobs
+module Download
   describe JobDownloader do
     context 'getting jobs' do
       it 'talks to the client' do

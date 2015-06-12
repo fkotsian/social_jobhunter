@@ -1,4 +1,4 @@
-module Jobs
+module Download
   class JobDownloader
     def initialize(client)
       @client = client
@@ -18,7 +18,8 @@ module Jobs
         j.update_attributes(j_params)
       end
     end
-    
+    # handle_asynchronously :download_jobs
+        
     private
     
     attr_reader :client

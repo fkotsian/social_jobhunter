@@ -1,0 +1,387 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&fromage=1&jt=fulltime&l=san%20francisco&limit=50&publisher=3508158328996054&q=marketing&sort=date&useragent=Mozilla//4.0(Firefox)&userip=162.246.145.234&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Jun 2015 04:10:25 GMT
+      Set-Cookie:
+      - BIGipServerjob_sjc=!OeI5RPNwNuLoXoEwbSfdYRG9aRdXRUGsrUohr5X6CFqkNU3VwVLr7IOD4e1HlnF20CS/CXpYWoUvJHg=;
+        path=/
+      - CTK=19nivcb6lb92gc3r; Domain=.indeed.com; Expires=Tue, 15-Jun-2032 22:58:56
+        GMT; Path=/
+      - DCT=9; Expires=Fri, 12-Jun-2015 06:10:25 GMT; Path=/
+      - JSESSIONID=726A32B79BC9D4182C1A7F8510086466.jasxA_sjc-job4; Path=/; HttpOnly
+      - TS0115ce5c=0139b1f997e78129ddf84985d3e058118e3b7ac3f04f668b6d37306353bd5661568db16026bbaad06ade6ce9d00fd989b59d25c4ce;
+        path=/; domain=.indeed.com
+      - TS016080f8=0139b1f997217e8081e423c2651c066c33d3780ad42fd23971bff09bd0ab7786714f43406178e2958df798a39944701225a6b9ba20bd55fe1e7e03bfb40e74863d11072e7de9946e5c8e763852bb7166886877372f17abc33f6f2a8445b05806af368a80ca;
+        Path=/
+      - ctkgen=1; Expires=Fri, 12-Jun-2015 04:13:25 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Fri, 12 Jun 2015 04:09:25 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "\n\n {\n\n    \"version\" : 2,\n    \"query\" : \"marketing\",\n    \"location\"
+        : \"san francisco\",\n    \n    \"dupefilter\" : true,\n     \n    \"highlight\"
+        : true,\n    \n    \"radius\" : 25,\n    \n    \"start\" : 1,\n    \"end\"
+        : 25,\n    \"totalResults\" : 560,\n     \n    \"pageNumber\" : 0,\n    \n\n
+        \   \"results\" : [\n        \n                {\n                    \"jobtitle\"
+        : \"Specialist III, Marketing\",\n                    \"company\" : \"AECOM\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"AECOM\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 00:14:12 GMT\",\n                    \"snippet\" : \"Knowledge
+        of Adobe Creative Suite 6. Undertakes special projects as assigned. Strong
+        organizational aptitude and detail orientation....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=36b4f0c9775bc33f&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"36b4f0c9775bc33f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Event Coordinator\",\n                    \"company\" : \"Center for Sustainable
+        Energy\",\n                    \"city\" : \"Oakland\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Oakland, CA\",\n                    \"source\" : \"Center for Sustainable
+        Energy\",\n                    \"date\" : \"Thu, 11 Jun 2015 22:25:31 GMT\",\n
+        \                   \"snippet\" : \"Create live/on the ground social media
+        posts that follow CSE social media standards. Social Media Assistance. Create
+        communications that reinforce key outreach...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=4e65208d29202097&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"4e65208d29202097\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Oakland, CA\",\n                    \"formattedRelativeTime\" : \"5 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Marketing Intern\",\n                    \"company\" : \"Zendesk\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Zendesk\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 01:45:16 GMT\",\n                    \"snippet\"
+        : \"Collaborate with content <b>Marketing</b> and other focused <b>Marketing</b>
+        teams on key projects What you bring to the role:....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=d24de389e788b593&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"d24de389e788b593\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Marketing Assistant\",\n                    \"company\" : \"Sai People
+        Solutions\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Sai People Solutions\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:42:02 GMT\",\n                    \"snippet\"
+        : \"Maintaining our website and social media content. Supporting the <b>Marketing</b>
+        Manager on various projects and administrative tasks....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=9b3c4a00694aa30f&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"9b3c4a00694aa30f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"28 minutes ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Growth Marketing, Engagement\",\n                    \"company\" : \"RelayRides\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"RelayRides\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 01:37:08 GMT\",\n                    \"snippet\"
+        : \"Experience in email <b>marketing</b>, user engagement, digital <b>marketing</b>,
+        growth, or related. Ability to prioritize and handle multiple projects with
+        tight deadlines....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=379eddf4363d1549&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"379eddf4363d1549\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Marketing Engineer Intern\",\n                    \"company\" : \"RelayRides\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"RelayRides\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 01:37:31 GMT\",\n                    \"snippet\"
+        : \"Ability to prioritize and handle multiple projects with tight deadlines.
+        Design everything to scale to hundreds of thousands of page views on the full
+        spectrum...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=1f91acb0fbdd8d27&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"1f91acb0fbdd8d27\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Marketing Operations Manager\",\n                    \"company\" : \"Model
+        Metrics\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Model Metrics\",\n
+        \                   \"date\" : \"Thu, 11 Jun 2015 22:23:59 GMT\",\n                    \"snippet\"
+        : \"The <b>Marketing</b> Operations team's goal is to increase <b>marketing</b>
+        efficiency and organizational agility through world class functional budget
+        strategies, automation...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=a282f1ca738b87b0&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"a282f1ca738b87b0\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"5 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Community & Content Strategist\",\n                    \"company\" : \"Ebates
+        Inc.\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Ebates Inc.\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:04:27 GMT\",\n                    \"snippet\"
+        : \"Wallet is looking for a Community and Content Strategist who knows how
+        to build valuable audiences across various social media platforms....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=7e7fbe2897138cad&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"7e7fbe2897138cad\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"1 hour ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Media Relations Manager\",\n                    \"company\" : \"Meyer
+        Sound Laboratories Inc.\",\n                    \"city\" : \"Berkeley\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Berkeley, CA\",\n                    \"source\"
+        : \"Meyer Sound Laboratories Inc.\",\n                    \"date\" : \"Fri,
+        12 Jun 2015 01:16:01 GMT\",\n                    \"snippet\" : \"In this critical
+        role, he/she drives the execution of media communications efforts including
+        preparation of articles, press kits, press releases, social media...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=3760fcb47b2b0011&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"3760fcb47b2b0011\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Berkeley, CA\",\n                    \"formattedRelativeTime\" : \"2 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Product Manager\",\n                    \"company\" : \"RelayRides\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"RelayRides\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 01:37:08 GMT\",\n                    \"snippet\"
+        : \"Work with engineering and design teams to execute initiatives. Collaborate
+        with <b>marketing</b> team to bridge the gap between acquisition, activation,
+        and recurring...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=8becc3404b27ca2a&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"8becc3404b27ca2a\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Account Manager\",\n                    \"company\" : \"Pathways Home
+        Health and Hospice\",\n                    \"city\" : \"Daly City\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Daly City, CA\",\n                    \"source\" : \"Pathways\",\n                    \"date\"
+        : \"Thu, 11 Jun 2015 22:50:05 GMT\",\n                    \"snippet\" : \"Minimum
+        of two years of college-level education, LVN license, or equivalent experience
+        in healthcare sales, facilities, home health, hospice, or other field...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=17c5c20832ec3b6b&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"17c5c20832ec3b6b\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Daly City, CA\",\n                    \"formattedRelativeTime\" : \"5
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Administrative Assistant III\",\n                    \"company\" : \"University
+        of California San Francisco\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"University of California San Francisco\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 00:37:45 GMT\",\n                    \"snippet\"
+        : \"Must possess the ability to handle multiple projects simultaneously and
+        be able to set priorities that accurately reflect relative importance of job...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=802f092530cac40c&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"802f092530cac40c\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Java Engineers\",\n                    \"company\" : \"Ebates Inc.\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Ebates Inc.\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:04:27 GMT\",\n                    \"snippet\"
+        : \"Requires a Master\\u2019s degree in Computer Science, Computer Engineering,
+        or a related technical field, and 3 years of Java back-end experience, or
+        a Bachelor\\u2019s...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=d4dfdda5281f1d63&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"d4dfdda5281f1d63\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"1 hour ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Distance Learning Programs Administrator\",\n                    \"company\"
+        : \"University of San Francisco\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"HispanicsInHigherEd.com\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:25:51 GMT\",\n                    \"snippet\" : \"Detail
+        oriented and highly organized, with ability to balance competing priorities.
+        Including the ability to communicate on a professional level with groups and...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=5382630bfaa0ab11&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"5382630bfaa0ab11\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Brand Manager\",\n                    \"company\" : \"Mekanism\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Mekanism\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 03:04:34 GMT\",\n                    \"snippet\" : \"O
+        Develop strong collaborative, working relationships with the Mekanism creative,
+        social media and production teams....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=92e76bdc0f4f94c3&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"92e76bdc0f4f94c3\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"1 hour ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"SEO Specialist\",\n                    \"company\" : \"Revel Systems\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Revel Systems\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 00:10:11 GMT\",\n                    \"snippet\"
+        : \"Provide in-depth, weekly, monthly and quarterly reports to the executive
+        team on key metrics, including website analytics, email <b>marketing</b>,
+        paid advertising,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=436ec4f8ec688586&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"436ec4f8ec688586\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"4 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Sitecore Architect||Full time||Contract||Remote\",\n                    \"company\"
+        : \"SYMANTEC\",\n                    \"city\" : \"San Francisco Bay Area\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco Bay Area,
+        CA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Thu, 11 Jun 2015 22:26:05 GMT\",\n                    \"snippet\" : \"3+
+        years of experience with design and development of interactive content [CMS]
+        and/or media rich websites using MVC design pattern and Sitecore 5.0+....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=5a2aea326d6848eb&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"5a2aea326d6848eb\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco Bay Area, CA\",\n                    \"formattedRelativeTime\"
+        : \"5 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Head of User Acquisition\",\n                    \"company\" : \"Storm8\",\n
+        \                   \"city\" : \"Redwood City\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Redwood City, CA\",\n                    \"source\" : \"Storm8\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:42:34 GMT\",\n                    \"snippet\" : \"Continue
+        improving framework for defining, managing, analyzing, and optimizing <b>marketing</b>
+        campaigns by working with both internal teams and external partners....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=43a7b894e2013df4&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"43a7b894e2013df4\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Redwood City, CA\",\n                    \"formattedRelativeTime\" : \"2
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Engagement Manager - AEM\",\n                    \"company\" :
+        \"Adobe\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Adobe\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:53:49 GMT\",\n                    \"snippet\" : \"We're
+        the ones behind the gorgeously designed content that streams across your laptop,
+        TV, phone, and tablet every day\\u2014and we\\u2019re the ones who harness
+        the...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=f955afd19ec9dc40&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"f955afd19ec9dc40\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Photographer\",\n                    \"company\" : \"University of San
+        Francisco\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"HispanicsInHigherEd.com\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 01:25:34 GMT\",\n                    \"snippet\"
+        : \"This position will play an important role in the Office of <b>Marketing</b>
+        Communications and its commitment to provide internal creative services of
+        high (\\u0093agency\\u0094)...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=2b7bf6ab2ebb1bf7&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"2b7bf6ab2ebb1bf7\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"University Recruiter\",\n                    \"company\" : \"Rocket Fuel
+        Inc.\",\n                    \"city\" : \"Redwood City\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Redwood City, CA\",\n                    \"source\" : \"Rocket Fuel Inc.\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 01:40:10 GMT\",\n                    \"snippet\"
+        : \"Partner with the <b>marketing</b> team to continually evaluate our brand
+        messaging and collateral materials to position Rocket Fuel as an Employer
+        of Choice....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=1c2e54e3334c237c&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"1c2e54e3334c237c\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Redwood City, CA\",\n                    \"formattedRelativeTime\" : \"2
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Associate Program Director\",\n                    \"company\" : \"Genentech\",\n
+        \                   \"city\" : \"South San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"South San Francisco, CA\",\n                    \"source\" : \"Genentech\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:26:20 GMT\",\n                    \"snippet\"
+        : \"Stays abreast of internal and external developments, trends and other
+        dynamics relevant to the work of PD and PDR to maintain, at all times, a fully
+        current...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=4fb5b25d3a5382c9&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"4fb5b25d3a5382c9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"South San Francisco, CA\",\n                    \"formattedRelativeTime\"
+        : \"44 minutes ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Regional Business Development Manager\",\n                    \"company\"
+        : \"DNV GL\",\n                    \"city\" : \"Oakland\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Oakland, CA\",\n                    \"source\" : \"DNV GL\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:33:29 GMT\",\n                    \"snippet\" : \"DNV
+        GL \\u2013 Energy, with more than 2,300 experts in over 30 countries around
+        the world, is committed to driving the global transition toward a safe, reliable,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=a37eef0787d73e0c&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"a37eef0787d73e0c\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Oakland, CA\",\n                    \"formattedRelativeTime\" : \"2 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Regional Business Development Manager\",\n                    \"company\"
+        : \"DNV GL Group\",\n                    \"city\" : \"Oakland\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Oakland, CA\",\n                    \"source\" : \"DNV GL GROUP\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:03:46 GMT\",\n                    \"snippet\" : \"DNV
+        GL \\u2013 Energy, with more than 2,300 experts in over 30 countries around
+        the world, is committed to driving the global transition toward a safe, reliable,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=bf46c6e0f19a83af&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"bf46c6e0f19a83af\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Oakland, CA\",\n                    \"formattedRelativeTime\" : \"3 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"SAP FICO Business Analyst \\u2013 SAP SUPPORT TEAM\",\n                    \"company\"
+        : \"Core-Mark\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Core-Mark\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 00:07:34 GMT\",\n                    \"snippet\"
+        : \"Proven ability to manage mid-sized projects. Assist in the development
+        of training materials, process documentation, change management communications
+        and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=41fdf5e623559972&qd=KLpU4Yxto_kBBDodkIOFyLgFqSxNhrhHPA5F-zP2zCpda7v3S6IeP28-_G1UiUwdmb-22dpldowW5mW3cDtkmdSNIgTrha3xumkgUSOlzFTYhMhpP382Z-TUsDivS0mc&indpubnum=3508158328996054&atk=19nivcbamb92gdtc\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5366');\",\n                    \"jobkey\"
+        : \"41fdf5e623559972\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"4 hours ago\"                \n}\n\n    ]\n}\n"
+    http_version: 
+  recorded_at: Fri, 12 Jun 2015 04:10:25 GMT
+recorded_with: VCR 2.9.3

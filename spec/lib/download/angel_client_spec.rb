@@ -1,8 +1,8 @@
-require_relative '../../../lib/jobs/angel_client'
+require_relative '../../../lib/download/angel_client'
 require_relative '../../helpers/vcr_helpers'
 require 'spec_helper'
 
-module Jobs
+module Download
   describe AngelClient do
     it 'queries the angellist Jobs API' do
       VCR.use_cassette('angel_jobs') do

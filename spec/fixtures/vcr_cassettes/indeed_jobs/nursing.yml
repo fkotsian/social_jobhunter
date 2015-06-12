@@ -1,0 +1,405 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&fromage=1&jt=fulltime&l=san%20francisco&limit=50&publisher=3508158328996054&q=nursing&sort=date&useragent=Mozilla//4.0(Firefox)&userip=162.246.145.234&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Jun 2015 04:10:25 GMT
+      Set-Cookie:
+      - BIGipServerjob_sjc=!C5O4xjBWa9oMLQ8wbSfdYRG9aRdXRYF+VUNP/iYPpa67jzcHPo9ZfVWRS6gSarxXbyU26WrCMbl1IhU=;
+        path=/
+      - CTK=19nivcbk2b02gd33; Domain=.indeed.com; Expires=Tue, 15-Jun-2032 22:58:56
+        GMT; Path=/
+      - DCT=9; Expires=Fri, 12-Jun-2015 06:10:25 GMT; Path=/
+      - JSESSIONID=220BD966F66FCAD8DBE97DD7AA03CA6D.jasxB_sjc-job11; Path=/; HttpOnly
+      - TS0115ce5c=0139b1f9974f57cc2fc80243a7d5a880d9561fedc28b53858151df17d8cd4ef9538f0ab895be2545d975afe361c540ab229057e0ee;
+        path=/; domain=.indeed.com
+      - TS016080f8=0139b1f9978b8e9089ced5a1e87f8fa0a5257c5065137cc8db6adef36881b808b97f164feb0ad3472ce1633cb4ed9cee4df5916629b455cbadf84380556a55e53ab5c61fdcee9fafddfd9f287924313e5b66cc7ec91018d3547f37f4c6acfb3b5c9def63b6;
+        Path=/
+      - ctkgen=1; Expires=Fri, 12-Jun-2015 04:13:25 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Fri, 12 Jun 2015 04:09:25 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "\n\n {\n\n    \"version\" : 2,\n    \"query\" : \"nursing\",\n    \"location\"
+        : \"san francisco\",\n    \n    \"dupefilter\" : true,\n     \n    \"highlight\"
+        : true,\n    \n    \"radius\" : 25,\n    \n    \"start\" : 1,\n    \"end\"
+        : 25,\n    \"totalResults\" : 202,\n     \n    \"pageNumber\" : 0,\n    \n\n
+        \   \"results\" : [\n        \n                {\n                    \"jobtitle\"
+        : \"Practice Analyst Supervisor - SOM Otolaryngology (ANL 2)\",\n                    \"company\"
+        : \"University of California San Francisco Medical Center\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"University of California San Francisco
+        Medical Center\",\n                    \"date\" : \"Fri, 12 Jun 2015 00:47:29
+        GMT\",\n                    \"snippet\" : \"Picks up and disposes of any litter
+        found throughout entire facility. As a subject-matter expert in patient scheduling
+        and the electronic medical record, the...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=aa9485b1090b3047&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"aa9485b1090b3047\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Quality Nurse Consultant I\",\n                    \"company\" : \"Kaiser
+        Permanente\",\n                    \"city\" : \"Oakland\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Oakland, CA\",\n                    \"source\" : \"Kaiser Permanente\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 02:59:06 GMT\",\n                    \"snippet\"
+        : \"Bachelor's degree in <b>nursing</b>, business administration, economics,
+        health care administration, operation research, public health administration,
+        or other related...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=87b2ce7ca38908be&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"87b2ce7ca38908be\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Oakland, CA\",\n                    \"formattedRelativeTime\" : \"1 hour
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Admitting Representative- Grade 5\",\n                    \"company\"
+        : \"Kaiser Permanente\",\n                    \"city\" : \"South San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"South San Francisco,
+        CA\",\n                    \"source\" : \"Kaiser Permanente\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 02:28:56 GMT\",\n                    \"snippet\" : \"Facilitate
+        the timely admission of patients throughout the hospital by coordinating patient
+        information w/the physicians, Emergency Room, Clinic Departments,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=13237a579b1c84db&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"13237a579b1c84db\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"South San Francisco, CA\",\n                    \"formattedRelativeTime\"
+        : \"1 hour ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Healthcare Management Consultant (So Cal Area)\",\n                    \"company\"
+        : \"CEP America\",\n                    \"city\" : \"Emeryville\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Emeryville, CA\",\n                    \"source\" : \"CEP America\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:29:49 GMT\",\n                    \"snippet\"
+        : \"Bachelor\\u2019s degree in <b>Nursing</b>, Business Administration, or
+        Health related field required. Master\\u2019s degree in <b>Nursing</b>, Business
+        Administration, or Healthcare...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=e6741b992e48e2a2&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"e6741b992e48e2a2\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Emeryville, CA\",\n                    \"formattedRelativeTime\" : \"40
+        minutes ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Registered Nurse - Per Diem - Kindred - Tunnell - SF, CA\",\n                    \"company\"
+        : \"Kindred Healthcare\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Kindred Healthcare\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 00:52:38 GMT\",\n                    \"snippet\" : \"The
+        RN Charge Nurse supervises <b>nursing</b> assignment, which includes directing
+        assigned <b>nursing</b> staff to the extent permitted by state practice act....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=4ad2669a7be08e22&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"4ad2669a7be08e22\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"HS Assistant/Associate Clinical Professor (Maternity Nursing Faculty...\",\n
+        \                   \"company\" : \"University of California San Francisco\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"California Association
+        for Nurse Practitioners\",\n                    \"date\" : \"Fri, 12 Jun 2015
+        02:27:25 GMT\",\n                    \"snippet\" : \"Department of Family
+        Health Care <b>Nursing</b>, UCSF School of <b>Nursing</b>. Maternity <b>Nursing</b>
+        Faculty and Content Expert....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=5557a5b6183c947f&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"5557a5b6183c947f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA 94143\",\n                    \"formattedRelativeTime\"
+        : \"1 hour ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Licensed Vocational Nurse, Float - Women's Health Internal (VOC NURSE)\",\n
+        \                   \"company\" : \"University of California San Francisco
+        Medical Center\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"University of
+        California San Francisco Medical Center\",\n                    \"date\" :
+        \"Fri, 12 Jun 2015 00:47:30 GMT\",\n                    \"snippet\" : \"Fax
+        temperature log to <b>Nursing</b> Administration. Restock entire room ---
+        drapes, gowns, restock entire cabinet....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=7652fff5f60a2261&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"7652fff5f60a2261\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Charge Nurse (RN)\",\n                    \"company\" : \"Satellite Healthcare\",\n
+        \                   \"city\" : \"Daly City\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Daly City, CA\",\n                    \"source\" : \"Satellite Healthcare\",\n
+        \                   \"date\" : \"Thu, 11 Jun 2015 22:13:22 GMT\",\n                    \"snippet\"
+        : \"Demonstrates knowledge of <b>nursing</b> skills, <b>nursing</b> practices,
+        procedures and standards. Graduation from an accredited <b>nursing</b> school
+        or equivalent....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=cf0e88a9a5da7305&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"cf0e88a9a5da7305\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Daly City, CA\",\n                    \"formattedRelativeTime\" : \"5
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Distance Learning Programs Administrator\",\n                    \"company\"
+        : \"University of San Francisco\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"HispanicsInHigherEd.com\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:25:51 GMT\",\n                    \"snippet\" : \"The
+        Distance Learning Programs Administrator will take responsibility for enhancing
+        the quality of distance learning programs in the School of <b>Nursing</b>
+        and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=5382630bfaa0ab11&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"5382630bfaa0ab11\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Account Manager\",\n                    \"company\" : \"Pathways Home
+        Health and Hospice\",\n                    \"city\" : \"Daly City\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Daly City, CA\",\n                    \"source\" : \"Pathways\",\n                    \"date\"
+        : \"Thu, 11 Jun 2015 22:50:05 GMT\",\n                    \"snippet\" : \"The
+        Account Manager is responsible for planning, organizing and implementing sales
+        activities within skilled <b>nursing</b> facilities, residential care institutions,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=17c5c20832ec3b6b&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"17c5c20832ec3b6b\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Daly City, CA\",\n                    \"formattedRelativeTime\" : \"5
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Pediatric Nutrition Sales Representative - San Francisco, CA\",\n                    \"company\"
+        : \"Nestle Nutrition\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Nestle Nutrition\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 01:45:00 GMT\",\n                    \"snippet\" : \"Thorough
+        understanding of the hierarchy of hospital departments such as NICU, Pediatrics,
+        Pharmacies, Nurseries and <b>Nursing</b> Units Purchasing and PICU....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=ac58cb906be27213&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"ac58cb906be27213\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"2 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Registered Nurse - Pediatric Interventional Cardiology (CLIN NURSE 2)\",\n
+        \                   \"company\" : \"University of California San Francisco
+        Medical Center\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"University of
+        California San Francisco Medical Center\",\n                    \"date\" :
+        \"Fri, 12 Jun 2015 00:47:31 GMT\",\n                    \"snippet\" : \"Utilizes
+        the <b>nursing</b> process for assessment, planning, implementation, and evaluation
+        to provide safe, therapeutic care....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=de04fb727ac0fcf0&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"de04fb727ac0fcf0\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RN or LVN (Registered / Licensed Vocational Nurse)\",\n                    \"company\"
+        : \"Maxim Healthcare Services\",\n                    \"city\" : \"Moraga\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Moraga, CA\",\n                    \"source\"
+        : \"Maxim Healthcare Services\",\n                    \"date\" : \"Fri, 12
+        Jun 2015 00:37:22 GMT\",\n                    \"snippet\" : \"We are looking
+        for <b>nursing</b> professionals to join our team. Minimum one (1) year of
+        <b>nursing</b> experience required with home health experience preferred....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=d7d270b7708fe6dd&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"d7d270b7708fe6dd\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Moraga, CA\",\n                    \"formattedRelativeTime\" : \"3 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"ASSOCIATE GOVERNMENTAL PROGRAM ANALYST\",\n                    \"company\"
+        : \"California State Personnel Board\",\n                    \"city\" : \"East
+        Bay\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"East Bay, CA\",\n
+        \                   \"source\" : \"California State Personnel Board\",\n                    \"date\"
+        : \"Thu, 11 Jun 2015 22:16:25 GMT\",\n                    \"snippet\" : \"Consistently
+        monitors and maintains communication methods, including email and cell phone.
+        35% Independently conducts unannounced onsite audits of healthcare...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=6668c6bba3fee4c6&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"6668c6bba3fee4c6\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"East Bay, CA\",\n                    \"formattedRelativeTime\" : \"5 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Medical Assistant, Float - Primary Care Services (HOSP BLANK AST 3)\",\n
+        \                   \"company\" : \"University of California San Francisco
+        Medical Center\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"University of
+        California San Francisco Medical Center\",\n                    \"date\" :
+        \"Fri, 12 Jun 2015 00:47:26 GMT\",\n                    \"snippet\" : \"Maintains
+        clean, well-stocked exam rooms, labs and <b>nursing</b> stations. Identifies
+        and communicates problems to the <b>nursing</b> staff or appropriate supervisor....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=293ab7a961abac09&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"293ab7a961abac09\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Registered Nurse - Adult Clinical Research Center (CLIN NURSE 2)\",\n
+        \                   \"company\" : \"University of California San Francisco
+        Medical Center\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"University of
+        California San Francisco Medical Center\",\n                    \"date\" :
+        \"Fri, 12 Jun 2015 00:47:29 GMT\",\n                    \"snippet\" : \"Functions
+        as a member of the interdisciplinary and <b>nursing</b> teams. Carries out
+        established <b>nursing</b> procedures and performs related duties as required....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=9e138be932cd49c0&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"9e138be932cd49c0\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RN or LPN (Registered / Licensed Practical Nurse)\",\n                    \"company\"
+        : \"Maxim Healthcare Services\",\n                    \"city\" : \"Concord\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Concord, CA\",\n                    \"source\"
+        : \"Maxim Healthcare Services\",\n                    \"date\" : \"Fri, 12
+        Jun 2015 00:36:37 GMT\",\n                    \"snippet\" : \"Minimum one
+        (1) year of <b>nursing</b> experience required with home health experience
+        preferred. Registered Nurses (RN) will also collaborate with a physician to...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=4a89c16eee1adc84&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"4a89c16eee1adc84\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Concord, CA\",\n                    \"formattedRelativeTime\" : \"3 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Medical Assistant - Outpatient Hepatology (HOSP BLANK AST 3)\",\n                    \"company\"
+        : \"University of California San Francisco Medical Center\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"University of California San Francisco
+        Medical Center\",\n                    \"date\" : \"Fri, 12 Jun 2015 00:47:39
+        GMT\",\n                    \"snippet\" : \"Identifies and communicates problems
+        to the <b>nursing</b> staff or appropriate supervisor. Ability to prioritize
+        and work efficiently with multiple forms of patient &amp;...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=2147e41020ba64a0&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"2147e41020ba64a0\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RN-TELEMETRY 48\",\n                    \"company\" : \"ST. ROSE HOSPITAL\",\n
+        \                   \"city\" : \"Hayward\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Hayward, CA\",\n                    \"source\" : \"St. Rose Hospital\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:27:31 GMT\",\n                    \"snippet\"
+        : \"Evaluates, develops and prioritizes a plan of care that is individualized
+        and goal directed based on <b>nursing</b> diagnosis, patient needs and standards
+        of care....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=ba9f9642b9d994a7&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"ba9f9642b9d994a7\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Hayward, CA 94545\",\n                    \"formattedRelativeTime\" :
+        \"42 minutes ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RN or LPN (Registered / Licensed Practical Nurse)\",\n                    \"company\"
+        : \"Maxim Healthcare Services\",\n                    \"city\" : \"San Ramon\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Ramon, CA\",\n
+        \                   \"source\" : \"Maxim Healthcare Services\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 00:36:47 GMT\",\n                    \"snippet\" : \"We
+        are looking for <b>nursing</b> professionals to join our team. Minimum one
+        (1) year of <b>nursing</b> experience required with home health experience
+        preferred....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=1f5832c9b11d189f&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"1f5832c9b11d189f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Ramon, CA\",\n                    \"formattedRelativeTime\" : \"3
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RN - ICU 18\",\n                    \"company\" : \"ST. ROSE HOSPITAL\",\n
+        \                   \"city\" : \"Hayward\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Hayward, CA\",\n                    \"source\" : \"St. Rose Hospital\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 03:27:13 GMT\",\n                    \"snippet\"
+        : \"Evaluates, develops and prioritizes a plan of care that is individualized
+        and goal directed based on <b>nursing</b> diagnosis, patient needs and standards
+        of care....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=6a465c1abecb75fc&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"6a465c1abecb75fc\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Hayward, CA 94545\",\n                    \"formattedRelativeTime\" :
+        \"43 minutes ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"CPMC-Nursing Supervisor-per diem-Nursing Services\",\n                    \"company\"
+        : \"Sutter Health\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Sutter Health\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 00:59:56 GMT\",\n                    \"snippet\" : \"The
+        <b>Nursing</b> Supervisor is responsible for the supervision of the <b>Nursing</b>
+        personnel on a designated shift. Bachelor's Degree in <b>Nursing</b> or equivalency
+        preferred....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=7088092169191bef&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"7088092169191bef\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"CNA - PRN - Kindred - Tunnell - SF, CA\",\n                    \"company\"
+        : \"Kindred Healthcare\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Kindred Healthcare\",\n                    \"date\"
+        : \"Fri, 12 Jun 2015 00:24:15 GMT\",\n                    \"snippet\" : \"Under
+        supervision, provides basic <b>nursing</b> assistance and assists residents
+        with daily living activities. CNA - PRN - Kindred - Tunnell - SF, CA....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=37e360c3237f52db&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"37e360c3237f52db\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"3 hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Caregiver\",\n                    \"company\" : \"Maxim Healthcare Services\",\n
+        \                   \"city\" : \"Oakland\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Oakland, CA\",\n                    \"source\" : \"Maxim Healthcare Services\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 00:37:23 GMT\",\n                    \"snippet\"
+        : \"Caregiver, respite, companion, medical assistant, <b>nursing</b> assistant,
+        cna, orderly, hha, na, patient care technician, healthcare, medical care,
+        assisted living,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=a5c754374b251370&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"a5c754374b251370\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Oakland, CA\",\n                    \"formattedRelativeTime\" : \"3 hours
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Caregiver\",\n                    \"company\" : \"Maxim Healthcare Services\",\n
+        \                   \"city\" : \"Concord\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Concord, CA\",\n                    \"source\" : \"Maxim Healthcare Services\",\n
+        \                   \"date\" : \"Fri, 12 Jun 2015 00:36:38 GMT\",\n                    \"snippet\"
+        : \"Caregiver, respite, companion, medical assistant, <b>nursing</b> assistant,
+        cna, orderly, hha, na, patient care technician, healthcare, medical care,
+        assisted living,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=41ea7c05b5e42e87&qd=KLpU4Yxto_kBBDodkIOFyKN_58VnZvC2ocll93GJPI8UZlU9HlW5U87qcrD-iQxXI9SJPhsni49A3gie611BrHbl59h3we25JSxucCavnKhZHF_ahsHyJ1DFqwrgbqGf&indpubnum=3508158328996054&atk=19nivcbn9b02gdda\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5795');\",\n                    \"jobkey\"
+        : \"41ea7c05b5e42e87\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Concord, CA\",\n                    \"formattedRelativeTime\" : \"3 hours
+        ago\"                \n}\n\n    ]\n}\n"
+    http_version: 
+  recorded_at: Fri, 12 Jun 2015 04:10:26 GMT
+recorded_with: VCR 2.9.3

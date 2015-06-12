@@ -2,18 +2,22 @@ require 'net/http'
 require 'json'
 require 'uri'
 
-module Jobs
+module Download
   class IndeedClient
     BASE_URI = 'http://api.indeed.com/ads'
+    
+    def initialize(query_string='software')
+      @query_string = query_string
+    end
     
     def get_jobs
       parse(query_for_jobs)
     end
     
-    def query_for_jobs(query='software', location='san+francisco')
+    def query_for_jobs(location='san+francisco')
       uri_str = "#{BASE_URI}/apisearch?" +
         "publisher=#{api_token}&" +
-        "q=#{query}&" +
+        "q=#{query_string}&" +
         "l=#{location}&" +
         "sort=date&" +
         "jt=fulltime&" +
@@ -29,6 +33,7 @@ module Jobs
     end
     
     private
+    attr_reader :query_string
     
     def parse(resp)
       jobs_hash = JSON.parse(resp)

@@ -1,0 +1,409 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&fromage=1&jt=fulltime&l=san%20francisco&limit=50&publisher=3508158328996054&q=software&sort=date&useragent=Mozilla//4.0(Firefox)&userip=162.246.145.234&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 19 Apr 2015 23:17:49 GMT
+      Set-Cookie:
+      - BIGipServerjob_sjc=!IO+Kb9HkM5Frp3zXRwqrDGOn23y3xtvwW3rK4ZIPTgIJ/RiUHGt6aSJr0hycmYaXZ9RWQUm0yXGLp6Q=;
+        path=/
+      - CTK=19j9vifsa1d692em; Domain=.indeed.com; Expires=Fri, 23-Apr-2032 18:06:20
+        GMT; Path=/
+      - DCT=9; Expires=Mon, 20-Apr-2015 01:17:49 GMT; Path=/
+      - JSESSIONID=4AC6FFA13C1E0AB786C6CD8CE1603351.jasxB_sjc-job8; Path=/; HttpOnly
+      - TS0115ce5c=0139b1f997a7880f95dc29578f2c928bb27990043b8796ef27264810d49fd014d9254851c8609b452c896ceeede9a59b54a82ceeb8;
+        path=/; domain=.indeed.com
+      - TS016080f8=0139b1f99794c94fbfba0b5269dfc2e3aea8780f27ae4e4ec2f73306655f0cef5ceab2fd3a8d5f40d4e5f7ef4a9ff8de50676264f0d6a22a87a4bd9a4ae70caea30133be8671f411db3f4be4c9af133995c4ce64f94f5bbf416b96ac7f74c5dce04af1f711;
+        Path=/
+      - ctkgen=1; Expires=Sun, 19-Apr-2015 23:20:49 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Sun, 19 Apr 2015 23:16:49 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n {\n\n    \"version\" :
+        2,\n    \"query\" : \"software\",\n    \"location\" : \"san francisco\",\n
+        \   \n    \"dupefilter\" : true,\n     \n    \"highlight\" : true,\n    \n
+        \   \"radius\" : 25,\n    \n    \n    \"start\" : 1,\n    \"end\" : 25,\n
+        \   \"totalResults\" : 229,\n     \n    \"pageNumber\" : 0,\n    \n    \n
+        \   \n    \n    \n\n     \n\n    \n\n    \n\n    \"results\" : [\n        \n
+        \           \n                {\n                    \"jobtitle\" : \"Sales
+        Operations Manager\",\n                    \"company\" : \"MemSQL\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"memsql\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 22:49:12 GMT\",\n                    \"snippet\" : \"SQL
+        is a Y-Combinator, SF-based startup that is leading the next wave of big data.
+        SQL's real-time database is the fastest performing and most scalable database...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=573e43aca08e3f1f&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"573e43aca08e3f1f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"28 minutes ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"SECURITY OFFICER\",\n
+        \                   \"company\" : \"CPS Security Solutions\",\n                    \"city\"
+        : \"Hayward\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Hayward, CA\",\n
+        \                   \"source\" : \"CPS Security Solutions\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 22:00:06 GMT\",\n                    \"snippet\" : \"At
+        CPS Security Solutions\\u00AE, our success is based on a top management team
+        with experience in Internet technology, security services marketing, communications,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=b11c13359a2f01c9&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"b11c13359a2f01c9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Hayward, CA\",\n                    \"formattedRelativeTime\" : \"1 hour
+        ago\"                \n}\n\n            ,\n        \n            \n                {\n
+        \                   \"jobtitle\" : \"SECURITY OFFICER\",\n                    \"company\"
+        : \"CPS Security Solutions\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"CPS Security Solutions\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 22:00:06 GMT\",\n                    \"snippet\" : \"At
+        CPS Security Solutions\\u00AE, our success is based on a top management team
+        with experience in Internet technology, security services marketing, communications,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=396f3c76ad1153ef&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"396f3c76ad1153ef\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"1 hour ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"SECURITY OFFICER\",\n
+        \                   \"company\" : \"CPS Security Solutions\",\n                    \"city\"
+        : \"Oakland\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Oakland, CA\",\n
+        \                   \"source\" : \"CPS Security Solutions\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 22:00:06 GMT\",\n                    \"snippet\" : \"At
+        CPS Security Solutions\\u00AE, our success is based on a top management team
+        with experience in Internet technology, security services marketing, communications,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=b4015243376ab3ef&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"b4015243376ab3ef\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Oakland, CA\",\n                    \"formattedRelativeTime\" : \"1 hour
+        ago\"                \n}\n\n            ,\n        \n            \n                {\n
+        \                   \"jobtitle\" : \"FLEX SECURITY OFFICER\",\n                    \"company\"
+        : \"CPS Security Solutions\",\n                    \"city\" : \"Burlingame\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Burlingame, CA\",\n
+        \                   \"source\" : \"CPS Security Solutions\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 22:00:16 GMT\",\n                    \"snippet\" : \"At
+        CPS Security Solutions\\u00AE, our success is based on a top management team
+        with experience in Internet technology, security services marketing, communications,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=785e5bb75477ea7e&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"785e5bb75477ea7e\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Burlingame, CA\",\n                    \"formattedRelativeTime\" : \"1
+        hour ago\"                \n}\n\n            ,\n        \n            \n                {\n
+        \                   \"jobtitle\" : \"SECURITY OFFICER\",\n                    \"company\"
+        : \"CPS Security Solutions\",\n                    \"city\" : \"Burlingame\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Burlingame, CA\",\n
+        \                   \"source\" : \"CPS Security Solutions\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 22:00:12 GMT\",\n                    \"snippet\" : \"At
+        CPS Security Solutions\\u00AE, our success is based on a top management team
+        with experience in Internet technology, security services marketing, communications,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=b23d881cb69fb5a1&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"b23d881cb69fb5a1\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Burlingame, CA\",\n                    \"formattedRelativeTime\" : \"1
+        hour ago\"                \n}\n\n            ,\n        \n            \n                {\n
+        \                   \"jobtitle\" : \"Product Manager, User Engagement - Consumer
+        Apps\",\n                    \"company\" : \"Zip Realty LLC\",\n                    \"city\"
+        : \"Emeryville\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Emeryville, CA\",\n
+        \                   \"source\" : \"Realogy\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 19:48:28 GMT\",\n                    \"snippet\" : \"Experience
+        working with a <b>software</b> development team. History of identifying and
+        measuring KPIs using Google Analytics or comparable tools....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=01f6d3a2141e1e0a&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"01f6d3a2141e1e0a\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Emeryville, CA\",\n                    \"formattedRelativeTime\" : \"3
+        hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Agile Software Developer
+        III\",\n                    \"company\" : \"Performant Financial Corporation\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Performant Financial
+        Corporation\",\n                    \"date\" : \"Sun, 19 Apr 2015 18:35:52
+        GMT\",\n                    \"snippet\" : \"To help with this, we are looking
+        for an experienced Agile <b>Software</b> Developer with strong contemporary
+        technology savvy, familiarity with Agile methodologies,...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=9799f8a89b3553f9&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"9799f8a89b3553f9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"4 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Agile Front End Developer\",\n
+        \                   \"company\" : \"Performant Financial Corporation\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"Performant Financial
+        Corporation\",\n                    \"date\" : \"Sun, 19 Apr 2015 18:35:53
+        GMT\",\n                    \"snippet\" : \"To help with this, we are looking
+        for an experienced Agile Front End Developer with strong contemporary technology
+        savvy, familiarity with Agile methodologies,...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=4e6e967cddc9acf2&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"4e6e967cddc9acf2\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"4 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Alfresco Developer\",\n
+        \                   \"company\" : \"Fasttrackhiring\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 17:43:17 GMT\",\n                    \"snippet\" : \"Experience
+        developing Alfresco 4.0x + (Alfresco Web Application Framework, Spring Surf,
+        REST and Web Service APIs, Java APIs) and configuring a client solution...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=df80729a54b27859&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"df80729a54b27859\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"5 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Sr. Systems Engineer,
+        SLED California\",\n                    \"company\" : \"VMware\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"VMware\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 17:51:22 GMT\",\n                    \"snippet\" : \"Ability
+        to see and present &quot;the big picture&quot; and offer solutions to make
+        it better. At the core of what we do are our employees who deeply value execution,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=f2ced6d8854e618e&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"f2ced6d8854e618e\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA 94103\",\n                    \"formattedRelativeTime\"
+        : \"5 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Enterprise Account
+        Executive - San Francisco, CA\",\n                    \"company\" : \"VMware\",\n
+        \                   \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"VMware\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 17:51:22 GMT\",\n                    \"snippet\" : \"At
+        the core of what we do are our employees who deeply value execution, passion,
+        integrity, customers, and community....\",\n                    \"url\" :
+        \"http://www.indeed.com/viewjob?jk=6c09a6d2ba66b73e&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"6c09a6d2ba66b73e\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA 94103\",\n                    \"formattedRelativeTime\"
+        : \"5 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Director of Professional
+        Services Operations\",\n                    \"company\" : \"VMware\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"VMware\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 17:51:22 GMT\",\n                    \"snippet\" : \"Experience
+        in Operations within a <b>software</b> company. At the core of what we do
+        are our employees who deeply value execution, passion, integrity, customers,
+        and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=85ae8013160fddb1&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"85ae8013160fddb1\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA 94103\",\n                    \"formattedRelativeTime\"
+        : \"5 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Teradtata Interactive
+        Solution Architect\",\n                    \"company\" : \"Teradata\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Teradata\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 16:46:54 GMT\",\n                    \"snippet\" : \"The
+        successful candidate will be responsible for partnering with internal resources
+        to identify and communicate the optimal mix of services required for...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=2abe8dc66d0c684d&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"2abe8dc66d0c684d\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"6 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"VoIP Engineer\",\n
+        \                   \"company\" : \"Advantex Professional Services\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Advantex Professional Services\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 16:33:42 GMT\",\n                    \"snippet\" : \"IP
+        Softswitch platform. Working directly with our <b>software</b> development
+        department on test environments and troubleshooting....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=a667d916d7cc9071&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"a667d916d7cc9071\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"6 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Preschool Director\",\n
+        \                   \"company\" : \"Redeemer Preschool\",\n                    \"city\"
+        : \"San Rafael\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Rafael, CA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 16:11:18 GMT\",\n                    \"snippet\" : \"Computer
+        Literacy and familiarity with Microsoft Office,Mac Books, Childcare Management
+        <b>software</b>, Quickbooks....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=b4111697dede2a43&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"b4111697dede2a43\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Rafael, CA\",\n                    \"formattedRelativeTime\" : \"7
+        hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Sr. Staff Engineer
+        Electrical\",\n                    \"company\" : \"Thermo Fisher Scientific\",\n
+        \                   \"city\" : \"South San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"South San Francisco, CA\",\n                    \"source\" : \"Thermo
+        Fisher Scientific\",\n                    \"date\" : \"Sun, 19 Apr 2015 13:28:30
+        GMT\",\n                    \"snippet\" : \"Candidate will work with internal
+        and/or external design team(s) to define and develop key components of genomic
+        sequencing chips and IP....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=5c28e260f4c469df&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"5c28e260f4c469df\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"South San Francisco, CA\",\n                    \"formattedRelativeTime\"
+        : \"9 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Security Engineer\",\n
+        \                   \"company\" : \"Augmedix Inc.\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Augmedix Inc.\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 13:00:58 GMT\",\n                    \"snippet\" : \"<b>Software</b>
+        acceptance\\u2014security implication in the <b>software</b> acceptance phase.
+        <b>Software</b> Deployment, Operations, Maintenance and Disposal\\u2014security
+        issues around...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=db5757be98692638&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"db5757be98692638\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"10 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"People Operations
+        Manager\",\n                    \"company\" : \"Augmedix Inc.\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"Augmedix Inc.\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 13:00:49 GMT\",\n                    \"snippet\" : \"Startup
+        experience required. Company paid gym membership. Experience in employee relations,
+        performance management, reward management, benefit management, HR...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=e87a4a366426de26&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"e87a4a366426de26\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"10 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"SAP Success Factors
+        Manager\",\n                    \"company\" : \"PwC\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"PwC\",\n                    \"date\" :
+        \"Sun, 19 Apr 2015 13:10:13 GMT\",\n                    \"snippet\" : \"Designing,
+        building, testing and deploying the technical components required for successful
+        SAP solutions, especially RICEFs (Reports, Interfaces, Conversions,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=0f4b58be4f6497af&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"0f4b58be4f6497af\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"10 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Software Engineer
+        I - College grad\",\n                    \"company\" : \"Gap Inc./Growth Innovation
+        and Digital\",\n                    \"city\" : \"San Francisco\",\n                    \"state\"
+        : \"CA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"San Francisco, CA\",\n                    \"source\" : \"National Retail
+        Federation\",\n                    \"date\" : \"Sun, 19 Apr 2015 11:27:39
+        GMT\",\n                    \"snippet\" : \"Design, implement and launch highly-visible
+        features for our retail platform using Test/Behavior Driven Development practices.
+        Experience with Java and J2EE....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=da79e4fc4197c638&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"da79e4fc4197c638\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"11 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Stores Technology
+        Operations Analyst\",\n                    \"company\" : \"Gap Inc./Growth
+        Innovation and Digital\",\n                    \"city\" : \"San Francisco\",\n
+        \                   \"state\" : \"CA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"National Retail Federation\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 11:27:43 GMT\",\n                    \"snippet\" : \"Our
+        technologists are driving retail technology innovation, e-commerce for all
+        Gap Inc.'s brands and delivering global, scalable, cloud-based platform solutions...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=7471d972c23f7c12&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"7471d972c23f7c12\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"11 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Software Engineer\",\n
+        \                   \"company\" : \"M\\u00E9tier\",\n                    \"city\"
+        : \"San Francisco Bay Area\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco Bay
+        Area, CA\",\n                    \"source\" : \"M\\u00E9tier\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 10:33:06 GMT\",\n                    \"snippet\" : \"Do
+        you love working with cutting edge technologies and smart, talented fellow
+        techies? You will research, design and develop <b>software</b> applications
+        to extend and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=80dd5298c5626e1e&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"80dd5298c5626e1e\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"San Francisco Bay Area, CA\",\n                    \"formattedRelativeTime\"
+        : \"12 hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Software Developer
+        4\",\n                    \"company\" : \"Oracle\",\n                    \"city\"
+        : \"Redwood City\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Redwood City, CA\",\n
+        \                   \"source\" : \"Oracle\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 10:41:50 GMT\",\n                    \"snippet\" : \"Logic
+        Server, Exalogic, relational database and SQL is a big plus; You will be responsible
+        for defining and developing <b>software</b> for tasks associated with the...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=dd80995a86afcef9&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"dd80995a86afcef9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Redwood City, CA\",\n                    \"formattedRelativeTime\" : \"12
+        hours ago\"                \n}\n\n            ,\n        \n            \n
+        \               {\n                    \"jobtitle\" : \"Technology Reporters\",\n
+        \                   \"company\" : \"BuzzFeed\",\n                    \"city\"
+        : \"San Francisco\",\n                    \"state\" : \"CA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"San Francisco, CA\",\n
+        \                   \"source\" : \"BuzzFeed\",\n                    \"date\"
+        : \"Sun, 19 Apr 2015 10:44:06 GMT\",\n                    \"snippet\" : \"They
+        should be able to predict what the next big thing will be, based largely on
+        their own passions. We\\u2019re going to cover emerging technology, privacy
+        and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=9fb08bdfe8370579&qd=KLpU4Yxto_kBBDodkIOFyH86hmYttwJRJ0byCbCDa6ZeuLusn79qdvsdvu3Ks9OQ1NyfkenOdcGN0V4BZBKpr4Tj1Lj9k4VLZEtguqkIAEO_3UfPaSwm_cyPqR37cNby&indpubnum=3508158328996054&atk=19j9vifus1d69716\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '9579');\",\n                    \"jobkey\"
+        : \"9fb08bdfe8370579\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"San Francisco, CA\",\n                    \"formattedRelativeTime\" :
+        \"12 hours ago\"                \n}\n\n            \n        \n    ]\n}\n\n"
+    http_version: 
+  recorded_at: Sun, 19 Apr 2015 23:17:49 GMT
+recorded_with: VCR 2.9.3

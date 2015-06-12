@@ -1,8 +1,8 @@
-require_relative '../../../lib/jobs/indeed_client'
+require_relative '../../../lib/download/indeed_client'
 require_relative '../../helpers/vcr_helpers'
 require 'spec_helper'
 
-module Jobs
+module Download
   describe IndeedClient do
     it 'queries the Indeed Feed API' do
       VCR.use_cassette('indeed_jobs') do

@@ -1,10 +1,10 @@
-require_relative '../../lib/jobs/indeed_client'
-require_relative '../../lib/jobs/angel_client'
-require_relative '../../lib/jobs/job_downloader'
+require_relative '../../lib/download/indeed_client'
+require_relative '../../lib/download/angel_client'
+require_relative '../../lib/download/job_downloader'
 require_relative '../helpers/vcr_helpers'
 require 'spec_helper'
 
-module Jobs
+module Download
   describe 'downloading jobs' do
     context 'from Angellist' do
       it 'creates a job in the database for each job downloaded' do
@@ -19,7 +19,7 @@ module Jobs
   
     context 'from Indeed' do
       it 'creates a job in the database for each job downloaded' do
-        VCR.use_cassette('indeed_jobs') do
+        VCR.use_cassette('indeed_jobs/development') do
           client = IndeedClient.new
           downloader = JobDownloader.new(client)
           downloader.download_jobs
