@@ -1,3 +1,5 @@
+require_relative '../jobs/job_factory'
+
 module Download
   class JobDownloader
     def initialize(client)
@@ -9,13 +11,11 @@ module Download
     end
     
     def download_jobs
+      factory = Jobs::JobFactory.new
       jobs = get_jobs
-      jobs.each do |j_params| 
-        # fake company temporarily until can create it
-        j_params['company'] ||= Company.unknown_co
-        
-        j = Job.matching_record_for(j_params)
-        j.update_attributes(j_params)
+      
+      jobs.each do |j_params|         
+        job = factory.produce(j_params)
       end
     end
     # handle_asynchronously :download_jobs

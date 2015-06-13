@@ -17,6 +17,7 @@ gem 'annotate'
 gem 'figaro'
 
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 group :development do
   gem 'better_errors', '< 2.0.0'

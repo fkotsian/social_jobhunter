@@ -31,8 +31,6 @@ class Job < ActiveRecord::Base
   
   accepts_nested_attributes_for :company
   
-  attr_reader :description
-  
   def self.matching_record_for(attrs)
     job_title = attrs['title']
     job_company = attrs['company']

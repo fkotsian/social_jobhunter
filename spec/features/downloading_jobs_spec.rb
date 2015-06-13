@@ -38,7 +38,7 @@ describe 'downloading jobs to populate the database', type: :feature do
           visit download_from_indeed_development_url
           expect { 
             Delayed::Worker.new.work_off
-          }.to change(Job, :count).by(25)
+          }.to change(Job, :count).by(22)
         end
       end
     end
@@ -57,7 +57,7 @@ describe 'downloading jobs to populate the database', type: :feature do
          visit download_from_indeed_nursing_url
          expect { 
            Delayed::Worker.new.work_off
-         }.to change(Job, :count).by(25)
+         }.to change(Job, :count).by(23)
        end
      end
    end

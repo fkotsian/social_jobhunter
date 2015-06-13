@@ -20,19 +20,23 @@ module Download
         downloader = JobDownloader.new(client)
         jobs = [
           {
-            'title' => 'job1',
-            'salary_bottom' => 75000,
-            'salary_top' => 80000,
-            'url' => 'job1.com',
-            'company' => company
+            :title => 'job1',
+            :salary_bottom => 75000,
+            :salary_top => 80000,
+            :url => 'job1.com',
+            :company_attributes => {
+              name: 'fakeco'
+            }
           },
           {
-            'title' => 'job2',
-            'salary_bottom' => 60000,
-            'salary_top' => 70000,
-            'url' => 'job2.com',
-            'company' => company
-          }
+            :title => 'job2',
+            :salary_bottom => 60000,
+            :salary_top => 70000,
+            :url => 'job2.com',
+            :company_attributes => {
+              name: 'fakeco'
+            }
+          },
         ]
         allow(client).to receive(:get_jobs).and_return jobs
         downloader.download_jobs
@@ -46,25 +50,31 @@ module Download
           downloader = JobDownloader.new(client)
           jobs = [
             {
-              'title' => 'job1',
-              'salary_bottom' => 75000,
-              'salary_top' => 80000,
-              'url' => 'job1.com',
-              'company' => company
+              :title => 'job1',
+              :salary_bottom => 75000,
+              :salary_top => 80000,
+              :url => 'job1.com',
+              :company_attributes => {
+                name: 'fakeco'
+              }
             },
             {
-              'title' => 'job2',
-              'salary_bottom' => 60000,
-              'salary_top' => 70000,
-              'url' => 'job2.com',
-              'company' => company
+              :title => 'job2',
+              :salary_bottom => 60000,
+              :salary_top => 70000,
+              :url => 'job2.com',
+              :company_attributes => {
+                name: 'fakeco'
+              }
             },
             {
-              'title' => 'job2',
-              'salary_bottom' => 60000,
-              'salary_top' => 70000,
-              'url' => 'job2again.com',
-              'company' => company
+              :title => 'job2',
+              :salary_bottom => 60000,
+              :salary_top => 70000,
+              :url => 'job2again.com',
+              :company_attributes => {
+                name: 'fakeco'
+              }
             }
           ]
           allow(client).to receive(:get_jobs).and_return jobs
