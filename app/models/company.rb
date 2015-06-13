@@ -37,6 +37,10 @@ class Company < ActiveRecord::Base
   private
   
   def ensure_description!
-    self.description ||= "No description yet given"
+    self.description ||= baseline_description
   end 
+  
+  def baseline_description
+    "No description yet provided."
+  end
 end
