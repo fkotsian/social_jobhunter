@@ -18,7 +18,7 @@ class Company < ActiveRecord::Base
   has_many :jobs
   # has_many :applications, through: :jobs, source: :job_applications
   
-  before_save :ensure_description!
+  # before_save :ensure_description!
 
   def display_description
     if self.description.nil?
@@ -33,7 +33,7 @@ class Company < ActiveRecord::Base
   def self.unknown_co
     Company.find_by(name: 'UnknownCo') || self.create!(name: 'UnknownCo', description: "We're not too sure which company this job applies to. Check the URL?")
   end
-
+  
   private
   
   def ensure_description!

@@ -12,7 +12,6 @@ module Download
       uri_str = "https://api.angel.co/1/jobs?" +
         "per_page=#{per_page}&" +
         "access_token=#{api_token}"
-        
       resp = make_req(uri_str)
       resp.body
     end
@@ -55,14 +54,12 @@ module Download
         job_attrs = {}
         co_attrs = {}
 
-#         co = job[:startup]
-#         co_attrs[:name] = co[:name]
-#         co_attrs[:url] = co[:company_url]
-#         co_attrs[:logo_url] = co[:logo_url]
-#         co_attrs[:thumb_url] = co[:thumb_url]
-#         co_attrs[:description] = co[:product_desc]
-#
-#         job_attrs[:company] = co_attrs
+        startup = job['startup']
+        co_attrs[:name] = startup['name']
+        co_attrs[:url] = startup['company_url']
+#         co_attrs[:logo_url] = startup['logo_url']
+#         co_attrs[:thumb_url] = startup['thumb_url']
+        co_attrs[:description] = startup['product_desc']
 
         job_tags = job.fetch(:tags, {})
         location = job_tags.select {|t| t[:tag_type] == "LocationTag"}[:display_name]
@@ -80,6 +77,7 @@ module Download
         # job_attrs[:currency_code] = job[:currency_code]
         job_attrs[:last_updated] = job['updated_at']
         
+        job_attrs[:company_attributes] = co_attrs
         job_attrs
       end
     end

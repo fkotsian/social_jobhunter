@@ -43,7 +43,8 @@ module Download
         job_attrs = {}
         co_attrs = {}
 
-        # co_attrs[:name] = job[:company]
+        co_attrs[:name] = job['company']
+        co_attrs[:description] = job['snippet']
 
         # category = 'software'
         # job_attrs[:job_category] = job_categories.index(category)
@@ -57,11 +58,10 @@ module Download
 
         # job_attrs[:currency_code] = job[:currency_code]
         job_attrs[:last_updated] = job['date']
-
+        
+        job_attrs[:company_attributes] = co_attrs
         job_attrs
       end
-      
-      
     end
     
     def make_req(uri_str, use_ssl=true)

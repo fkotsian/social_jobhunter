@@ -5,11 +5,9 @@ require 'spec_helper'
 module Download
   describe IndeedClient do
     it 'queries the Indeed Feed API' do
-      VCR.use_cassette('indeed_jobs') do
-        client = IndeedClient.new
-        resp = client.query_for_jobs
-        expect(resp).to match /"results" :/
-      end
+      client = IndeedClient.new
+      resp = client.query_for_jobs
+      expect(resp).to match /"results" :/
     end
     
     it 'parses the returned content' do

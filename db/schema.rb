@@ -11,20 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150611195727) do
+ActiveRecord::Schema.define(version: 20150613173515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "companies", force: true do |t|
-    t.string   "name",         null: false
-    t.string   "description"
+  create_table "companies", force: :cascade do |t|
+    t.string   "name",         limit: 255, null: false
+    t.text     "description"
     t.integer  "company_size"
-    t.string   "industry"
+    t.string   "industry",     limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url"
-    t.string   "company_url"
+    t.string   "url",          limit: 255
+    t.string   "company_url",  limit: 255
   end
 
   add_index "companies", ["company_size"], name: "index_companies_on_company_size", using: :btree
@@ -32,58 +32,58 @@ ActiveRecord::Schema.define(version: 20150611195727) do
   add_index "companies", ["name"], name: "index_companies_on_name", unique: true, using: :btree
   add_index "companies", ["url"], name: "index_companies_on_url", unique: true, using: :btree
 
-  create_table "delayed_jobs", force: true do |t|
-    t.integer  "priority",   default: 0, null: false
-    t.integer  "attempts",   default: 0, null: false
-    t.text     "handler",                null: false
+  create_table "delayed_jobs", force: :cascade do |t|
+    t.integer  "priority",               default: 0, null: false
+    t.integer  "attempts",               default: 0, null: false
+    t.text     "handler",                            null: false
     t.text     "last_error"
     t.datetime "run_at"
     t.datetime "locked_at"
     t.datetime "failed_at"
-    t.string   "locked_by"
-    t.string   "queue"
+    t.string   "locked_by",  limit: 255
+    t.string   "queue",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
-  create_table "job_applications", force: true do |t|
-    t.integer  "job_id",                           null: false
-    t.integer  "applicant_id",                     null: false
-    t.string   "status",       default: "Applied"
+  create_table "job_applications", force: :cascade do |t|
+    t.integer  "job_id",                                       null: false
+    t.integer  "applicant_id",                                 null: false
+    t.string   "status",       limit: 255, default: "Applied"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "note"
+    t.string   "note",         limit: 255
   end
 
   add_index "job_applications", ["applicant_id"], name: "index_job_applications_on_applicant_id", using: :btree
   add_index "job_applications", ["job_id"], name: "index_job_applications_on_job_id", using: :btree
   add_index "job_applications", ["status"], name: "index_job_applications_on_status", using: :btree
 
-  create_table "job_categories", force: true do |t|
-    t.string   "name",         null: false
+  create_table "job_categories", force: :cascade do |t|
+    t.string   "name",         limit: 255, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "display_name"
+    t.string   "display_name", limit: 255
   end
 
   add_index "job_categories", ["display_name"], name: "index_job_categories_on_display_name", unique: true, using: :btree
   add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true, using: :btree
 
-  create_table "jobs", force: true do |t|
-    t.string   "title",                            null: false
-    t.integer  "company_id",                       null: false
+  create_table "jobs", force: :cascade do |t|
+    t.string   "title",           limit: 255,                  null: false
+    t.integer  "company_id",                                   null: false
     t.integer  "job_category_id"
-    t.string   "url"
+    t.string   "url",             limit: 255
     t.integer  "salary_bottom"
     t.integer  "salary_top"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status",          default: "Open"
+    t.string   "status",          limit: 255, default: "Open"
     t.datetime "last_updated"
     t.text     "description"
-    t.string   "location"
+    t.string   "location",        limit: 255
   end
 
   add_index "jobs", ["company_id"], name: "index_jobs_on_company_id", using: :btree
@@ -94,17 +94,17 @@ ActiveRecord::Schema.define(version: 20150611195727) do
   add_index "jobs", ["title"], name: "index_jobs_on_title", using: :btree
   add_index "jobs", ["url"], name: "index_jobs_on_url", unique: true, using: :btree
 
-  create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
+  create_table "users", force: :cascade do |t|
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",                      default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end

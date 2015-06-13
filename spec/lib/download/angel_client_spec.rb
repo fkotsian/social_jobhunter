@@ -5,11 +5,9 @@ require 'spec_helper'
 module Download
   describe AngelClient do
     it 'queries the angellist Jobs API' do
-      VCR.use_cassette('angel_jobs') do
-        client = AngelClient.new
-        resp = client.query_for_jobs
-        expect(resp).to match /"jobs\":/
-      end
+      client = AngelClient.new
+      resp = client.query_for_jobs
+      expect(resp).to match /"jobs\":/
     end
     
     it 'parses the returned content' do

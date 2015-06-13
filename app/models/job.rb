@@ -31,14 +31,13 @@ class Job < ActiveRecord::Base
   
   accepts_nested_attributes_for :company
   
-  attr_reader :description
-  
   def self.matching_record_for(attrs)
     job_title = attrs['title']
     job_company = attrs['company']
         
-    match = where(title: job_title, company_id: job_company.id)
-    match.first_or_initialize(attrs)
+    # match = where(title: job_title, company_id: job_company.id)
+    # match.first_or_initialize(attrs)
+    find_or_initialize_by(attrs)
   end
   
   def self.find_by_title_and_company_name(title, co_name)
