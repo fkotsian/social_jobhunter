@@ -17,14 +17,14 @@ ActiveRecord::Schema.define(version: 20150613235030) do
   enable_extension "plpgsql"
 
   create_table "companies", force: :cascade do |t|
-    t.string   "name",         limit: 255, null: false
+    t.string   "name",         null: false
     t.text     "description"
     t.integer  "company_size"
-    t.string   "industry",     limit: 255
+    t.string   "industry"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url",          limit: 255
-    t.string   "company_url",  limit: 255
+    t.string   "url"
+    t.string   "company_url"
   end
 
   add_index "companies", ["company_size"], name: "index_companies_on_company_size", using: :btree
@@ -33,15 +33,15 @@ ActiveRecord::Schema.define(version: 20150613235030) do
   add_index "companies", ["url"], name: "index_companies_on_url", unique: true, using: :btree
 
   create_table "delayed_jobs", force: :cascade do |t|
-    t.integer  "priority",               default: 0, null: false
-    t.integer  "attempts",               default: 0, null: false
-    t.text     "handler",                            null: false
+    t.integer  "priority",   default: 0, null: false
+    t.integer  "attempts",   default: 0, null: false
+    t.text     "handler",                null: false
     t.text     "last_error"
     t.datetime "run_at"
     t.datetime "locked_at"
     t.datetime "failed_at"
-    t.string   "locked_by",  limit: 255
-    t.string   "queue",      limit: 255
+    t.string   "locked_by"
+    t.string   "queue"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,12 +49,12 @@ ActiveRecord::Schema.define(version: 20150613235030) do
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "job_applications", force: :cascade do |t|
-    t.integer  "job_id",                                       null: false
-    t.integer  "applicant_id",                                 null: false
-    t.string   "status",       limit: 255, default: "Applied"
+    t.integer  "job_id",                           null: false
+    t.integer  "applicant_id",                     null: false
+    t.string   "status",       default: "Applied"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "note",         limit: 255
+    t.string   "note"
   end
 
   add_index "job_applications", ["applicant_id"], name: "index_job_applications_on_applicant_id", using: :btree
@@ -62,25 +62,25 @@ ActiveRecord::Schema.define(version: 20150613235030) do
   add_index "job_applications", ["status"], name: "index_job_applications_on_status", using: :btree
 
   create_table "job_categories", force: :cascade do |t|
-    t.string   "name",         limit: 255, null: false
+    t.string   "name",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "display_name", limit: 255
+    t.string   "display_name"
   end
 
   add_index "job_categories", ["display_name"], name: "index_job_categories_on_display_name", unique: true, using: :btree
   add_index "job_categories", ["name"], name: "index_job_categories_on_name", unique: true, using: :btree
 
   create_table "jobs", force: :cascade do |t|
-    t.string   "title",           limit: 255,                  null: false
-    t.integer  "company_id",                                   null: false
+    t.string   "title",                            null: false
+    t.integer  "company_id",                       null: false
     t.integer  "job_category_id"
-    t.string   "url",             limit: 255
+    t.string   "url"
     t.integer  "salary_bottom"
     t.integer  "salary_top"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status",          limit: 255, default: "Open"
+    t.string   "status",          default: "Open"
     t.datetime "last_updated"
     t.text     "description"
     t.integer  "location_id"
@@ -114,16 +114,16 @@ ActiveRecord::Schema.define(version: 20150613235030) do
   add_index "locations", ["street2"], name: "index_locations_on_street2", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",                  limit: 255, default: "", null: false
-    t.string   "encrypted_password",     limit: 255, default: "", null: false
-    t.string   "reset_password_token",   limit: 255
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                      default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip",     limit: 255
-    t.string   "last_sign_in_ip",        limit: 255
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
