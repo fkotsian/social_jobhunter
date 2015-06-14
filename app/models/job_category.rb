@@ -2,10 +2,11 @@
 #
 # Table name: job_categories
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)      not null
-#  created_at :datetime
-#  updated_at :datetime
+#  id           :integer          not null, primary key
+#  name         :string(255)      not null
+#  created_at   :datetime
+#  updated_at   :datetime
+#  display_name :string(255)
 #
 
 class JobCategory < ActiveRecord::Base  

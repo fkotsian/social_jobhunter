@@ -53,6 +53,7 @@ module Download
       jobs.map do |job|
         job_attrs = {}
         co_attrs = {}
+        loc_attrs = {}
 
         startup = job['startup']
         co_attrs[:name] = startup['name']
@@ -61,12 +62,13 @@ module Download
 #         co_attrs[:thumb_url] = startup['thumb_url']
         co_attrs[:description] = startup['product_desc']
 
-        job_tags = job.fetch(:tags, {})
-        location = job_tags.select {|t| t[:tag_type] == "LocationTag"}[:display_name]
-        category = job_tags.select {|t| t[:tag_type] == "RoleTag"}[:display_name]
+        job_tags = job.fetch('tags', {})
+        location_tag = job_tags.detect {|t| t['tag_type'] == "LocationTag"}['display_name']
+        category_tag = job_tags.detect {|t| t['tag_type'] == "RoleTag"}['display_name']
 
-        job_attrs[:job_category] = job_categories.index(category)
-        job_attrs[:location] = location
+
+        loc_attrs[:city] = location_tag
+        job_attrs[:job_category] = job_categories.index(category_tag)
 
         job_attrs[:title] = job['title']
         job_attrs[:url] = job['angellist_url']
@@ -78,6 +80,7 @@ module Download
         job_attrs[:last_updated] = job['updated_at']
         
         job_attrs[:company_attributes] = co_attrs
+        job_attrs[:location_attributes] = loc_attrs
         job_attrs
       end
     end

@@ -4,12 +4,13 @@
 #
 #  id           :integer          not null, primary key
 #  name         :string(255)      not null
-#  description  :string(255)
+#  description  :text
 #  company_size :integer
 #  industry     :string(255)
 #  created_at   :datetime
 #  updated_at   :datetime
 #  url          :string(255)
+#  company_url  :string(255)
 #
 
 class Company < ActiveRecord::Base

@@ -42,10 +42,15 @@ module Download
       jobs.map do |job|
         job_attrs = {}
         co_attrs = {}
+        loc_attrs = {}
 
         co_attrs[:name] = job['company']
         co_attrs[:description] = job['snippet']
-
+        
+        loc_attrs[:city] = job['city']
+        loc_attrs[:region] = job['state']
+        loc_attrs[:country] = job['country']
+        
         # category = 'software'
         # job_attrs[:job_category] = job_categories.index(category)
         
@@ -60,6 +65,7 @@ module Download
         job_attrs[:last_updated] = job['date']
         
         job_attrs[:company_attributes] = co_attrs
+        job_attrs[:location_attributes] = loc_attrs
         job_attrs
       end
     end

@@ -12,6 +12,9 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  status          :string(255)      default("Open")
+#  last_updated    :datetime
+#  description     :text
+#  location_id     :integer
 #
 
 class Job < ActiveRecord::Base
@@ -19,6 +22,7 @@ class Job < ActiveRecord::Base
   belongs_to :job_category, 
               class_name: "JobCategory", 
               foreign_key: :job_category_id
+  belongs_to :location
   has_many :applications, 
             class_name: 'JobApplication'
   has_many :applicants, 
@@ -30,6 +34,7 @@ class Job < ActiveRecord::Base
   validates :url, uniqueness: true, allow_nil: true
   
   accepts_nested_attributes_for :company
+  accepts_nested_attributes_for :location
   
   def self.matching_record_for(attrs)
     job_title = attrs['title']

@@ -24,6 +24,15 @@ module Download
           expect(Company.count).to eq 39
         end
       end
+      
+      it 'creates associated Locations in the database for each Job created' do
+        VCR.use_cassette('angel_jobs') do
+          client = AngelClient.new
+          downloader = JobDownloader.new(client)
+          downloader.download_jobs
+          expect(Location.count).to eq 27
+        end
+      end
     end
   
     context 'from Indeed' do
@@ -43,6 +52,15 @@ module Download
           downloader = JobDownloader.new(client)
           downloader.download_jobs
           expect(Company.count).to eq 16
+        end
+      end
+      
+      it 'creates associated Locations in the database for each Job created' do
+        VCR.use_cassette('indeed_jobs/development') do
+          client = IndeedClient.new
+          downloader = JobDownloader.new(client)
+          downloader.download_jobs
+          expect(Location.count).to eq 9
         end
       end
     end

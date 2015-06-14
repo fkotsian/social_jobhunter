@@ -67,22 +67,22 @@ module Jobs
     end
     
     context 'when the job does not exist' do
-      context 'and the job company does not exist' do
-        it 'creates the job' do
-          f = JobFactory.new        
-          job_attrs = {
-            title: 'realjob',
-            description: 'Doing Real Things',
-            company_attributes: {
-              name: 'defaultco',
-            }
+      it 'creates the job' do
+        f = JobFactory.new        
+        job_attrs = {
+          title: 'realjob',
+          description: 'Doing Real Things',
+          company_attributes: {
+            name: 'defaultco'
           }
-        
-          f.produce(job_attrs)
-          expect(Job.count).to eq 1
-          expect(Job.first.description).to eq 'Doing Real Things'
-        end
-        
+        }
+      
+        f.produce(job_attrs)
+        expect(Job.count).to eq 1
+        expect(Job.first.description).to eq 'Doing Real Things'
+      end
+      
+      context 'and the job company does not exist' do        
         it 'creates the company' do
           f = JobFactory.new        
           job_attrs = {
@@ -97,24 +97,23 @@ module Jobs
           expect(Company.count).to eq 1
           expect(Company.first.description).to eq 'A Real Company'
         end
-      end
-      
-      context 'and the job company does exist' do
-        it 'creates the job' do
-          Company.create!(name: 'defaultco')
-          
+        
+        it 'references the company' do
           f = JobFactory.new        
           job_attrs = {
             title: 'realjob',
             company_attributes: {
-              name: 'defaultco'
+              name: 'defaultco',
+              description: 'A Real Company'
             }
           }
         
           produced = f.produce(job_attrs)
-          expect(Job.count).to eq 1
+          expect(produced.company.description).to eq 'A Real Company'
         end
-        
+      end
+      
+      context 'and the job company does exist' do
         it 'references the company' do
           c = Company.create!(name: 'defaultco')
           
@@ -160,6 +159,74 @@ module Jobs
         
           produced = f.produce(job_attrs)
           expect(produced.company.description).to eq 'A Real Company'
+        end
+      end
+      
+      context 'and the job location is provided' do
+        it 'references the job location' do
+          f = JobFactory.new        
+          job_attrs = {
+            title: 'realjob',
+            description: 'Doing Real Things',
+            location_attributes: {
+              street1: '123 Fake St',
+              city: 'Springfield',
+              region: 'Illinois'
+            },
+            company_attributes: {
+              name: 'defaultco'
+            }
+          }
+      
+          produced = f.produce(job_attrs)
+          expect(produced.location.city).to eq 'Springfield'
+        end
+        
+        context 'and the job location exists' do
+          it 'references the job location' do
+            l = Location.create!(street1: '123 Fake St',
+                             city: 'Springfield',
+                             region: 'Illinois'
+            )
+            f = JobFactory.new        
+            job_attrs = {
+              title: 'realjob',
+              description: 'Doing Real Things',
+              location_attributes: {
+                street1: '123 Fake St',
+                city: 'Springfield',
+                region: 'Illinois'
+              },
+              company_attributes: {
+                name: 'defaultco'
+              }
+            }
+      
+            produced = f.produce(job_attrs)
+            expect(produced.location).to eq l
+          end
+        end
+        
+        context 'and the job location does not exist' do
+          it 'creates the job location' do
+            f = JobFactory.new        
+            job_attrs = {
+              title: 'realjob',
+              description: 'Doing Real Things',
+              location_attributes: {
+                street1: '123 Fake St',
+                city: 'Springfield',
+                region: 'Illinois'
+              },
+              company_attributes: {
+                name: 'defaultco'
+              }
+            }
+      
+            f.produce(job_attrs)
+            expect(Location.count).to eq 1
+            expect(Location.first.region).to eq 'Illinois'
+          end
         end
       end
     end
