@@ -9,21 +9,20 @@
 # )
 
 marketing = JobCategory.create!(
-  display_name: "Marketing",
-  name: "marketing"
+  name: "Marketing"
 )
 development = JobCategory.create!(
-  display_name: "Development",
-  name: "development"
+  name: "Software Development"
+)
+design = JobCategory.create!(
+  name: "Design"
 )
 nursing = JobCategory.create!(
-  display_name: "Nursing",
-  name: "nursing"
+  name: "Nursing"
 )
-# sales = JobCategory.create(
-#   display_name: "Sales",
-#   name: "sales"
-# )
+sales = JobCategory.create!(
+  name: "Sales"
+)
 # design = JobCategory.create(
 #   display_name: "Design",
 #   name: "design"

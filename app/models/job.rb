@@ -19,9 +19,7 @@
 
 class Job < ActiveRecord::Base
   belongs_to :company 
-  belongs_to :job_category, 
-              class_name: "JobCategory", 
-              foreign_key: :job_category_id
+  belongs_to :job_category
   belongs_to :location
   has_many :applications, 
             class_name: 'JobApplication'
@@ -35,6 +33,7 @@ class Job < ActiveRecord::Base
   
   accepts_nested_attributes_for :company
   accepts_nested_attributes_for :location
+  accepts_nested_attributes_for :job_category
   
   def self.matching_record_for(attrs)
     job_title = attrs['title']

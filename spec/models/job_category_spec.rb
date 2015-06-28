@@ -5,7 +5,9 @@ describe JobCategory do
   context "seeding the database" do
     it "creates the preset job categories" do
       expect(JobCategory.names).to match_array [
-        'Development',
+        'Software Development',
+        'Sales',
+        'Design',
         'Marketing',
         'Nursing'
       ]

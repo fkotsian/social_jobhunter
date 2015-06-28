@@ -14,7 +14,7 @@ module Download
       factory = Jobs::JobFactory.new
       jobs = get_jobs
       
-      jobs.each do |j_params|         
+      jobs.map do |j_params|         
         job = factory.produce(j_params)
       end
     end

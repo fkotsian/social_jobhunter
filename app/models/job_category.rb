@@ -13,13 +13,15 @@ class JobCategory < ActiveRecord::Base
   has_many :jobs
   validates :name, uniqueness: true
   
-  attr_reader :name
-  
   def self.names
     all.map(&:display_name)
   end
   
   def display_name
     super || name.titleize
+  end
+  
+  def self.unknown_category
+    find_by(name: 'Unknown') || create!(name: 'Unknown')
   end
 end

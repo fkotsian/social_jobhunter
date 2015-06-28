@@ -33,6 +33,19 @@ module Download
           expect(Location.count).to eq 27
         end
       end
+      
+      it 'associates the created Jobs with a JobCategory' do
+        VCR.use_cassette('angel_jobs') do
+          client = AngelClient.new
+          downloader = JobDownloader.new(client)
+          jobs = downloader.download_jobs
+          categories_for_jobs = jobs.map {|j| j.job_category.name}.uniq
+          expect(categories_for_jobs).to match_array ['Software Development',
+             'Design', 
+             'Sales', 
+             'Unknown']
+        end
+      end
     end
   
     context 'from Indeed' do
@@ -61,6 +74,16 @@ module Download
           downloader = JobDownloader.new(client)
           downloader.download_jobs
           expect(Location.count).to eq 9
+        end
+      end
+      
+      it 'associates the created Jobs with a JobCategory' do
+        VCR.use_cassette('indeed_jobs/development') do
+          client = IndeedClient.new
+          downloader = JobDownloader.new(client)
+          jobs = downloader.download_jobs
+          categories_for_jobs = jobs.map {|j| j.job_category.display_name}.uniq
+          expect(categories_for_jobs).to match_array ['Software Development']
         end
       end
     end

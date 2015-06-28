@@ -54,6 +54,7 @@ module Download
         job_attrs = {}
         co_attrs = {}
         loc_attrs = {}
+        category_attrs = {}
 
         startup = job['startup']
         co_attrs[:name] = startup['name']
@@ -64,12 +65,11 @@ module Download
 
         job_tags = job.fetch('tags', {})
         location_tag = job_tags.detect {|t| t['tag_type'] == "LocationTag"}['display_name']
-        category_tag = job_tags.detect {|t| t['tag_type'] == "RoleTag"}['display_name']
+        category_tag = job_category(job_tags)
 
-
-        loc_attrs[:city] = location_tag
-        job_attrs[:job_category] = job_categories.index(category_tag)
-
+        loc_attrs[:city] = location_tag.titleize
+        category_attrs[:name] = category_tag.titleize
+        
         job_attrs[:title] = job['title']
         job_attrs[:url] = job['angellist_url']
         job_attrs[:description] = job['description']
@@ -81,6 +81,7 @@ module Download
         
         job_attrs[:company_attributes] = co_attrs
         job_attrs[:location_attributes] = loc_attrs
+        job_attrs[:job_category_attributes] = category_attrs
         job_attrs
       end
     end
@@ -88,6 +89,32 @@ module Download
     def api_token
       t = ENV['angellist_token']
       t ? t : (raise "Missing #{self.class.name} API token.")
+    end
+    
+    def job_category(job_tags)
+      category = job_tags.detect {|t| t['tag_type'] == "RoleTag"}['display_name']
+      case category.downcase
+      when /.*developer.*/
+        'Software Development'
+      when /.*software.*/
+        'Software Development'
+      when /.*ui.*/
+        'Design'
+      when /.*ux.*/
+        'Design'
+      when /.*design.*/
+        'Design'
+      when /.*biz dev.*/
+        'Business Development'
+      when /.*business development.*/
+        'Business Development'
+      when /.*sales.*/
+        'Sales'
+      when /.*nurs.*/
+        'Nursing'
+      else
+        'Unknown'
+      end
     end
     
     def job_categories

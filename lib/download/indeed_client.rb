@@ -43,6 +43,7 @@ module Download
         job_attrs = {}
         co_attrs = {}
         loc_attrs = {}
+        category_attrs = {}
 
         co_attrs[:name] = job['company']
         co_attrs[:description] = job['snippet']
@@ -51,8 +52,7 @@ module Download
         loc_attrs[:region] = job['state']
         loc_attrs[:country] = job['country']
         
-        # category = 'software'
-        # job_attrs[:job_category] = job_categories.index(category)
+        category_attrs[:name] = job_category
         
         job_attrs[:location] = job['formatted_location']
         job_attrs[:title] = job['jobtitle']
@@ -66,7 +66,17 @@ module Download
         
         job_attrs[:company_attributes] = co_attrs
         job_attrs[:location_attributes] = loc_attrs
+        job_attrs[:job_category_attributes] = category_attrs
         job_attrs
+      end
+    end
+    
+    def job_category
+      case query_string.downcase
+      when /.*software.*/
+        'Software Development'
+      else
+        query_string
       end
     end
     

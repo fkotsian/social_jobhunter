@@ -82,7 +82,7 @@ module Jobs
         expect(Job.first.description).to eq 'Doing Real Things'
       end
       
-      context 'and the job company does not exist' do        
+      context 'and the job company does not exist' do
         it 'creates the company' do
           f = JobFactory.new        
           job_attrs = {
@@ -226,6 +226,47 @@ module Jobs
             f.produce(job_attrs)
             expect(Location.count).to eq 1
             expect(Location.first.region).to eq 'Illinois'
+          end
+        end
+      end
+      
+      context 'and the job category is provided' do
+        context 'and the job category exists' do
+          it 'references the job category' do
+            f = JobFactory.new        
+            job_attrs = {
+              title: 'realjob',
+              description: 'Doing Real Things',
+              company_attributes: {
+                name: 'defaultco'
+              },
+              job_category_attributes: {
+                name: 'Software Development'
+              }
+            }
+      
+            produced = f.produce(job_attrs)
+            expect(produced.title).to eq 'realjob'
+            expect(produced.job_category.display_name).to eq 'Software Development'
+          end
+        end
+        context 'and the job category does not exist' do
+          it 'references the Unknown job category' do
+            f = JobFactory.new        
+            job_attrs = {
+              title: 'realjob',
+              description: 'Doing Real Things',
+              company_attributes: {
+                name: 'defaultco'
+              },
+              job_category_attributes: {
+                name: 'acompletelynewkindofjob'
+              }
+            }
+      
+            produced = f.produce(job_attrs)
+            expect(produced.title).to eq 'realjob'
+            expect(produced.job_category).to eq JobCategory.unknown_category
           end
         end
       end
